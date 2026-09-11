@@ -1,0 +1,460 @@
+[
+  {
+    "name": "charizard",
+    "kind": "card",
+    "id": "sv3pt5/199",
+    "url": "https://images.pokemontcg.io/sv3pt5/199_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-charizard.png",
+    "http_status": 200,
+    "bytes": 541821,
+    "verified": true,
+    "dimensions": [
+      733,
+      1024
+    ]
+  },
+  {
+    "name": "mew",
+    "kind": "card",
+    "id": "sv3pt5/205",
+    "url": "https://images.pokemontcg.io/sv3pt5/205_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-mew.png",
+    "http_status": 200,
+    "bytes": 495082,
+    "verified": true,
+    "dimensions": [
+      733,
+      1024
+    ]
+  },
+  {
+    "name": "pikachu",
+    "kind": "card",
+    "id": "sv3pt5/173",
+    "url": "https://images.pokemontcg.io/sv3pt5/173_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-pikachu.png",
+    "http_status": 200,
+    "bytes": 637704,
+    "verified": true,
+    "dimensions": [
+      733,
+      1024
+    ]
+  },
+  {
+    "name": "gengar",
+    "kind": "card",
+    "id": "swsh8/271",
+    "url": "https://images.pokemontcg.io/swsh8/271_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-gengar.png",
+    "http_status": 200,
+    "bytes": 846950,
+    "verified": true,
+    "dimensions": [
+      734,
+      1024
+    ]
+  },
+  {
+    "name": "bulbasaur",
+    "kind": "card",
+    "id": "sv3pt5/166",
+    "url": "https://images.pokemontcg.io/sv3pt5/166_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-bulbasaur.png",
+    "http_status": 200,
+    "bytes": 761163,
+    "verified": true,
+    "dimensions": [
+      733,
+      1024
+    ]
+  },
+  {
+    "name": "squirtle",
+    "kind": "card",
+    "id": "sv3pt5/170",
+    "url": "https://images.pokemontcg.io/sv3pt5/170_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-squirtle.png",
+    "http_status": 200,
+    "bytes": 783868,
+    "verified": true,
+    "dimensions": [
+      733,
+      1024
+    ]
+  },
+  {
+    "name": "eevee",
+    "kind": "card",
+    "id": "swsh9tg/TG11",
+    "url": "https://images.pokemontcg.io/swsh9tg/TG11_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-eevee.png",
+    "http_status": 200,
+    "bytes": 578882,
+    "verified": true,
+    "dimensions": [
+      734,
+      1024
+    ]
+  },
+  {
+    "name": "umbreon",
+    "kind": "card",
+    "id": "swsh7/215",
+    "url": "https://images.pokemontcg.io/swsh7/215_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-umbreon.png",
+    "http_status": 200,
+    "bytes": 792631,
+    "verified": true,
+    "dimensions": [
+      734,
+      1024
+    ]
+  },
+  {
+    "name": "mewtwo",
+    "kind": "card",
+    "id": "swshp/SWSH242",
+    "url": "https://images.pokemontcg.io/swshp/SWSH242_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-mewtwo.png",
+    "http_status": 200,
+    "bytes": 1224944,
+    "verified": true,
+    "dimensions": [
+      734,
+      1024
+    ]
+  },
+  {
+    "name": "dragonite",
+    "kind": "card",
+    "id": "swsh7/192",
+    "url": "https://images.pokemontcg.io/swsh7/192_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-dragonite.png",
+    "http_status": 200,
+    "bytes": 494469,
+    "verified": true,
+    "dimensions": [
+      734,
+      1024
+    ]
+  },
+  {
+    "name": "venusaur",
+    "kind": "card",
+    "id": "sv3pt5/198",
+    "url": "https://images.pokemontcg.io/sv3pt5/198_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-venusaur.png",
+    "http_status": 200,
+    "bytes": 735061,
+    "verified": true,
+    "dimensions": [
+      733,
+      1024
+    ]
+  },
+  {
+    "name": "blastoise",
+    "kind": "card",
+    "id": "sv3pt5/200",
+    "url": "https://images.pokemontcg.io/sv3pt5/200_hires.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/card-blastoise.png",
+    "http_status": 200,
+    "bytes": 704970,
+    "verified": true,
+    "dimensions": [
+      733,
+      1024
+    ]
+  },
+  {
+    "name": "pokemon-1",
+    "kind": "portrait",
+    "id": 1,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-1.png",
+    "http_status": 200,
+    "bytes": 203385,
+    "verified": true
+  },
+  {
+    "name": "pokemon-2",
+    "kind": "portrait",
+    "id": 2,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-2.png",
+    "http_status": 200,
+    "bytes": 202759,
+    "verified": true
+  },
+  {
+    "name": "pokemon-3",
+    "kind": "portrait",
+    "id": 3,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-3.png",
+    "http_status": 200,
+    "bytes": 186011,
+    "verified": true
+  },
+  {
+    "name": "pokemon-4",
+    "kind": "portrait",
+    "id": 4,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-4.png",
+    "http_status": 200,
+    "bytes": 137817,
+    "verified": true
+  },
+  {
+    "name": "pokemon-5",
+    "kind": "portrait",
+    "id": 5,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-5.png",
+    "http_status": 200,
+    "bytes": 130334,
+    "verified": true
+  },
+  {
+    "name": "pokemon-6",
+    "kind": "portrait",
+    "id": 6,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-6.png",
+    "http_status": 200,
+    "bytes": 144568,
+    "verified": true
+  },
+  {
+    "name": "pokemon-7",
+    "kind": "portrait",
+    "id": 7,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-7.png",
+    "http_status": 200,
+    "bytes": 155045,
+    "verified": true
+  },
+  {
+    "name": "pokemon-8",
+    "kind": "portrait",
+    "id": 8,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-8.png",
+    "http_status": 200,
+    "bytes": 179754,
+    "verified": true
+  },
+  {
+    "name": "pokemon-9",
+    "kind": "portrait",
+    "id": 9,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-9.png",
+    "http_status": 200,
+    "bytes": 197853,
+    "verified": true
+  },
+  {
+    "name": "pokemon-10",
+    "kind": "portrait",
+    "id": 10,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-10.png",
+    "http_status": 200,
+    "bytes": 174430,
+    "verified": true
+  },
+  {
+    "name": "pokemon-11",
+    "kind": "portrait",
+    "id": 11,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-11.png",
+    "http_status": 200,
+    "bytes": 118885,
+    "verified": true
+  },
+  {
+    "name": "pokemon-12",
+    "kind": "portrait",
+    "id": 12,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-12.png",
+    "http_status": 200,
+    "bytes": 183600,
+    "verified": true
+  },
+  {
+    "name": "pokemon-25",
+    "kind": "portrait",
+    "id": 25,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-25.png",
+    "http_status": 200,
+    "bytes": 118057,
+    "verified": true
+  },
+  {
+    "name": "pokemon-94",
+    "kind": "portrait",
+    "id": 94,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-94.png",
+    "http_status": 200,
+    "bytes": 144713,
+    "verified": true
+  },
+  {
+    "name": "pokemon-133",
+    "kind": "portrait",
+    "id": 133,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-133.png",
+    "http_status": 200,
+    "bytes": 142266,
+    "verified": true
+  },
+  {
+    "name": "pokemon-149",
+    "kind": "portrait",
+    "id": 149,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-149.png",
+    "http_status": 200,
+    "bytes": 132064,
+    "verified": true
+  },
+  {
+    "name": "pokemon-150",
+    "kind": "portrait",
+    "id": 150,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-150.png",
+    "http_status": 200,
+    "bytes": 119320,
+    "verified": true
+  },
+  {
+    "name": "pokemon-151",
+    "kind": "portrait",
+    "id": 151,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-151.png",
+    "http_status": 200,
+    "bytes": 133175,
+    "verified": true
+  },
+  {
+    "name": "pokemon-152",
+    "kind": "portrait",
+    "id": 152,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/152.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-152.png",
+    "http_status": 200,
+    "bytes": 104850,
+    "verified": true
+  },
+  {
+    "name": "pokemon-155",
+    "kind": "portrait",
+    "id": 155,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/155.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-155.png",
+    "http_status": 200,
+    "bytes": 116113,
+    "verified": true
+  },
+  {
+    "name": "pokemon-158",
+    "kind": "portrait",
+    "id": 158,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-158.png",
+    "http_status": 200,
+    "bytes": 115506,
+    "verified": true
+  },
+  {
+    "name": "pokemon-252",
+    "kind": "portrait",
+    "id": 252,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-252.png",
+    "http_status": 200,
+    "bytes": 125497,
+    "verified": true
+  },
+  {
+    "name": "pokemon-255",
+    "kind": "portrait",
+    "id": 255,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/255.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-255.png",
+    "http_status": 200,
+    "bytes": 86015,
+    "verified": true
+  },
+  {
+    "name": "pokemon-258",
+    "kind": "portrait",
+    "id": 258,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-258.png",
+    "http_status": 200,
+    "bytes": 124303,
+    "verified": true
+  },
+  {
+    "name": "pokemon-137",
+    "kind": "portrait",
+    "id": 137,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-137.png",
+    "http_status": 200,
+    "bytes": 153642,
+    "verified": true
+  },
+  {
+    "name": "pokemon-142",
+    "kind": "portrait",
+    "id": 142,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-142.png",
+    "http_status": 200,
+    "bytes": 81716,
+    "verified": true
+  },
+  {
+    "name": "pokemon-144",
+    "kind": "portrait",
+    "id": 144,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-144.png",
+    "http_status": 200,
+    "bytes": 160360,
+    "verified": true
+  },
+  {
+    "name": "pokemon-145",
+    "kind": "portrait",
+    "id": 145,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-145.png",
+    "http_status": 200,
+    "bytes": 110704,
+    "verified": true
+  },
+  {
+    "name": "pokemon-146",
+    "kind": "portrait",
+    "id": 146,
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+    "path": "/Users/bleon/Documents/Codex/2026-09-11/setzte-diesen-prompt-um-dabei-sind/work/assets/pokemon-146.png",
+    "http_status": 200,
+    "bytes": 94816,
+    "verified": true
+  }
+]
