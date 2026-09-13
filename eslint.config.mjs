@@ -14,6 +14,14 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
   ]),
   {
+    files: ["components/marketing/**/*.{ts,tsx}"],
+    rules: {
+      // Marketing artwork is already resized to WebP with explicit dimensions,
+      // responsive sources and lazy loading; no server image optimizer needed.
+      "@next/next/no-img-element": "off",
+    },
+  },
+  {
     files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],
     rules: {
       // These files are vendored verbatim from shadcn@4.17.0. Keep the

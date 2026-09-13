@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MonDex — Your collection, closer.",
-  description: "A premium Pokémon collection prototype. Explore your Dex, scan demo cards, and curate your collection.",
+  title: "MonDex — Deine Karten. Dein MonDex.",
+  description: "Entdecke deinen persönlichen Pokédex, gestalte digitale Binder und behalte deine Sammlung im Blick. Erlebe die interaktiven MonDex-Produktdemos.",
   other: {
     "codex-preview": "development",
   },
@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased dark">{children}</body>
+    <html lang="de">
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,352 @@
+[
+  {
+    "width": 360,
+    "errors": [],
+    "scrollWidth": 360,
+    "broken": [],
+    "h1": {
+      "x": 17,
+      "y": 153.390625,
+      "width": 323,
+      "height": 85.59375,
+      "top": 153.390625,
+      "right": 340,
+      "bottom": 238.984375,
+      "left": 17
+    },
+    "sections": [
+      {
+        "id": "top",
+        "height": 1237
+      },
+      {
+        "id": "entdecken",
+        "height": 1096
+      },
+      {
+        "id": "binder",
+        "height": 909
+      },
+      {
+        "id": "",
+        "height": 1147
+      },
+      {
+        "id": "",
+        "height": 887
+      },
+      {
+        "id": "",
+        "height": 438
+      },
+      {
+        "id": "vormerken",
+        "height": 663
+      },
+      {
+        "id": "fragen",
+        "height": 495
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "broken": [],
+    "h1": {
+      "x": 17,
+      "y": 153.390625,
+      "width": 353,
+      "height": 89.875,
+      "top": 153.390625,
+      "right": 370,
+      "bottom": 243.265625,
+      "left": 17
+    },
+    "sections": [
+      {
+        "id": "top",
+        "height": 1296
+      },
+      {
+        "id": "entdecken",
+        "height": 1135
+      },
+      {
+        "id": "binder",
+        "height": 909
+      },
+      {
+        "id": "",
+        "height": 1147
+      },
+      {
+        "id": "",
+        "height": 913
+      },
+      {
+        "id": "",
+        "height": 438
+      },
+      {
+        "id": "vormerken",
+        "height": 663
+      },
+      {
+        "id": "fragen",
+        "height": 481
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "broken": [],
+    "h1": {
+      "x": 29,
+      "y": 245.78125,
+      "width": 347.5,
+      "height": 111.25,
+      "top": 245.78125,
+      "right": 376.5,
+      "bottom": 357.03125,
+      "left": 29
+    },
+    "sections": [
+      {
+        "id": "top",
+        "height": 848
+      },
+      {
+        "id": "entdecken",
+        "height": 827
+      },
+      {
+        "id": "binder",
+        "height": 1030
+      },
+      {
+        "id": "",
+        "height": 841
+      },
+      {
+        "id": "",
+        "height": 882
+      },
+      {
+        "id": "",
+        "height": 287
+      },
+      {
+        "id": "vormerken",
+        "height": 676
+      },
+      {
+        "id": "fragen",
+        "height": 491
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "broken": [],
+    "h1": {
+      "x": 29,
+      "y": 301.296875,
+      "width": 470.5,
+      "height": 119.8125,
+      "top": 301.296875,
+      "right": 499.5,
+      "bottom": 421.109375,
+      "left": 29
+    },
+    "sections": [
+      {
+        "id": "top",
+        "height": 853
+      },
+      {
+        "id": "entdecken",
+        "height": 972
+      },
+      {
+        "id": "binder",
+        "height": 1042
+      },
+      {
+        "id": "",
+        "height": 962
+      },
+      {
+        "id": "",
+        "height": 885
+      },
+      {
+        "id": "",
+        "height": 322
+      },
+      {
+        "id": "vormerken",
+        "height": 746
+      },
+      {
+        "id": "fragen",
+        "height": 425
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "errors": [],
+    "scrollWidth": 1280,
+    "broken": [],
+    "h1": {
+      "x": 37,
+      "y": 275.9375,
+      "width": 573,
+      "height": 136.9375,
+      "top": 275.9375,
+      "right": 610,
+      "bottom": 412.875,
+      "left": 37
+    },
+    "sections": [
+      {
+        "id": "top",
+        "height": 853
+      },
+      {
+        "id": "entdecken",
+        "height": 972
+      },
+      {
+        "id": "binder",
+        "height": 1042
+      },
+      {
+        "id": "",
+        "height": 962
+      },
+      {
+        "id": "",
+        "height": 924
+      },
+      {
+        "id": "",
+        "height": 322
+      },
+      {
+        "id": "vormerken",
+        "height": 746
+      },
+      {
+        "id": "fragen",
+        "height": 425
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "broken": [],
+    "h1": {
+      "x": 117,
+      "y": 267.375,
+      "width": 573,
+      "height": 154.0625,
+      "top": 267.375,
+      "right": 690,
+      "bottom": 421.4375,
+      "left": 117
+    },
+    "sections": [
+      {
+        "id": "top",
+        "height": 853
+      },
+      {
+        "id": "entdecken",
+        "height": 972
+      },
+      {
+        "id": "binder",
+        "height": 1046
+      },
+      {
+        "id": "",
+        "height": 962
+      },
+      {
+        "id": "",
+        "height": 930
+      },
+      {
+        "id": "",
+        "height": 322
+      },
+      {
+        "id": "vormerken",
+        "height": 746
+      },
+      {
+        "id": "fragen",
+        "height": 425
+      }
+    ]
+  },
+  {
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "broken": [],
+    "h1": {
+      "x": 357,
+      "y": 287.375,
+      "width": 573,
+      "height": 154.0625,
+      "top": 287.375,
+      "right": 930,
+      "bottom": 441.4375,
+      "left": 357
+    },
+    "sections": [
+      {
+        "id": "top",
+        "height": 894
+      },
+      {
+        "id": "entdecken",
+        "height": 972
+      },
+      {
+        "id": "binder",
+        "height": 1046
+      },
+      {
+        "id": "",
+        "height": 962
+      },
+      {
+        "id": "",
+        "height": 930
+      },
+      {
+        "id": "",
+        "height": 322
+      },
+      {
+        "id": "vormerken",
+        "height": 746
+      },
+      {
+        "id": "fragen",
+        "height": 425
+      }
+    ]
+  }
+]

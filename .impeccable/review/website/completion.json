@@ -1,0 +1,22 @@
+{
+  "productionBuild": "passed",
+  "typescript": "passed",
+  "eslint": "passed",
+  "journeyChecks": 19,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "viewports": [
+    360,
+    390,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "review": "Ship; prior material findings resolved",
+  "performance": "See performance.json for local-only production measurements. These are not physical-device or field measurements.",
+  "publication": "Requested; pending Sites deployment"
+}

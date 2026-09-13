@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "Alle drei App-Vorschauen",
+    "Discovery und gemeinsam aktualisierte Home-Zahlen und Karten",
+    "Discovery wiederholbar ohne doppelte Zählung",
+    "Binder-Auswahl, Öffnen und stabile Höhe",
+    "Blättern und Seitengrenzen",
+    "Kartenbetrachter, Escape und Fokus-Rückgabe",
+    "Binder schließen",
+    "Alle drei Scan-Effekte",
+    "Profilwechsel bricht Animation ab",
+    "Alle Collection-Tabs",
+    "Marktwerte wirklich ausgeblendet",
+    "Formularvalidierung und ehrlicher Demo-Erfolg ohne Speichern/Übermitteln",
+    "Alle FAQ-Antworten",
+    "Alle drei Informationsseiten",
+    "Mobile Navigation, Anker, Escape und Fokus",
+    "Mobile Binder-Einzelseite",
+    "Reduced Motion: Discovery funktioniert",
+    "Inhalte und FAQ ohne JavaScript sichtbar",
+    "Keine JavaScript-Laufzeitfehler"
+  ],
+  "errors": []
+}

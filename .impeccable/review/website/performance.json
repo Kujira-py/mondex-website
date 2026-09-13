@@ -1,0 +1,29 @@
+{
+  "environment": "Production build, local macOS Chrome headless, fresh browser context per viewport, no CPU or network throttling. Localhost figures are not field metrics or a physical iPhone measurement.",
+  "results": [
+    {
+      "width": 390,
+      "metrics": {
+        "cls": 0,
+        "lcp": 320,
+        "longTasks": []
+      },
+      "navigationMs": 44.5,
+      "resources": 32,
+      "transferBytes": 342747,
+      "imageBytes": 74696
+    },
+    {
+      "width": 1440,
+      "metrics": {
+        "cls": 0,
+        "lcp": 308,
+        "longTasks": []
+      },
+      "navigationMs": 65,
+      "resources": 32,
+      "transferBytes": 342747,
+      "imageBytes": 74696
+    }
+  ]
+}

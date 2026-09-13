@@ -1,1 +1,146 @@
-{"schemaVersion":1,"product":"MonDex","mode":"operate","tokens":{"color":{"background":"#0d0e12","surface":"#191a21","foreground":"#f4f3f5","muted":"#9c9da9","accent":"#9581ef","success":"#89c79d"},"layout":{"maxWidth":430,"mobilePadding":20,"desktopPadding":24},"radius":{"card":6,"control":9,"goal":16},"motion":{"ease":"cubic-bezier(.22,1,.36,1)","press":160,"page":300,"sheet":400,"reveal":450}},"reference":"User-supplied 32-section MonDex brief"}
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-13T01:06:20Z",
+  "title": "Design System: MonDex Produktwebsite",
+  "extensions": {
+    "colorMeta": {
+      "background": { "role": "neutral", "displayName": "Seitenschwarz", "tonalRamp": ["oklch(15% .008 285)", "oklch(26% .008 285)", "oklch(38% .008 285)", "oklch(49% .008 285)", "oklch(61% .008 285)", "oklch(72% .008 285)", "oklch(84% .008 285)", "oklch(95% .008 285)"] },
+      "surface": { "role": "neutral", "displayName": "Erhöhtes Anthrazit", "tonalRamp": ["oklch(15% .011 285)", "oklch(26% .011 285)", "oklch(38% .011 285)", "oklch(49% .011 285)", "oklch(61% .011 285)", "oklch(72% .011 285)", "oklch(84% .011 285)", "oklch(95% .011 285)"] },
+      "surface-secondary": { "role": "neutral", "displayName": "Sekundäres Anthrazit", "tonalRamp": ["oklch(15% .012 285)", "oklch(26% .012 285)", "oklch(38% .012 285)", "oklch(49% .012 285)", "oklch(61% .012 285)", "oklch(72% .012 285)", "oklch(84% .012 285)", "oklch(95% .012 285)"] },
+      "text": { "role": "neutral", "displayName": "Helles Schriftweiß", "tonalRamp": ["oklch(15% .003 285)", "oklch(26% .003 285)", "oklch(38% .003 285)", "oklch(49% .003 285)", "oklch(61% .003 285)", "oklch(72% .003 285)", "oklch(84% .003 285)", "oklch(95% .003 285)"] },
+      "muted": { "role": "neutral", "displayName": "Gedämpftes Schriftgrau", "tonalRamp": ["oklch(15% .012 285)", "oklch(26% .012 285)", "oklch(38% .012 285)", "oklch(49% .012 285)", "oklch(61% .012 285)", "oklch(72% .012 285)", "oklch(84% .012 285)", "oklch(95% .012 285)"] },
+      "accent": { "role": "primary", "displayName": "MonDex-Violett", "tonalRamp": ["oklch(15% .23 287)", "oklch(26% .23 287)", "oklch(38% .23 287)", "oklch(49% .23 287)", "oklch(61% .23 287)", "oklch(72% .23 287)", "oklch(84% .23 287)", "oklch(95% .23 287)"] },
+      "accent-light": { "role": "primary", "displayName": "Helles MonDex-Violett", "tonalRamp": ["oklch(15% .14 290)", "oklch(26% .14 290)", "oklch(38% .14 290)", "oklch(49% .14 290)", "oklch(61% .14 290)", "oklch(72% .14 290)", "oklch(84% .14 290)", "oklch(95% .14 290)"] },
+      "line": { "role": "neutral", "displayName": "Feine weiße Trennlinie", "tonalRamp": ["oklch(15% 0 0)", "oklch(26% 0 0)", "oklch(38% 0 0)", "oklch(49% 0 0)", "oklch(61% 0 0)", "oklch(72% 0 0)", "oklch(84% 0 0)", "oklch(95% 0 0)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero; Tablet 52px, Mobile 42px, bis 380px Breite 40px." },
+      "headline": { "displayName": "Abschnittsüberschrift", "purpose": "Große Produktmomente; Tablet 39px, Mobile 34px, kleinere Größen für Portfolio, FAQ und Launch." },
+      "intro": { "displayName": "Einleitung", "purpose": "Abschnittserklärungen mit begrenzter Zeilenlänge." },
+      "body": { "displayName": "Fließtext", "purpose": "Lesetext in der gemeinsamen Systemschrift." },
+      "label": { "displayName": "Hinweise", "purpose": "Demo-Hinweise und Metadaten; verkleinerte App-Vorschauen haben eigene kleinere Werte." },
+      "button": { "displayName": "Aktion", "purpose": "Primäre und sekundäre Aktionen." }
+    },
+    "shadows": [
+      { "name": "phone", "value": "0 32px 65px -30px #000b, inset 0 0 0 1px #ffffff0b", "purpose": "Zurückhaltende räumliche Kante des Smartphones." },
+      { "name": "binder-cover", "value": "9px 12px 3px -8px #0c0c0f, 0 30px 35px -18px #000a", "purpose": "Dicke und Material des geschlossenen Binders." },
+      { "name": "binder-spread", "value": "drop-shadow(0 24px 18px #0005)", "purpose": "CSS-Filter als struktureller Schatten des geöffneten Binders." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.22,1,.36,1)", "purpose": "Gemeinsames Easing räumlicher Übergänge." },
+      { "name": "press", "value": "140ms", "purpose": "Hover und Druckreaktionen." },
+      { "name": "language-switch", "value": "160ms", "purpose": "Text- und Auswahlzustand der DE/EN-Sprachwahl." },
+      { "name": "tabs", "value": "200ms", "purpose": "Tab-Überblendungen und FAQ-Übergänge." },
+      { "name": "mobile-menu", "value": "220ms", "purpose": "Kompakte mobile Navigation." },
+      { "name": "binder", "value": "600ms", "purpose": "Binder öffnen und schließen; Cover-Geometrie und Druckgröße passen zur ausgewählten Galerieform." },
+      { "name": "page", "value": "400ms", "purpose": "Einzelnes Seitenblatt mit Vorder-/Rückseite dreht um den Rücken; die ruhende Doppelseite bleibt stabil." },
+      { "name": "discovery", "value": "760ms", "purpose": "Silhouette zu entdecktem Pokémon." },
+      { "name": "scan-standard", "value": "240ms", "purpose": "Gesamte Standard-Reaktion inklusive Erkennungsphase." },
+      { "name": "scan-holo", "value": "440ms", "purpose": "Gesamte Holo-Reaktion inklusive Erkennungsphase." },
+      { "name": "scan-metallic", "value": "900ms", "purpose": "Gesamte Metallic-Reaktion inklusive Erkennungsphase." },
+      { "name": "hero-copy", "value": "350ms", "purpose": "Einmaliges Erscheinen des Hero-Texts mit 8px Verschiebung." },
+      { "name": "hero-preview", "value": "400ms", "purpose": "Einmaliges Erscheinen der Vorschau nach 70ms Verzögerung." },
+      { "name": "reduced-motion", "value": ".01ms", "purpose": "CSS-Animationen nahezu unmittelbar; räumliche Cover- und Folieneffekte entfallen. JavaScript schließt Demo-Phasen in 30ms ab." }
+    ],
+    "breakpoints": [
+      { "name": "compact-phone-max", "value": "380px" },
+      { "name": "tablet-min", "value": "768px" },
+      { "name": "desktop-min", "value": "1024px" },
+      { "name": "narrow-desktop-max", "value": "1100px" },
+      { "name": "wide-desktop-min", "value": "1600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Einfarbige MonDex-Hauptaktion mit zurückhaltender Druckreaktion.",
+      "html": "<button class=\"ds-primary\">Zum Launch vormerken <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:13px 22px;border:0;border-radius:var(--radius-button,12px);font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif;font-size:14px;font-weight:550;line-height:1.4;background:var(--accent,#7657FF);color:#fff;cursor:pointer;transition:background var(--motion-press,140ms),transform var(--motion-press,140ms)}.ds-primary:hover{background:#6848ee}.ds-primary:active:not(:disabled){transform:scale(.98)}.ds-primary:focus-visible{outline:2px solid var(--accent-light,#A99BFF);outline-offset:5px}.ds-primary:disabled{cursor:default;opacity:.5}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Umrandete Aktion für bewusst gestartete Produktdemos.",
+      "html": "<button class=\"ds-secondary\">Entdeckung ausprobieren <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:13px 22px;border:1px solid #ffffff26;border-radius:var(--radius-button,12px);font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif;font-size:14px;font-weight:550;line-height:1.4;background:transparent;color:var(--text,#F5F5F7);cursor:pointer;transition:background var(--motion-press,140ms),transform var(--motion-press,140ms),border-color var(--motion-press,140ms)}.ds-secondary:hover:not(:disabled){background:var(--surface-secondary,#1C1C22);border-color:#ffffff45}.ds-secondary:active:not(:disabled){transform:scale(.98)}.ds-secondary:focus-visible{outline:2px solid var(--accent-light,#A99BFF);outline-offset:5px}.ds-secondary:disabled{cursor:default;opacity:.5}@media(prefers-reduced-motion:reduce){.ds-secondary{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Text Action",
+      "kind": "button",
+      "description": "Leichte Sekundäraktion mit großzügiger tatsächlicher Höhe.",
+      "html": "<a class=\"ds-text-action\" href=\"#app-vorschau\">App ansehen <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0;color:var(--text,#F5F5F7);text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif;font-size:14px;font-weight:450;transition:color var(--motion-press,140ms)}.ds-text-action:hover{color:var(--accent-light,#A99BFF)}.ds-text-action:focus-visible{outline:2px solid var(--accent-light,#A99BFF);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-text-action{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Demo Tabs",
+      "kind": "custom",
+      "refersTo": "demo-tabs",
+      "description": "Neutrale Auswahlgruppe; statische Vorschau des ausgewählten Zustands.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"App-Vorschau\"><button role=\"tab\" aria-selected=\"true\">Home</button><button role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Pokédex</button><button role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Binder</button></div>",
+      "css": ".ds-tabs{display:flex;align-items:center;justify-content:center;gap:4px;padding:4px;width:fit-content;border-radius:var(--radius-button,12px);background:var(--surface,#141419)}.ds-tabs button{min-height:40px;padding:9px 18px;border:0;background:none;color:var(--muted,#96969E);font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif;font-size:13px;border-radius:var(--radius-small,8px);cursor:pointer;transition:background var(--motion-tab,200ms),color var(--motion-tab,200ms)}.ds-tabs button[aria-selected=true]{background:#2b2a33;color:var(--text,#F5F5F7)}.ds-tabs button:hover{color:var(--text,#F5F5F7)}.ds-tabs button:focus-visible{outline:2px solid var(--accent-light,#A99BFF);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-tabs button{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Email Field",
+      "kind": "input",
+      "refersTo": "email-input",
+      "description": "Sichtbar benanntes Feld mit neutraler Fläche und ausdrücklichem Demo-Hinweis.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-launch-email\">E-Mail-Adresse</label><input id=\"ds-launch-email\" type=\"email\" placeholder=\"du@beispiel.de\" aria-describedby=\"ds-form-note\"/><p id=\"ds-form-note\">Formular-Demo · Deine E-Mail-Adresse wird nicht gespeichert.</p></div>",
+      "css": ".ds-field{width:min(460px,100%);font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif}.ds-field label{display:block;font-size:12px;color:#bdbdc4;margin-bottom:10px}.ds-field input{box-sizing:border-box;width:100%;height:52px;border:1px solid #ffffff20;border-radius:var(--radius-button,12px);color:var(--text,#F5F5F7);background:var(--surface,#141419);padding:0 45px 0 15px;font:inherit;font-size:15px;caret-color:var(--accent-light,#A99BFF)}.ds-field input::placeholder{color:var(--muted,#96969E);opacity:1}.ds-field input:focus-visible{outline:2px solid var(--accent-light,#A99BFF);outline-offset:5px}.ds-field input[aria-invalid=true]{border-color:#e29eab}.ds-field p{text-align:center;font-size:11px;margin:15px 0 0;color:var(--muted,#96969E);line-height:1.6}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "Ruhige Abschnittslinks auf dem neutralen Header-Grund.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Abschnitte\"><a href=\"#entdecken\">Entdecken</a><a href=\"#binder\">Binder</a><a href=\"#fragen\">Fragen</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:38px;background:var(--background,#0B0B0F)}.ds-nav a{padding-block:15px;font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif;font-size:14px;color:#b9b9c2;text-decoration:none;transition:color var(--motion-press,140ms)}.ds-nav a:hover{color:var(--text,#F5F5F7)}.ds-nav a:focus-visible{outline:2px solid var(--accent-light,#A99BFF);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-nav a{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "custom",
+      "refersTo": "language-switch",
+      "description": "Kompakter DE/EN-Schalter im Desktop- und Mobile-Header; statische Vorschau des deutschen Auswahlzustands.",
+      "html": "<div class=\"ds-language\" role=\"group\" aria-label=\"Sprache der Website\"><button type=\"button\" lang=\"de\" aria-label=\"Deutsch\" aria-pressed=\"true\">DE</button><button type=\"button\" lang=\"en\" aria-label=\"English\" aria-pressed=\"false\">EN</button></div>",
+      "css": ".ds-language{display:inline-flex;flex:0 0 auto;gap:2px;padding:3px;border:1px solid var(--line,rgba(255,255,255,.07));border-radius:9px}.ds-language button{min-width:32px;min-height:32px;padding:0 5px;border:0;background:none;color:var(--muted,#96969E);font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif;font-size:11px;border-radius:6px;cursor:pointer;transition:color 160ms,background 160ms}.ds-language button[aria-pressed=true]{background:var(--surface-secondary,#1C1C22);color:var(--text,#F5F5F7)}.ds-language button:hover{color:var(--text,#F5F5F7)}.ds-language button:focus-visible{outline:2px solid var(--accent-light,#A99BFF);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-language button{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Collection Surface",
+      "kind": "card",
+      "refersTo": "collection-panel",
+      "description": "Gezielt eingesetzte neutrale Inhaltsfläche für die Collection-Demo.",
+      "html": "<section class=\"ds-collection\"><h3>Deine Sammlung</h3><p>Interaktive Produktdemo · Beispieldaten</p></section>",
+      "css": ".ds-collection{background:var(--surface,#141419);border-radius:var(--radius-panel,18px);padding:32px 38px 24px;font-family:-apple-system,BlinkMacSystemFont,Inter,'Helvetica Neue',sans-serif;color:var(--text,#F5F5F7)}.ds-collection h3{margin:0;font-size:20px;font-weight:550;letter-spacing:-.035em}.ds-collection p{margin:20px 0 0;color:var(--muted,#96969E);font-size:12px;line-height:1.6}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Deine Karten. Dein MonDex.",
+    "overview": "MonDex wirkt ruhig, präzise, persönlich und hochwertig. Die Oberfläche gibt dem Sammeln Raum; Karten, Pokémon und Binder bestimmen die Farbe. Die öffentliche Website übernimmt die visuelle Verwandtschaft der App mit größerer Typografie und großzügigerem Abstand, auf Deutsch und Englisch.\n\nDas System folgt dem ausdrücklich festgelegten Nutzerbrief. Seine Farben, Radien, Schriftfamilie und Materialwirkung sind verbindlich. Dunkle Flächen bleiben neutral; physische Tiefe gehört zu den dargestellten Sammlerobjekten. Das originale Orbit-Zeichen wird unverändert verwendet. Die konkrete Abschnittsdramaturgie und der Oberflächenmodus stehen in `.impeccable/website-brief.md`.",
+    "keyCharacteristics": [
+      "Neutrale dunkle Bühne, farbige Sammlerobjekte.",
+      "Zurückhaltendes Violett für Aktionen und Auswahl.",
+      "Systemtypografie mit ruhigen, großen Überschriften.",
+      "Präzise Bewegung bei bewusst ausgelösten Zustandswechseln.",
+      "Sichtbar gekennzeichnete Produktdemos und Beispieldaten."
+    ],
+    "rules": [
+      { "name": "The Neutral Surface Rule", "body": "Die Oberfläche bleibt neutral. Karten, Pokémon und Binder liefern die Farbe.", "section": "colors" },
+      { "name": "The Object Depth Rule", "body": "Materialverläufe, Taschenreflexionen und Schatten erklären Binder und Karten; sie werden nicht als Seitendekoration vergrößert.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** preserve the user's pinned palette, copy, original Orbit mark and component character.",
+      "**Do** let cards, Pokémon and binders supply the color on neutral surfaces.",
+      "**Do** keep visible focus, keyboard controls, reduced-motion alternatives and explicit demo labels.",
+      "**Do** reserve artwork and demo dimensions so state changes retain a stable page rhythm.",
+      "**Do** keep financial information visually secondary to the collection."
+    ],
+    "donts": [
+      "**Don't** add decorative fonts, large violet gradients, glow clouds, particles or unnecessary glass effects.",
+      "**Don't** turn every section into a rounded card or add a website bottom navigation.",
+      "**Don't** introduce floating phone groups, scroll-hijacking or permanent decorative animation.",
+      "**Don't** present stylized lighting as authentic card finish or sample values as live product data.",
+      "**Don't** invent launch dates, downloads, testimonials, legal information or a successful stored signup."
+    ]
+  }
+}
