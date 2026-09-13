@@ -26,16 +26,16 @@ export const searchPages: Record<string, Record<Locale, SearchCopy>> = {
     de: { title: "Pokémon-Kartensammlung verwalten & tracken | MonDex", description: "Behalte Pokémon-Karten, Sets, Varianten und Wunschlisten im Blick. Entdecke MonDex als Sammlungstracker mit persönlichem Pokédex in der Produktdemo." },
   },
   "/kontakt": {
-    en: { title: "Contact & Development Status | MonDex", description: "Contact information and development status for MonDex. Official contact details are still being prepared." },
-    de: { title: "Kontakt & Entwicklungsstand | MonDex", description: "Kontaktinformationen und Entwicklungsstand von MonDex. Die offiziellen Kontaktdaten werden noch ergänzt." },
+    en: { title: "Contact | MonDex", description: "Get in touch with MonDex by email: app support, bug reports, account and data requests, privacy questions, press, partnerships and feature ideas." },
+    de: { title: "Kontakt | MonDex", description: "Schreib MonDex per E-Mail: App-Support, Fehlerberichte, Konto- und Datenanfragen, Fragen zum Datenschutz, Presse, Kooperationen und Ideen." },
   },
   "/datenschutz": {
-    en: { title: "Privacy Information | MonDex", description: "Privacy information for MonDex, including what the launch waitlist sends and why. Final operator and hosting details are still being prepared." },
-    de: { title: "Datenschutzhinweise | MonDex", description: "Datenschutzhinweise zu MonDex, auch dazu, welche Angaben die Launch-Warteliste übermittelt. Betreiber- und Hosting-Angaben werden noch ergänzt." },
+    en: { title: "Privacy Policy | MonDex", description: "What the MonDex website and app collect, why, where it’s kept and how you stay in control. No ads, no tracking, no selling your data." },
+    de: { title: "Datenschutzerklärung | MonDex", description: "Was die MonDex-Website und -App erfassen, wofür, wo es gespeichert wird und wie du die Kontrolle behältst. Keine Werbung, kein Tracking, kein Datenverkauf." },
   },
   "/impressum": {
-    en: { title: "Legal Notice | MonDex", description: "Legal notice for the MonDex product website. Final operator and contact information is still being prepared." },
-    de: { title: "Impressum | MonDex", description: "Impressum der MonDex-Produktwebsite. Die endgültigen Betreiber- und Kontaktangaben werden noch ergänzt." },
+    en: { title: "Legal Notice | MonDex", description: "Legal notice for MonDex: operator and contact details, notes on card prices and grade estimates, and the Pokémon trademark notice." },
+    de: { title: "Impressum | MonDex", description: "Impressum von MonDex: Betreiber- und Kontaktangaben, Hinweise zu Kartenpreisen und Zustandsschätzungen sowie der Pokémon-Markenhinweis." },
   },
 };
 

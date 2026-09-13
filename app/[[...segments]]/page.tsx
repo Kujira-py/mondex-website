@@ -1,9 +1,8 @@
 import { notFound } from "next/navigation";
 import MarketingSite from "@/components/marketing/MarketingSite";
 import FeaturePage from "@/components/marketing/FeaturePage";
-import InfoPage from "@/components/marketing/InfoPage";
+import InfoPage, { type InfoPath } from "@/components/marketing/InfoPage";
 import { featurePaths, pageMetadata, searchPages, type FeaturePath } from "@/components/marketing/seo";
-import { infoContent } from "@/components/marketing/info-content";
 
 type Props = { params: Promise<{ segments?: string[] }> };
 export const dynamicParams = false;
@@ -27,5 +26,5 @@ export default async function Page(props: Props) {
   const { path, locale } = await resolvePage(props);
   if (path === "/") return <MarketingSite initialLocale={locale} />;
   if (featurePaths.includes(path as FeaturePath)) return <FeaturePage path={path as FeaturePath} initialLocale={locale} />;
-  return <InfoPage {...infoContent[path]} pagePath={path} initialLocale={locale} />;
+  return <InfoPage path={path as InfoPath} initialLocale={locale} />;
 }

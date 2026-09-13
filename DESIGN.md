@@ -12,31 +12,31 @@ colors:
   line: "rgba(255,255,255,.07)"
 typography:
   display:
-    fontFamily: '-apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", sans-serif'
+    fontFamily: '"Onest", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
     fontSize: "clamp(56px,5vw,72px)"
     fontWeight: 550
     lineHeight: 1.07
     letterSpacing: "-.035em"
   headline:
-    fontFamily: '-apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", sans-serif'
+    fontFamily: '"Onest", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
     fontSize: "clamp(40px,3.65vw,52px)"
     fontWeight: 550
     lineHeight: 1.12
     letterSpacing: "-.035em"
   intro:
-    fontFamily: '-apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", sans-serif'
+    fontFamily: '"Onest", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
     fontSize: "18px"
     lineHeight: 1.65
   body:
-    fontFamily: '-apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", sans-serif'
+    fontFamily: '"Onest", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
     fontSize: "16px"
     lineHeight: 1.6
   label:
-    fontFamily: '-apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", sans-serif'
+    fontFamily: '"Onest", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
     fontSize: "12px"
     lineHeight: 1.6
   button:
-    fontFamily: '-apple-system, BlinkMacSystemFont, Inter, "Helvetica Neue", sans-serif'
+    fontFamily: '"Onest", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
     fontSize: "14px"
     fontWeight: 550
     lineHeight: 1.4
@@ -163,7 +163,7 @@ Das Violett wird nicht zu einer allgemeinen Hintergrundfarbe. Primärbutton-Hove
 
 ## Typography
 
-Display, Fließtext und Bedienelemente teilen die Systemschrift aus dem Frontmatter. Es wird keine zusätzliche Schrift geladen. Die Hierarchie entsteht aus Größe, Medium-/Semibold-Gewichten und gezielten Abständen.
+Display, Fließtext und Bedienelemente teilen die Schrift Onest aus dem Frontmatter (selbst gehostete Variable Font, `app/fonts/Onest-Variable.woff2`, Gewichte 100–900, SIL Open Font License). Die Systemschrift dient nur als Fallback. Die Hierarchie entsteht aus Größe, Medium-/Semibold-Gewichten und gezielten Abständen.
 
 - **Display:** skalierende Desktop-Größe aus dem Frontmatter; auf Tablet (52px), auf Mobile (42px), bis (380px) Breite (40px).
 - **Headline:** auf Tablet grundsätzlich (39px), auf Mobile (34px). Portfolio, FAQ und Launch verwenden bewusst kleinere, komponentenspezifische Größen.

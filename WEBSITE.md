@@ -31,13 +31,13 @@ Für die zweite Variante zuvor den Entwicklungsserver beenden. Sie zeigt den geb
 - Standard-, Holo- und Metallic-Scanreaktionen mit Abbruch bei Profilwechsel. Keine Kamera, keine Geräusche, keine Vibration.
 - Cards/Sets/Binders/Lists-Demos sowie ein Portfolio-Beispiel mit ausblendbaren Werten.
 - Formular mit Eingabevalidierung und ausdrücklich als Demo gekennzeichneter Rückmeldung. Keine Backend-Anbindung, keine Speicherung und keine Übermittlung von E-Mail-Adressen.
-- FAQ und eigenständige Routen /kontakt, /datenschutz und /impressum.
+- FAQ sowie Kontakt, Datenschutzerklärung und Impressum unter /kontakt, /datenschutz und /impressum, jeweils auf Deutsch und Englisch.
 - Rücksicht auf reduzierte Bewegung, sichtbare Inhalte auch ohne JavaScript.
 
 ## Noch vor einem öffentlichen Launch nötig
 
 - Tatsächlicher Anmelde-Endpunkt und dazu passende Speicher-, Fehler- und Erfolgszustände. Die aktuelle Rückmeldung darf erst dann durch eine echte Anmeldung ersetzt werden.
-- Endgültige Kontakt-, Betreiber- und Rechtstexte. Die drei Informationsseiten kennzeichnen dies sichtbar.
+- Die Platzhalter in eckigen Klammern auf Kontakt, Datenschutz und Impressum ausfüllen (gelb markiert). Betreiberangaben, Datum und Jahr stehen zentral in `components/marketing/info/shared.tsx`, die Texte beider Sprachen in den Seitendateien daneben.
 - Finale Freigabe der verwendeten Karten-/Pokémon-Assets für öffentliche Verwendung. Wiederverwendet wurden vorhandene Projektassets; Herkunft siehe public/assets/provenance.json und public/marketing/README.md.
 - Bestätigte Launch-Details. Keine Downloadziele, App-Store-Badges oder Veröffentlichungstermine werden erfunden.
 

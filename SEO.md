@@ -21,7 +21,7 @@ The site describes an app in development. Do not add unsupported download links,
 - Language links remain usable without JavaScript. With JavaScript, switching languages preserves the current demo state and synchronises the page metadata and structured data.
 - Open Graph and Twitter preview metadata use local 1200×630 PNGs in both languages.
 - JSON-LD describes the website, page, app in development and breadcrumbs. It does not invent offers or ratings. No enhanced Google result is promised.
-- The sitemap includes the 8 indexable home/feature URLs. The unfinished contact, privacy and legal pages use `noindex, follow` until real content is supplied.
+- The sitemap includes the 8 indexable home/feature URLs. The contact, privacy and legal pages use `noindex, follow` while they still contain `[BRACKETED]` placeholders. Operator details, the privacy date and the copyright year live in `components/marketing/info/shared.tsx`; the page copy lives next to it.
 - Internal links connect each feature page to its demo, related features and the homepage. Existing lightweight images, dimensions, lazy loading and reduced-motion behaviour remain.
 - The site is served from the root of the custom domain `mondextcg.com`, so `robots.txt` and `sitemap.xml` are the host-root files crawlers read. The project does not block indexing.
 
