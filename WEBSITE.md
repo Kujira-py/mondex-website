@@ -48,3 +48,7 @@ Für die zweite Variante zuvor den Entwicklungsserver beenden. Sie zeigt den geb
 ## Prüfung
 
 Siehe `.impeccable/review/website/` für responsive Screenshots, Browser-Klickstrecke und Messberichte. Der Browser-Test prüft 360, 390, 768, 1024, 1280, 1440 und 1920 px, alle Demo-Zustände, Formular, FAQ, Dialogfokus, reduzierte Bewegung und Inhalte ohne JavaScript. Build-, TypeScript- und Lint-Prüfung gehören zum Abschluss.
+
+## SEO and GitHub Pages
+
+The public GitHub Pages destination is `https://kujira-py.github.io/mondex-website/`. English is available at `/en/`. Run `npm run build:pages` and `npm run verify:pages` for the static site. The public repository workflow publishes `out/` on pushes to main. See `SEO.md` for the route map, indexing policy and Search Console follow-up.

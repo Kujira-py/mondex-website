@@ -1,3 +1,0 @@
-import InfoPage from "@/components/marketing/InfoPage";
-import { routeLocale, type WebsitePageProps } from "@/components/marketing/route-locale";
-export default async function Page(props: WebsitePageProps) { return <InfoPage initialLocale={await routeLocale(props)} title="Datenschutz" paragraphs={["Die endgültigen Datenschutzhinweise sind noch zu ergänzen. Diese Seite ist ein Platzhalter und keine vollständige Datenschutzerklärung.", "Das Launch-Formular dieser Vorschau ist ausschließlich eine Demo. Es übermittelt und speichert keine E-Mail-Adressen. Auch die gezeigte Sammlung besteht aus Beispieldaten.", "Vor der Veröffentlichung müssen die Angaben zum Betreiber, Hosting und zu tatsächlich eingesetzten Diensten vervollständigt werden."]} />; }

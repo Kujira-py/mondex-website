@@ -30,7 +30,7 @@ Die Seite besteht aus Header, acht Hauptabschnitten und Footer. Die feste Reihen
 5. Collection-Organisation mit Cards, Sets, Binders und Lists.
 6. Eigenständiger, bewusst kompakter Portfolio-Einblick mit ausblendbaren Werten.
 7. Launch-Formular unter `#vormerken`.
-8. Vier aufklappbare häufige Fragen unter `#fragen`.
+8. Sieben aufklappbare häufige Fragen unter `#fragen`.
 
 Die Hauptaktion heißt „Zum Launch vormerken“ bzw. „Get launch updates“. Echte Abschnittslinks, mobile Navigation, Tastaturbedienung, Escape und Fokus-Rückgabe unterstützen die Nutzerreise. Die Website erhält keine eigene App-Bottom-Navigation; die Darstellung innerhalb der Smartphone-Demo ist Teil der Produktvorschau.
 
@@ -38,9 +38,9 @@ Alle Produktinteraktionen und Zahlen sind als Demo bzw. Beispieldaten gekennzeic
 
 ### Sprachen und Teilen
 
-Ein DE/EN-Schalter bleibt im Header auf Desktop und Mobile erreichbar. Deutsch ist der Standard. `?lang=en` wählt Englisch und liefert bereits beim serverseitigen Rendern englische Inhalte. Der Parameter bleibt beim Navigieren zwischen Produkt- und Informationsseiten erhalten; geteilte englische Links und Neuladen behalten die Sprache. Der Wechsel zurück zu Deutsch entfernt den Parameter. Die Sprachwahl verwendet weder localStorage noch Cookies.
+Ein DE/EN-Schalter bleibt im Header auf Desktop und Mobile erreichbar. Deutsch ist der Standard. Englische Seiten besitzen eigene `/en/`-Pfade und liefern bereits beim statischen Rendern englische Inhalte. Interne Links und Neuladen behalten die Sprache. Ältere `?lang=en`-Links werden im Browser zur entsprechenden englischen Seite weitergeleitet. Die Sprachwahl verwendet weder localStorage noch Cookies.
 
-Die Übersetzungen stehen zentral in `components/marketing/en.json`; `locale.tsx` steuert den Sprachwechsel und interne Links, `route-locale.ts` die anfängliche Routensprache. Die drei Informationsseiten bleiben in beiden Sprachen als unvollständig gekennzeichnet. Sprache verändert weder Demo-Daten noch den Entwicklungsstatus.
+Die Übersetzungen stehen zentral in `components/marketing/en.json`; `locale.tsx` steuert den Sprachwechsel und interne Links, die statischen Seitenrouten die anfängliche Routensprache. Die drei Informationsseiten bleiben in beiden Sprachen als unvollständig gekennzeichnet. Sprache verändert weder Demo-Daten noch den Entwicklungsstatus.
 
 Der Nutzer hat die anschließende Veröffentlichung auf Sites angefordert, um die Website einem Freund zu zeigen. Diese Dokumentation bestätigt keine erfolgte Veröffentlichung und enthält noch keine verifizierte öffentliche URL. Der veröffentlichte Stand bleibt eine Produktdemo mit den hier genannten offenen Launch-Inhalten.
 
@@ -68,3 +68,7 @@ Die vom Nutzer festgelegten Texte, Tokens, Abschnittsfolge und Interaktionen sin
 - Die Website verwendet optimierte WebP-Ableitungen vorhandener Projektgrafiken. Herkunft: `public/assets/provenance.json`; Verarbeitung: `public/marketing/README.md`. Für diese Website wurden keine neuen fremden Kartenbilder bezogen. Die öffentliche Nutzungsfreigabe der Karten-/Pokémon-Grafiken bleibt zu klären; Herkunftsdaten ersetzen keine Freigabe.
 - `public/brand/orbit.svg` ist die unveränderte Kopie des vorhandenen nativen Orbit-Assets; `public/favicon.svg` enthält dasselbe Zeichen.
 - Vorhandene Website-Aufnahmen und Prüfberichte liegen unter `.impeccable/review/website/`. Diese Dokumentationsaktualisierung behauptet keine zusätzlich ausgeführten Browser- oder Performance-Tests.
+
+## SEO-Erweiterung und statisches Hosting
+
+Drei zusätzliche zweisprachige Informationsseiten erklären Kartenscans, digitale Binder und Sammlungstracking. Sie ergänzen die bestehende Landingpage und ändern keine Demo-Daten. Die nachfolgende Veröffentlichung wurde für GitHub Pages in `Kujira-py/mondex-website` autorisiert. Alle Seiten sind statisch lesbar. Canonical- und Sprachverknüpfungen, strukturierte Daten sowie eine Sitemap teilen Suchmaschinen die Seitenstruktur mit. Details und offene Search-Console-Verifizierung stehen in `SEO.md`.

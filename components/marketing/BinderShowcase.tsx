@@ -23,7 +23,7 @@ function BinderPage({ binder, page, second, onCard }: { binder: number; page: nu
   })}</div></div>;
 }
 export default function BinderShowcase() {
-  const { t } = useLocale();
+  const { t, href } = useLocale();
   const [selected, setSelected] = useState(0);
   const [phase, setPhase] = useState<Phase>("closed");
   const [page, setPage] = useState(0);
@@ -56,7 +56,7 @@ export default function BinderShowcase() {
   const isTurning = phase === "turning";
   const leftPage = isTurning && direction < 0 ? page - 1 : page;
   const rightPage = isTurning && direction > 0 ? page + 1 : page;
-  return <section id="binder" className="section binder-section" aria-labelledby="binder-title"><div className="container binder-heading"><h2 id="binder-title">{t("Eine Sammlung,")}<br />{t("die du gerne aufschlägst.")}</h2><p>{t("Ordne deine Lieblingskarten, fülle deinen Dex-Binder oder gestalte ein Album ganz nach deinen Vorstellungen.")}</p></div>
+  return <section id="binder" className="section binder-section" aria-labelledby="binder-title"><div className="container binder-heading"><h2 id="binder-title">{t("Eine Sammlung,")}<br />{t("die du gerne aufschlägst.")}</h2><p>{t("Ordne deine Lieblingskarten, fülle deinen Dex-Binder oder gestalte ein Album ganz nach deinen Vorstellungen.")}</p><a className="text-button feature-link" href={href("/digital-pokemon-card-binder")}>{t("Mehr über digitale Pokémon-Binder")}</a></div>
     <div className={`binder-stage phase-${phase}`} ref={demoRef} data-phase={phase}>
       <div className="binder-floor" aria-hidden="true" />
       <div className="binder-covers" inert={phase !== "closed"} aria-hidden={phase !== "closed"}>{binders.map((binder, index) => {

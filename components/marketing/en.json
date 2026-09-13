@@ -147,5 +147,19 @@
   "Vorschau": "preview",
   "Effektvorschau": "effect preview",
   "Unentdecktes Pokémon": "Undiscovered Pokémon",
-  "Scan-Effektprofil": "Scan effect profile"
+  "Scan-Effektprofil": "Scan effect profile",
+  "Die Pokémon-TCG-App für Kartenscans, digitale Binder und deinen persönlichen Pokédex. Entdecke, wie MonDex deine Sammlung zusammenbringt.": "The Pokémon TCG app for card scanning, digital binders and your personal Pokédex. Discover how MonDex brings your collection together.",
+  "Pokémon-Karten scannen.": "Scan Pokémon cards.",
+  "So funktioniert der Kartenscanner": "How the card scanner works",
+  "Mehr über digitale Pokémon-Binder": "Explore digital Pokémon binders",
+  "Deine Pokémon-Sammlung organisieren": "Organise your Pokémon collection",
+  "Pokémon-Karten scannen": "Pokémon card scanner",
+  "Digitale Pokémon-Binder": "Digital Pokémon binders",
+  "Pokémon-Sammlung verwalten": "Pokémon collection tracker",
+  "Kann ich mit MonDex Pokémon-Karten auf dem Handy scannen?": "Can I scan Pokémon cards with my phone using MonDex?",
+  "MonDex wird als Scan- und Sammlungs-App für iPhone und Android entwickelt. Der Ablauf verbindet ein Kartenfoto mit einem prüfbaren Kartenvorschlag. Auf dieser Website kannst du nur die Scan-Effekt-Demo ausprobieren; echte Kameraaufnahmen und Kartenerkennung sind hier nicht verfügbar.": "MonDex is being developed as a scanning and collection app for iPhone and Android. The workflow connects a card photo to a suggestion you can review. This website offers the scan effect demo only; real camera capture and card recognition are not available here.",
+  "Was ist der Unterschied zwischen einem Kartenscanner und einem Sammlungstracker?": "What is the difference between a card scanner and a collection tracker?",
+  "Ein Kartenscanner hilft dabei, eine fotografierte Karte zuzuordnen. Ein Sammlungstracker hält fest, welche Karten, Varianten und Exemplare du besitzt und was noch fehlt. MonDex verbindet diese Aufgaben mit einem persönlichen Pokédex und digitalen Bindern.": "A card scanner helps identify a photographed card. A collection tracker records the cards, printings and copies you own and what is missing. MonDex brings these tasks together with a personal Pokédex and digital binders.",
+  "Wie unterscheiden sich Holo und Reverse Holo in der Sammlung?": "How are Holo and Reverse Holo distinguished in a collection?",
+  "Holo und Reverse Holo sind unterschiedliche Druckvarianten, auch wenn sie sich ein Katalogbild teilen. Prüfe deshalb die Variante deines Exemplars getrennt von der Seltenheit. Die Website zeigt stilisierte Folieneffekte, keine verifizierten Fotos jeder Druckvariante.": "Holo and Reverse Holo are different printings, even when they share a catalogue image. Check your copy’s printing separately from its rarity. The website shows stylised foil effects, not verified photos of every printing."
 }

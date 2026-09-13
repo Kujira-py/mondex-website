@@ -9,11 +9,11 @@ import { BinderCover } from "./BinderShowcase";
 import CardViewer from "./CardViewer";
 type Tab = "Cards" | "Sets" | "Binders" | "Lists";
 export default function CollectionPreview() {
-  const { t, locale } = useLocale();
+  const { t, locale, href } = useLocale();
   const [tab, setTab] = useState<Tab>("Cards");
   const [card, setCard] = useState<DemoCard | null>(null);
   const stats = useDemo();
-  return <section className="section container collection-section" aria-labelledby="collection-title"><div className="section-intro"><h2 id="collection-title">{t("Alles an seinem Platz.")}</h2><p>{t("Karten, Sets, Binder und Listen: Organisiere deine Sammlung so, wie du sammelst.")}</p></div>
+  return <section id="sammlung" className="section container collection-section" aria-labelledby="collection-title"><div className="section-intro"><h2 id="collection-title">{t("Alles an seinem Platz.")}</h2><p>{t("Karten, Sets, Binder und Listen: Organisiere deine Sammlung so, wie du sammelst.")}</p><a className="text-button feature-link" href={href("/pokemon-card-collection-tracker")}>{t("Deine Pokémon-Sammlung organisieren")}</a></div>
     <div className="collection-demo"><div className="collection-demo-header"><h3>{t("Deine Sammlung")}<span>{stats.cards.toLocaleString(locale === "en" ? "en-GB" : "de-DE")}{" "}{t("Karten")}</span></h3><Tabs items={["Cards", "Sets", "Binders", "Lists"] as const} value={tab} onChange={setTab} label={t("Sammlungsansicht")} panelId="collection-panel" /></div>
       <div className="collection-panel" id="collection-panel" role="tabpanel" aria-label={`${tab} Demo`}><div className={`panel-enter collection-${tab.toLowerCase()}`} key={tab}>
         {tab === "Cards" && ownedDemoCards(stats.discovered).slice(0, 6).map(c => <button type="button" className="collection-card" key={c.id} onClick={() => setCard(c)} aria-label={`${t(c.name)} ${t("größer ansehen")}`}><CardImage card={c} small decorative /><strong>{t(c.name)}</strong><span>{c.set} · {c.number}</span></button>)}

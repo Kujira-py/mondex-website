@@ -1,7 +1,8 @@
+import { assetPath } from "./seo";
 export const assets = {
-  orbit: "/brand/orbit.svg",
-  pokemon: (id: number) => `/marketing/pokemon-${id}.webp`,
-  card: (id: string, small = false) => `/marketing/card-${id}${small ? "-small" : ""}.webp`,
+  orbit: assetPath("/brand/orbit.svg"),
+  pokemon: (id: number) => assetPath(`/marketing/pokemon-${id}.webp`),
+  card: (id: string, small = false) => assetPath(`/marketing/card-${id}${small ? "-small" : ""}.webp`),
 };
 export type DemoCard = { id: string; name: string; number: string; set: string };
 export const demoCards: DemoCard[] = [
@@ -36,6 +37,9 @@ export const binders = [
   { id: "favorites", name: "Favorites", detail: "Die bleiben bei dir.", cover: "FAVORITES" },
 ] as const;
 export const faqs = [
+  {"question": "Kann ich mit MonDex Pokémon-Karten auf dem Handy scannen?", "answer": "MonDex wird als Scan- und Sammlungs-App für iPhone und Android entwickelt. Der Ablauf verbindet ein Kartenfoto mit einem prüfbaren Kartenvorschlag. Auf dieser Website kannst du nur die Scan-Effekt-Demo ausprobieren; echte Kameraaufnahmen und Kartenerkennung sind hier nicht verfügbar."},
+  {"question": "Was ist der Unterschied zwischen einem Kartenscanner und einem Sammlungstracker?", "answer": "Ein Kartenscanner hilft dabei, eine fotografierte Karte zuzuordnen. Ein Sammlungstracker hält fest, welche Karten, Varianten und Exemplare du besitzt und was noch fehlt. MonDex verbindet diese Aufgaben mit einem persönlichen Pokédex und digitalen Bindern."},
+  {"question": "Wie unterscheiden sich Holo und Reverse Holo in der Sammlung?", "answer": "Holo und Reverse Holo sind unterschiedliche Druckvarianten, auch wenn sie sich ein Katalogbild teilen. Prüfe deshalb die Variante deines Exemplars getrennt von der Seltenheit. Die Website zeigt stilisierte Folieneffekte, keine verifizierten Fotos jeder Druckvariante."},
   { question: "Wann erscheint MonDex?", answer: "MonDex ist in Entwicklung. Ein Veröffentlichungstermin steht noch nicht fest. Die Launch-Anmeldung auf dieser Website ist derzeit eine Demo und speichert keine E-Mail-Adressen." },
   { question: "Für welche Plattformen ist MonDex geplant?", answer: "MonDex wird für iPhone und Android entwickelt. Welche Geräte und Betriebssystemversionen zum Launch unterstützt werden, steht noch nicht endgültig fest." },
   { question: "Kann ich meine bestehende Sammlung importieren?", answer: "Ein Import deiner bestehenden Sammlung ist für den Launch noch nicht bestätigt. Sobald die unterstützten Formate und Möglichkeiten feststehen, ergänzen wir diese Information." },

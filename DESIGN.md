@@ -219,7 +219,7 @@ Fokus: sichtbare Linie im hellen Akzent (2px) mit Abstand (5px). Das E-Mail-Feld
 
 Der deckende Sticky Header erhält nach dem Scrollen eine feine Trennlinie. Die mobile Navigation öffnet kompakt darunter, schließt bei Linkauswahl oder Escape und gibt den Fokus sinnvoll zurück. Die App-Navigation innerhalb des Smartphones bleibt eine visuelle Produktdarstellung.
 
-DE und EN stehen als kompakte, fein umrandete Gruppe dauerhaft im Header. Die ausgewählte Sprache verwendet die sekundäre neutrale Fläche, hellen Text und `aria-pressed`; Fokus bleibt deutlich sichtbar. Der Schalter passt auch neben Logo und Menübutton auf Mobile. Beide Sprachen teilen alle visuellen Tokens. Englische Links behalten `?lang=en`, einschließlich der Informationsseiten; die Sprachwahl verwendet keine lokale Speicherung.
+DE und EN stehen als kompakte, fein umrandete Gruppe dauerhaft im Header. Die ausgewählte Sprache verwendet die sekundäre neutrale Fläche, hellen Text und `aria-current`; Fokus bleibt deutlich sichtbar. Der Schalter passt auch neben Logo und Menübutton auf Mobile. Beide Sprachen teilen alle visuellen Tokens. Englische Links behalten `?lang=en`, einschließlich der Informationsseiten; die Sprachwahl verwendet keine lokale Speicherung.
 
 Tabs bilden eine kompakte neutrale Gruppe. Eine hellere Auswahlfläche und hellerer Text zeigen den aktiven Zustand. Home/Pokédex/Binder, Standard/Holo/Metallic und Cards/Sets/Binders/Lists steuern jeweils ihre eigene Demo. Fokus, Auswahl und zugehörige Panels werden semantisch ausgewiesen.
 
@@ -252,3 +252,7 @@ Portfolio verwendet eine kleine Sparkline und benannte Beispielwerte. „Werte a
 - **Don't** introduce floating phone groups, scroll-hijacking or permanent decorative animation.
 - **Don't** present stylized lighting as authentic card finish or sample values as live product data.
 - **Don't** invent launch dates, downloads, testimonials, legal information or a successful stored signup.
+
+## Such- und Funktionsseiten
+
+Die drei Funktionsseiten verwenden dieselben neutralen Farben, Schriftfamilie und Header-/Footer-Komponenten. Ein klarer Seitentitel, kurzer Einstieg und Demo-Link führen in eine Lesespalte mit vier Themen. Desktop zeigt eine schmale Inhaltsnavigation daneben, Mobile ordnet sie darüber an. Die Breite des Fließtexts bleibt bei maximal 72ch. Der Footer verlinkt die drei Themen in einer eigenen ruhigen Zeile. DE/EN sind echte Sprachlinks; der interaktive Wechsel erhält den Demo-Zustand.

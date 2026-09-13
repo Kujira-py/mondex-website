@@ -1,0 +1,5 @@
+export const infoContent: Record<string, { title: string; paragraphs: string[] }> = {
+  "/kontakt": { title: "Kontakt", paragraphs: ["Die offiziellen Kontaktdaten von MonDex werden hier vor der Veröffentlichung ergänzt.", "Für diesen Prototyp wurde noch keine Kontaktadresse bereitgestellt. Es gibt deshalb derzeit kein Kontaktformular."] },
+  "/datenschutz": { title: "Datenschutz", paragraphs: ["Die endgültigen Datenschutzhinweise sind noch zu ergänzen. Diese Seite ist ein Platzhalter und keine vollständige Datenschutzerklärung.", "Das Launch-Formular dieser Vorschau ist ausschließlich eine Demo. Es übermittelt und speichert keine E-Mail-Adressen. Auch die gezeigte Sammlung besteht aus Beispieldaten.", "Vor der Veröffentlichung müssen die Angaben zum Betreiber, Hosting und zu tatsächlich eingesetzten Diensten vervollständigt werden."] },
+  "/impressum": { title: "Impressum", paragraphs: ["Die Angaben zum Betreiber und die erforderlichen Kontaktdaten wurden für diesen Prototyp noch nicht bereitgestellt.", "Diese Seite ist noch kein vollständiges Impressum. Die endgültigen Angaben müssen vor der Veröffentlichung ergänzt werden."] },
+};
