@@ -30,8 +30,8 @@ export const searchPages: Record<string, Record<Locale, SearchCopy>> = {
     de: { title: "Kontakt & Entwicklungsstand | MonDex", description: "Kontaktinformationen und Entwicklungsstand von MonDex. Die offiziellen Kontaktdaten werden noch ergänzt." },
   },
   "/datenschutz": {
-    en: { title: "Privacy Information | MonDex", description: "Privacy information for the MonDex product demo. The form does not save email addresses. Final privacy information is still being prepared." },
-    de: { title: "Datenschutzhinweise | MonDex", description: "Datenschutzhinweise zur MonDex-Produktdemo. Das Formular speichert keine E-Mail-Adressen. Die endgültigen Angaben werden noch ergänzt." },
+    en: { title: "Privacy Information | MonDex", description: "Privacy information for MonDex, including what the launch waitlist sends and why. Final operator and hosting details are still being prepared." },
+    de: { title: "Datenschutzhinweise | MonDex", description: "Datenschutzhinweise zu MonDex, auch dazu, welche Angaben die Launch-Warteliste übermittelt. Betreiber- und Hosting-Angaben werden noch ergänzt." },
   },
   "/impressum": {
     en: { title: "Legal Notice | MonDex", description: "Legal notice for the MonDex product website. Final operator and contact information is still being prepared." },
