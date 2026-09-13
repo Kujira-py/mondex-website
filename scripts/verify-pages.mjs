@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
-const origin = (process.env.NEXT_PUBLIC_SITE_URL || "https://kujira-py.github.io/mondex-website").replace(/\/$/, "");
+const origin = (process.env.NEXT_PUBLIC_SITE_URL || "https://mondextcg.com").replace(/\/$/, "");
 const base = new URL(origin).pathname.replace(/\/$/, "");
 const decode = value => value.replaceAll("&amp;", "&").replaceAll("&#x27;", "'").replaceAll("&quot;", '"');
 const attr = (tag, name) => decode(tag.match(new RegExp(`\\b${name}="([^"]*)"`, "i"))?.[1] || "");
@@ -14,7 +14,7 @@ const paths = ["/", "/pokemon-tcg-scanner/", "/digital-pokemon-card-binder/", "/
 const titles = new Set();
 let pages = 0;
 for (const locale of ["de", "en"]) for (const path of paths) {
-  const url = new URL(`${origin}${locale === "en" ? "/en" : ""}${path}`);
+  const url = new URL(`${origin}${locale === "de" ? "/de" : ""}${path}`);
   const html = readFileSync(htmlPath(url), "utf8");
   const head = html.slice(0, html.indexOf("</head>"));
   assert.match(html, new RegExp(`<html[^>]*lang="${locale}"`), `${url}: static HTML language`);
@@ -27,7 +27,7 @@ for (const locale of ["de", "en"]) for (const path of paths) {
   const canonical = attr(tags.find(t => attr(t, "rel") === "canonical") || "", "href");
   assert.equal(canonical, url.href, `${url}: canonical`);
   for (const lang of ["de", "en", "x-default"]) {
-    assert.equal(attr(tags.find(t => attr(t, "hreflang") === lang) || "", "href"), `${origin}${lang === "en" ? "/en" : ""}${path}`, `${url}: alternate ${lang}`);
+    assert.equal(attr(tags.find(t => attr(t, "hreflang") === lang) || "", "href"), `${origin}${lang === "de" ? "/de" : ""}${path}`, `${url}: alternate ${lang}`);
   }
   assert(meta("description").length > 70, `${url}: description`);
   const indexable = !["/kontakt/", "/datenschutz/", "/impressum/"].includes(path);

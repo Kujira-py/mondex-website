@@ -51,4 +51,4 @@ Siehe `.impeccable/review/website/` für responsive Screenshots, Browser-Klickst
 
 ## SEO and GitHub Pages
 
-The public GitHub Pages destination is `https://kujira-py.github.io/mondex-website/`. English is available at `/en/`. Run `npm run build:pages` and `npm run verify:pages` for the static site. The public repository workflow publishes `out/` on pushes to main. See `SEO.md` for the route map, indexing policy and Search Console follow-up.
+The site is published on GitHub Pages at the custom domain `https://mondextcg.com/`. English is the default; German is available at `/de/`. Run `npm run build:pages` and `npm run verify:pages` for the static site. The public repository workflow publishes `out/` on pushes to main. See `SEO.md` for the route map, indexing policy and Search Console follow-up.

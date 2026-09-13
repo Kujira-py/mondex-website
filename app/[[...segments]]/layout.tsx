@@ -17,7 +17,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ segments?: string[] }>;
 }>) {
-  const locale = (await params).segments?.[0] === "en" ? "en" : "de";
+  const locale = (await params).segments?.[0] === "de" ? "de" : "en";
   return (
     <html lang={locale}>
       <body>{children}</body>

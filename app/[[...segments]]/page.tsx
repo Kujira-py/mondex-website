@@ -8,12 +8,14 @@ import { infoContent } from "@/components/marketing/info-content";
 type Props = { params: Promise<{ segments?: string[] }> };
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return Object.keys(searchPages).flatMap(path => [[], ["en"]].map(prefix => ({ segments: [...prefix, ...path.split("/").filter(Boolean)] })));
+  // English is served without a prefix; "/en/" is kept so previously shared English links still resolve.
+  return Object.keys(searchPages).flatMap(path => [[], ["de"], ["en"]].map(prefix => ({ segments: [...prefix, ...path.split("/").filter(Boolean)] })));
 }
 async function resolvePage({ params }: Props) {
   const { segments = [] } = await params;
-  const locale = segments[0] === "en" ? "en" : "de";
-  const path = `/${(locale === "en" ? segments.slice(1) : segments).join("/")}`;
+  const prefixed = segments[0] === "de" || segments[0] === "en";
+  const locale = segments[0] === "de" ? "de" : "en";
+  const path = `/${(prefixed ? segments.slice(1) : segments).join("/")}`;
   if (!Object.hasOwn(searchPages, path)) notFound();
   return { path, locale } as const;
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { Locale } from "./locale";
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://kujira-py.github.io/mondex-website").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://mondextcg.com").replace(/\/$/, "");
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const assetPath = (path: string) => `${BASE_PATH}${path}`;
 export const featurePaths = ["/pokemon-tcg-scanner", "/digital-pokemon-card-binder", "/pokemon-card-collection-tracker"] as const;
@@ -42,7 +42,7 @@ export const searchPages: Record<string, Record<Locale, SearchCopy>> = {
 export function localizedPath(path: string, locale: Locale) {
   const [pathname, hash] = path.split("#");
   const page = (pathname || "/").replace(/\/$/, "");
-  return `${BASE_PATH}${locale === "en" ? "/en" : ""}${page}/${hash ? `#${hash}` : ""}`;
+  return `${BASE_PATH}${locale === "de" ? "/de" : ""}${page}/${hash ? `#${hash}` : ""}`;
 }
 export const canonicalUrl = (path: string, locale: Locale) => `${SITE_URL}${localizedPath(path, locale).slice(BASE_PATH.length)}`;
 export const isIndexable = (path: string) => path === "/" || featurePaths.includes(path as FeaturePath);
@@ -55,7 +55,7 @@ export function pageMetadata(path: string, locale: Locale): Metadata {
     applicationName: "MonDex",
     alternates: {
       canonical: canonicalUrl(path, locale),
-      languages: { de: canonicalUrl(path, "de"), en: canonicalUrl(path, "en"), "x-default": canonicalUrl(path, "de") },
+      languages: { de: canonicalUrl(path, "de"), en: canonicalUrl(path, "en"), "x-default": canonicalUrl(path, "en") },
     },
     robots: isIndexable(path) ? { index: true, follow: true, "max-image-preview": "large" } : { index: false, follow: true },
     openGraph: { ...copy, type: "website", siteName: "MonDex", url: canonicalUrl(path, locale), locale: locale === "en" ? "en_US" : "de_DE", alternateLocale: locale === "en" ? "de_DE" : "en_US", images: [{ url: image, width: 1200, height: 630, alt: locale === "en" ? "MonDex — Pokémon TCG scanning, digital binders and collection tracking" : "MonDex — Pokémon-Karten scannen, digitale Binder und Sammlung verwalten" }] },

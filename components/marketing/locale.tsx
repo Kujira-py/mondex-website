@@ -1,21 +1,22 @@
 "use client";
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import english from "./en.json";
-import { SITE_URL, canonicalUrl, localizedPath, searchPages, structuredData } from "./seo";
+import { BASE_PATH, SITE_URL, canonicalUrl, localizedPath, searchPages, structuredData } from "./seo";
 export type Locale = "de" | "en";
 const translations: Record<string, string> = english;
-const LocaleContext = createContext({ locale: "de" as Locale, pagePath: "/", setLocale: (() => {}) as (locale: Locale) => void, t: (text: string) => text, href: (path: string) => path });
+const LocaleContext = createContext({ locale: "en" as Locale, pagePath: "/", setLocale: (() => {}) as (locale: Locale) => void, t: (text: string) => text, href: (path: string) => path });
 
-export function LocaleProvider({ initialLocale = "de", pagePath = "/", children }: { initialLocale?: Locale; pagePath?: string; children: ReactNode }) {
+export function LocaleProvider({ initialLocale = "en", pagePath = "/", children }: { initialLocale?: Locale; pagePath?: string; children: ReactNode }) {
   const [locale, setLanguage] = useState(initialLocale);
   const setLocale = (value: Locale) => {
     setLanguage(value);
     window.history.replaceState(window.history.state, "", localizedPath(pagePath, value) + window.location.hash);
   };
-  // Preserve old shared ?lang=en links while using crawlable static language URLs.
+  // Old shared links (?lang=en, /en/…) predate English becoming the unprefixed default; move them to the canonical URL.
   useEffect(() => {
-    if (new URLSearchParams(window.location.search).get("lang") === "en") {
-      window.location.replace(localizedPath(pagePath, "en") + window.location.hash);
+    const { search, pathname, hash } = window.location;
+    if (new URLSearchParams(search).get("lang") === "en" || pathname.startsWith(`${BASE_PATH}/en/`)) {
+      window.history.replaceState(window.history.state, "", localizedPath(pagePath, "en") + hash);
     }
   }, [pagePath]);
   useEffect(() => {
