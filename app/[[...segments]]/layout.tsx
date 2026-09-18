@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   },
 };
 
+const THEME_SCRIPT = `try{if(localStorage.getItem("mondex-theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
+
 export default async function RootLayout({
   children, params,
 }: Readonly<{
@@ -19,7 +21,11 @@ export default async function RootLayout({
 }>) {
   const locale = (await params).segments?.[0] === "de" ? "de" : "en";
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        {/* Runs before paint so a saved dark preference never flashes light. Light is the default. */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body>{children}</body>
     </html>
   );
