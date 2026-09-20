@@ -123,12 +123,12 @@ function FeatureGrid() {
                 <h3>{t(feature.title)}</h3>
                 <p>{t(feature.body)}</p>
               </div>
-              {feature.image ? (
+              {"image" in feature ? (
                 <div className="feature-screen" aria-hidden="true">
                   {feature.id === "scan" ? (
-                    <ScannerVisual alt={t("alt" in feature ? feature.alt : "")} eager={index < 2} />
+                    <ScannerVisual alt={t(feature.alt)} eager={index < 2} />
                   ) : (
-                    <img src={assetPath(feature.image)} width="603" height="1311" alt={t("alt" in feature ? feature.alt : "")} loading={index < 2 ? "eager" : "lazy"} decoding="async" />
+                    <img src={assetPath(feature.image)} width="603" height="1311" alt={t(feature.alt)} loading={index < 2 ? "eager" : "lazy"} decoding="async" />
                   )}
                 </div>
               ) : (
