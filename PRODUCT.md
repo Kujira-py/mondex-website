@@ -15,22 +15,23 @@ Deutsch- und englischsprachige Pokémon-TCG-Sammler, die erfahren möchten, wie 
 
 ## Product Purpose
 
-Öffentliche Produktwebsite für die MonDex-App in Entwicklung, verfügbar auf Deutsch und Englisch. Die Leitidee lautet „Deine Karten. Dein MonDex.“ bzw. „Your cards. Your MonDex.“ Die drei prägenden Erlebnisse sind Entdecken, Aufschlagen und Erfassen: ein Pokémon im persönlichen Pokédex entdecken, einen digitalen Binder öffnen und einen stilisierten Karteneffekt ausprobieren.
+Öffentliche Produktwebsite für die MonDex-App in Entwicklung, verfügbar auf Deutsch und Englisch. Die aktuelle Leitidee lautet „Deine Sammlung. Bis ins letzte Exemplar.“ bzw. „Your collection. Down to the last copy.“ Das Produkt wird über echte Aufnahmen aus dem aktuellen iOS-Entwicklungsbuild, eine klare Feature-Hierarchie und die Verbindung von Scanner, persönlichem Pokédex, Bindern, Exemplaren und Portfolio erklärt.
 
-Die zuvor in diesem Webprojekt gezeigte App-Simulation wurde bewusst durch diese Landingpage ersetzt. Die eigenständige native App unter `/Users/bleon/MonDex` bleibt von diesem Website-Auftrag unverändert. MonDex wird für iPhone und Android entwickelt; unterstützte Geräte, Betriebssystemversionen, Launch-Termin und endgültiger Funktionsumfang sind noch nicht bestätigt.
+Die eigenständige native App unter `/Users/viganmustafa/Desktop/Code/MonDex` bleibt von diesem Website-Auftrag unverändert. MonDex startet zuerst auf dem iPhone; Android wird entwickelt, ist aber noch nicht abschließend getestet. Unterstützte Geräte, Betriebssystemversionen, Launch-Termin und endgültiger Funktionsumfang sind noch nicht bestätigt.
 
 ## Capabilities and Constraints
 
-Die Seite besteht aus Header, acht Hauptabschnitten und Footer. Die feste Reihenfolge lautet:
+Die Startseite wurde im September 2026 vollständig neu aufgebaut. Sie besteht aus schwebendem Header, sieben Hauptabschnitten und Footer. Die feste Reihenfolge lautet:
 
-1. Hero mit umschaltbarer App-Vorschau: Home, Pokédex und Binder.
-2. Persönlicher Pokédex mit wiederholbarer Discovery-Demo.
-3. Digitale Binder: drei Cover, Öffnen, Blättern, Schließen und Kartenbetrachter.
-4. Scanner mit Standard-, Holo- und Metallic-Reaktion.
-5. Collection-Organisation mit Cards, Sets, Binders und Lists.
-6. Eigenständiger, bewusst kompakter Portfolio-Einblick mit ausblendbaren Werten.
-7. Launch-Formular unter `#vormerken`.
-8. Sieben aufklappbare häufige Fragen unter `#fragen`.
+1. Großflächiger violetter Hero mit drei echten App-Aufnahmen, Kartenmotiv und klarer Launch-Handlung.
+2. Asymmetrisches Feature-Raster für Scanner, Pokédex, Offline-Erkennung, Binder, Exemplare und Portfolio.
+3. Ruhig laufende Kartenstrecke mit vorhandenen, dokumentierten Beispielgrafiken.
+4. Interaktiver aktueller App-Explorer für Scanner, Home, Pokédex, Sammlung, Binder und Portfolio.
+5. Drei Produktprinzipien zu Prüfbarkeit, optionalen Marktwerten und persönlichem Fortschritt.
+6. Launch-Formular unter `#vormerken`.
+7. Sieben aufklappbare häufige Fragen unter `#fragen`.
+
+Die neue Richtung übernimmt von DexTCG nur allgemeine Gestaltungsprinzipien — selbstbewusste Farbfläche, räumliche Produktcollage, asymmetrisches Feature-Raster und produktbezogene Bewegung. Marke, Texte, Screenshots, Fakten und Komponenten bleiben eigenständige MonDex-Arbeit.
 
 Die Hauptaktion heißt „Zum Launch vormerken“ bzw. „Get launch updates“. Echte Abschnittslinks, mobile Navigation, Tastaturbedienung, Escape und Fokus-Rückgabe unterstützen die Nutzerreise. Die Website erhält keine eigene App-Bottom-Navigation; die Darstellung innerhalb der Smartphone-Demo ist Teil der Produktvorschau.
 
@@ -64,7 +65,7 @@ Die vom Nutzer festgelegten Texte, Tokens, Abschnittsfolge und Interaktionen sin
 
 - Nutzerbrief: `/Users/bleon/.codex/attachments/703262e1-4206-4e46-b81f-d34ac47d84ff/pasted-text.txt`; Website-Richtung: `.impeccable/website-brief.md`.
 - Aktuelle Umsetzung: `app/globals.css`, `components/marketing/MarketingSite.tsx`, `data.ts`, `state.tsx`, `locale.tsx`, `en.json`, `route-locale.ts` und die Marketing-Komponenten. Startanweisungen und offene Integrationen stehen in `WEBSITE.md`.
-- Native Projektdateien unter `/private/tmp/mondex-merge-main-20260912/mobile/ios` und `/private/tmp/mondex-merge-main-20260912/mobile/android` belegen die Plattformarbeit, keine bestätigte Launch-Unterstützung bestimmter Geräte oder Versionen.
+- Der aktuelle lokale MonDex-Stand unter `/Users/viganmustafa/Desktop/Code/MonDex` belegt Auto-, Snap-, Batch- und Packs-Scans, Offline-Erkennung mit geladenem Paket, persönliche Pokédex- und Binder-Erlebnisse sowie Portfolio-Analysen. Die Website-Aufnahmen stammen aus einem frischen Release-Simulator-Build vom 20. September 2026; Details stehen in `public/marketing/README.md`.
 - Die Website verwendet optimierte WebP-Ableitungen vorhandener Projektgrafiken. Herkunft: `public/assets/provenance.json`; Verarbeitung: `public/marketing/README.md`. Für diese Website wurden keine neuen fremden Kartenbilder bezogen. Die öffentliche Nutzungsfreigabe der Karten-/Pokémon-Grafiken bleibt zu klären; Herkunftsdaten ersetzen keine Freigabe.
 - `public/brand/orbit.svg` ist die unveränderte Kopie des vorhandenen nativen Orbit-Assets; `public/favicon.svg` enthält dasselbe Zeichen.
 - Vorhandene Website-Aufnahmen und Prüfberichte liegen unter `.impeccable/review/website/`. Diese Dokumentationsaktualisierung behauptet keine zusätzlich ausgeführten Browser- oder Performance-Tests.

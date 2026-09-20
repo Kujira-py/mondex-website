@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-const THEME_SCRIPT = `try{if(localStorage.getItem("mondex-theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
+const THEME_SCRIPT = `document.documentElement.classList.add("js");try{if(localStorage.getItem("mondex-theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
 
 export default async function RootLayout({
   children, params,

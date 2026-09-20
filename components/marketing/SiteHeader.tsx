@@ -4,7 +4,7 @@ import { localizedPath } from "./seo";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, ArrowUpRight, Moon, Sun } from "lucide-react";
 import { Brand } from "./shared";
-const links = [{ label: "Entdecken", href: "/#entdecken" }, { label: "Binder", href: "/#binder" }, { label: "Fragen", href: "/#fragen" }];
+const links = [{ label: "Features", href: "/#features" }, { label: "App", href: "/#app-einblicke" }, { label: "Fragen", href: "/#fragen" }];
 export default function SiteHeader() {
   const { t, locale, pagePath, setLocale, href: localHref } = useLocale();
   const [open, setOpen] = useState(false);
@@ -21,7 +21,10 @@ export default function SiteHeader() {
     return () => { document.removeEventListener("keydown", onKey); window.removeEventListener("resize", resize); };
   }, [open]);
   const [dark, setDark] = useState(false);
-  useEffect(() => setDark(document.documentElement.dataset.theme === "dark"), []);
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => setDark(document.documentElement.dataset.theme === "dark"));
+    return () => cancelAnimationFrame(frame);
+  }, []);
   const toggleTheme = () => {
     const next = !dark;
     setDark(next);
