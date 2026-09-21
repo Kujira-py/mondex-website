@@ -16,6 +16,7 @@ import { useLocale } from "./locale";
 import { assetPath } from "./seo";
 import { Orbit } from "./shared";
 import ScannerVisual from "./ScannerVisual";
+import Reveal from "./Reveal";
 
 const screens = [
   {
@@ -102,7 +103,7 @@ export default function ProductShowcase() {
 
   return (
     <section id="app-einblicke" className="product-showcase" aria-labelledby="showcase-title">
-      <div className="container showcase-heading">
+      <Reveal className="container showcase-heading">
         <div>
           <h2 id="showcase-title">{t("Direkt aus dem aktuellen MonDex.")}</h2>
           <p>
@@ -118,7 +119,7 @@ export default function ProductShowcase() {
             {t("Stand 20. September 2026 · Beispieldaten")}
           </span>
         </p>
-      </div>
+      </Reveal>
 
       <div className="container showcase-layout">
         <div className="showcase-rail" role="tablist" aria-label={t("App-Ansicht auswählen")}>

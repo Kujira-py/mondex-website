@@ -1,6 +1,6 @@
 "use client";
 
-import type { CSSProperties } from "react";
+import { useState, type CSSProperties, type MouseEvent, type PointerEvent, type ReactNode } from "react";
 import {
   ArrowDownRight,
   ArrowUpRight,
@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { LocaleProvider, type Locale, useLocale } from "./locale";
 import { assetPath } from "./seo";
-import { demoCards } from "./data";
+import { demoCards, type DemoCard } from "./data";
 import { CardImage, Orbit } from "./shared";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
@@ -85,6 +85,17 @@ const featureCards = [
   },
 ] as const;
 
+const featurePeekSlots = [
+  { x: "18%", y: "0px", hiddenX: "-50%", hiddenY: "0%", visibleX: "-50%", visibleY: "-60%", rotate: -12, vx: -0.18, vy: -1 },
+  { x: "78%", y: "0px", hiddenX: "-50%", hiddenY: "0%", visibleX: "-50%", visibleY: "-58%", rotate: 11, vx: 0.18, vy: -1 },
+  { x: "0px", y: "34%", hiddenX: "0%", hiddenY: "-50%", visibleX: "-58%", visibleY: "-50%", rotate: -9, vx: -1, vy: -0.2 },
+  { x: "0px", y: "72%", hiddenX: "0%", hiddenY: "-50%", visibleX: "-58%", visibleY: "-50%", rotate: 8, vx: -1, vy: 0.18 },
+  { x: "100%", y: "30%", hiddenX: "-100%", hiddenY: "-50%", visibleX: "-42%", visibleY: "-50%", rotate: 10, vx: 1, vy: -0.22 },
+  { x: "100%", y: "70%", hiddenX: "-100%", hiddenY: "-50%", visibleX: "-42%", visibleY: "-50%", rotate: -8, vx: 1, vy: 0.2 },
+  { x: "26%", y: "100%", hiddenX: "-50%", hiddenY: "-100%", visibleX: "-50%", visibleY: "-42%", rotate: -8, vx: -0.18, vy: 1 },
+  { x: "74%", y: "100%", hiddenX: "-50%", hiddenY: "-100%", visibleX: "-50%", visibleY: "-42%", rotate: 10, vx: 0.18, vy: 1 },
+] as const;
+
 function HeroVisual() {
   const { t } = useLocale();
   return (
@@ -105,6 +116,100 @@ function HeroVisual() {
   );
 }
 
+function InteractiveFeatureCard({ children, cardOffset }: { children: ReactNode; cardOffset: number }) {
+  const [burst, setBurst] = useState<{ id: number; width: number; cards: DemoCard[] } | null>(null);
+  const [deckCycle, setDeckCycle] = useState(0);
+  const peekCards = Array.from(
+    { length: 5 },
+    (_, index) => demoCards[(cardOffset * 2 + deckCycle * 5 + index * 7) % demoCards.length],
+  );
+  const peekLayouts = Array.from({ length: 5 }, (_, index) => featurePeekSlots[(cardOffset + index * 3) % featurePeekSlots.length]);
+  const burstCards = burst?.cards ?? peekCards;
+
+  const handlePointerLeave = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType === "mouse") setDeckCycle((cycle) => cycle + 1);
+  };
+
+  const handleClick = (event: MouseEvent<HTMLDivElement>) => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const bounds = event.currentTarget.getBoundingClientRect();
+    setBurst({
+      id: event.timeStamp,
+      width: bounds.width,
+      cards: peekCards,
+    });
+  };
+
+  return (
+    <div
+      className={`feature-card-interaction${burst ? " is-bursting" : ""}`}
+      onPointerLeave={handlePointerLeave}
+      onClick={handleClick}
+    >
+      <div className="feature-peek-stack" aria-hidden="true">
+        {peekCards.map((card, index) => (
+          <img
+            key={`${card.id}-${index}`}
+            className="feature-peek-card"
+            src={assetPath(`/marketing/card-${card.id}-small.webp`)}
+            width="240"
+            height="335"
+            alt=""
+            draggable="false"
+            style={{
+              "--peek-x": peekLayouts[index].x,
+              "--peek-y": peekLayouts[index].y,
+              "--peek-hidden-x": peekLayouts[index].hiddenX,
+              "--peek-hidden-y": peekLayouts[index].hiddenY,
+              "--peek-visible-x": peekLayouts[index].visibleX,
+              "--peek-visible-y": peekLayouts[index].visibleY,
+              "--peek-rotate": `${peekLayouts[index].rotate}deg`,
+              "--peek-delay": `${120 + index * 45}ms`,
+            } as CSSProperties}
+          />
+        ))}
+      </div>
+      <article>{children}</article>
+      {burst ? (
+        <div className="feature-card-burst" key={burst.id} aria-hidden="true">
+          {burstCards.map((card, index) => {
+            const layout = peekLayouts[index % peekLayouts.length];
+            const copyDirection = index < peekLayouts.length ? -1 : 1;
+            const distance = Math.min(360, Math.max(210, burst.width * 0.62));
+            const spread = 72 * copyDirection;
+            const dx = layout.vx * distance + -layout.vy * spread;
+            const dy = layout.vy * distance * 0.78 + layout.vx * spread;
+            return (
+              <img
+                key={`${burst.id}-${card.id}-${index}`}
+                className="feature-burst-card"
+                src={assetPath(`/marketing/card-${card.id}-small.webp`)}
+                width="240"
+                height="335"
+                alt=""
+                draggable="false"
+                style={{
+                  "--burst-x": layout.x,
+                  "--burst-y": layout.y,
+                  "--burst-origin-x": layout.visibleX,
+                  "--burst-origin-y": layout.visibleY,
+                  "--burst-dx": `${dx}px`,
+                  "--burst-dy": `${dy}px`,
+                  "--burst-start-rotate": `${layout.rotate}deg`,
+                  "--burst-rotate": `${(index % 2 === 0 ? -1 : 1) * (82 + index * 17)}deg`,
+                  "--burst-delay": `${index * 32}ms`,
+                } as CSSProperties}
+                onAnimationEnd={index === burstCards.length - 1 ? () => setBurst(null) : undefined}
+              />
+            );
+          })}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 function FeatureGrid() {
   const { t } = useLocale();
   return (
@@ -117,7 +222,7 @@ function FeatureGrid() {
       <div className="container feature-grid">
         {featureCards.map(({ icon: Icon, ...feature }, index) => (
           <Reveal className={`feature-card ${feature.className}`} key={feature.id}>
-            <article>
+            <InteractiveFeatureCard cardOffset={index}>
               <div className="feature-card-copy">
                 <div className="feature-index"><Icon size={19} strokeWidth={1.8} /><span>{feature.number}</span></div>
                 <h3>{t(feature.title)}</h3>
@@ -139,7 +244,7 @@ function FeatureGrid() {
                   <span>{t("Später synchronisiert")}</span>
                 </div>
               )}
-            </article>
+            </InteractiveFeatureCard>
           </Reveal>
         ))}
       </div>
@@ -232,8 +337,8 @@ function MarketingContent() {
         <CardRibbon />
         <ProductShowcase />
         <ProductPrinciples />
-        <div className="launch-shell"><WaitlistSection source="home-redesign" /></div>
-        <FaqSection />
+        <Reveal className="launch-shell"><WaitlistSection source="home-redesign" /></Reveal>
+        <Reveal><FaqSection /></Reveal>
       </main>
       <SiteFooter />
     </>
