@@ -1,3 +1,5 @@
+> **Current GitHub Pages site:** the updated website is in [`website/`](website/README.md). The existing root project remains here for reference. The Pages workflow builds and publishes `website/out/`.
+
 # vinext-starter
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.

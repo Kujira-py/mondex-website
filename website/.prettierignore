@@ -1,0 +1,6 @@
+.next
+node_modules
+qa
+public
+.agents
+package-lock.json

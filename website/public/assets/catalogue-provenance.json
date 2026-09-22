@@ -1,0 +1,4379 @@
+{
+  "catalogueSnapshot": "2026-09-11",
+  "assets": [
+    {
+      "kind": "card",
+      "key": "rayquaza",
+      "id": "swsh7-218",
+      "name": "Rayquaza VMAX",
+      "number": "218",
+      "displayNumber": "218/203",
+      "setId": "swsh7",
+      "setName": "Evolving Skies",
+      "series": "Sword & Shield",
+      "artist": "Anesaki Dynamic",
+      "pokemonIds": [
+        384
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh7/218_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh7.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-rayquaza.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 217914,
+      "sha256": "87d0a2d4477324d23b2e019fe24f2499f4e971fc32221edb10a0b1bb47921430",
+      "suggestedPublicPath": "/assets/card-rayquaza.webp"
+    },
+    {
+      "kind": "card",
+      "key": "giratina",
+      "id": "swsh11-186",
+      "name": "Giratina V",
+      "number": "186",
+      "displayNumber": "186/196",
+      "setId": "swsh11",
+      "setName": "Lost Origin",
+      "series": "Sword & Shield",
+      "artist": "Shinji Kanda",
+      "pokemonIds": [
+        487
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh11/186_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh11.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-giratina.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 277846,
+      "sha256": "453515c7693def008d8b036226586c8f2101ca53ef7b3d954bb207fb90e98303",
+      "suggestedPublicPath": "/assets/card-giratina.webp"
+    },
+    {
+      "kind": "card",
+      "key": "lugia",
+      "id": "neo1-9",
+      "name": "Lugia",
+      "number": "9",
+      "displayNumber": "9/111",
+      "setId": "neo1",
+      "setName": "Neo Genesis",
+      "series": "Neo",
+      "artist": "Hironobu Yoshida",
+      "pokemonIds": [
+        249
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/neo1/9_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/neo1.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-lugia.webp",
+      "dimensions": [
+        660,
+        908
+      ],
+      "bytes": 119914,
+      "sha256": "73987bdf2fef9eb4cebb36f5a5352d9a515b055b4e2778e07a69148fbb689bea",
+      "suggestedPublicPath": "/assets/card-lugia.webp"
+    },
+    {
+      "kind": "card",
+      "key": "blaziken",
+      "id": "swsh6-201",
+      "name": "Blaziken VMAX",
+      "number": "201",
+      "displayNumber": "201/198",
+      "setId": "swsh6",
+      "setName": "Chilling Reign",
+      "series": "Sword & Shield",
+      "artist": "Shigenori Negishi",
+      "pokemonIds": [
+        257
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh6/201_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh6.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-blaziken.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 211766,
+      "sha256": "979e10070a04b806177a26ce41dbc07090a428de49c5274d387bbe72564ae0d3",
+      "suggestedPublicPath": "/assets/card-blaziken.webp"
+    },
+    {
+      "kind": "card",
+      "key": "dialga",
+      "id": "swsh10-177",
+      "name": "Origin Forme Dialga V",
+      "number": "177",
+      "displayNumber": "177/189",
+      "setId": "swsh10",
+      "setName": "Astral Radiance",
+      "series": "Sword & Shield",
+      "artist": "Mitsuhiro Arita",
+      "pokemonIds": [
+        483
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh10/177_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh10.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-dialga.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 163232,
+      "sha256": "0cee026ad47e502005c9f597e563677f66d8e0cf00b5a1c5a8bd1e261306823d",
+      "suggestedPublicPath": "/assets/card-dialga.webp"
+    },
+    {
+      "kind": "card",
+      "key": "leafeon",
+      "id": "swsh12pt5gg-GG35",
+      "name": "Leafeon VSTAR",
+      "number": "GG35",
+      "displayNumber": "GG35/GG70",
+      "setId": "swsh12pt5gg",
+      "setName": "Crown Zenith Galarian Gallery",
+      "series": "Sword & Shield",
+      "artist": "Jiro Sasumo",
+      "pokemonIds": [
+        470
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG35_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh12pt5gg.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-leafeon.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 210208,
+      "sha256": "5869be11c3749eba30624bc07b59123922ba69a584eb7a7030f21fa0287a3f37",
+      "suggestedPublicPath": "/assets/card-leafeon.webp"
+    },
+    {
+      "kind": "card",
+      "key": "magikarp",
+      "id": "sv2-203",
+      "name": "Magikarp",
+      "number": "203",
+      "displayNumber": "203/193",
+      "setId": "sv2",
+      "setName": "Paldea Evolved",
+      "series": "Scarlet & Violet",
+      "artist": "Shinji Kanda",
+      "pokemonIds": [
+        129
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/sv2/203_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/sv2.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-magikarp.webp",
+      "dimensions": [
+        660,
+        918
+      ],
+      "bytes": 294646,
+      "sha256": "22bac72654b9fbc24983eb511faaeff49a9105fddb79cac8f8c6520bfc985f60",
+      "suggestedPublicPath": "/assets/card-magikarp.webp"
+    },
+    {
+      "kind": "card",
+      "key": "gardevoir",
+      "id": "sv1-245",
+      "name": "Gardevoir ex",
+      "number": "245",
+      "displayNumber": "245/198",
+      "setId": "sv1",
+      "setName": "Scarlet & Violet",
+      "series": "Scarlet & Violet",
+      "artist": "Jiro Sasumo",
+      "pokemonIds": [
+        282
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/sv1/245_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/sv1.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-gardevoir.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 202212,
+      "sha256": "6599c57de07344a875afe578f596bda7eb58bfd1a3e88da27687d9c1fda27c1b",
+      "suggestedPublicPath": "/assets/card-gardevoir.webp"
+    },
+    {
+      "kind": "card",
+      "key": "houndour",
+      "id": "sv3-204",
+      "name": "Houndour",
+      "number": "204",
+      "displayNumber": "204/197",
+      "setId": "sv3",
+      "setName": "Obsidian Flames",
+      "series": "Scarlet & Violet",
+      "artist": "KYUPIYAMA",
+      "pokemonIds": [
+        228
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/sv3/204_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/sv3.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-houndour.webp",
+      "dimensions": [
+        660,
+        922
+      ],
+      "bytes": 174546,
+      "sha256": "a8c6be78726d7e0af248d86fc3468dd55021e48b7e4e7eb992f002a2f4bbbd87",
+      "suggestedPublicPath": "/assets/card-houndour.webp"
+    },
+    {
+      "kind": "card",
+      "key": "iron-leaves",
+      "id": "sv5-203",
+      "name": "Iron Leaves ex",
+      "number": "203",
+      "displayNumber": "203/162",
+      "setId": "sv5",
+      "setName": "Temporal Forces",
+      "series": "Scarlet & Violet",
+      "artist": "nagimiso",
+      "pokemonIds": [
+        1010
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/sv5/203_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/sv5.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-iron-leaves.webp",
+      "dimensions": [
+        660,
+        922
+      ],
+      "bytes": 198364,
+      "sha256": "5f8a216525817cfeb31f3827887d32fd88617dadaff45db62a56260dc6470216",
+      "suggestedPublicPath": "/assets/card-iron-leaves.webp"
+    },
+    {
+      "kind": "card",
+      "key": "groudon",
+      "id": "sv4-199",
+      "name": "Groudon",
+      "number": "199",
+      "displayNumber": "199/182",
+      "setId": "sv4",
+      "setName": "Paradox Rift",
+      "series": "Scarlet & Violet",
+      "artist": "Nurikabe",
+      "pokemonIds": [
+        383
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/sv4/199_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/sv4.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-groudon.webp",
+      "dimensions": [
+        660,
+        922
+      ],
+      "bytes": 176100,
+      "sha256": "f9a3384e9fe975b951282ef8b9fbb2662b01514fe90e74c4cc4141956d808032",
+      "suggestedPublicPath": "/assets/card-groudon.webp"
+    },
+    {
+      "kind": "card",
+      "key": "tyranitar",
+      "id": "swsh5-155",
+      "name": "Tyranitar V",
+      "number": "155",
+      "displayNumber": "155/163",
+      "setId": "swsh5",
+      "setName": "Battle Styles",
+      "series": "Sword & Shield",
+      "artist": "HYOGONOSUKE",
+      "pokemonIds": [
+        248
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh5/155_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh5.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-tyranitar.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 128086,
+      "sha256": "cd6da4b2603510769aaf24ffd9ae7e1efc66d5667fa1025c10a6afaa8d7dbde2",
+      "suggestedPublicPath": "/assets/card-tyranitar.webp"
+    },
+    {
+      "kind": "card",
+      "key": "sylveon",
+      "id": "swsh7-212",
+      "name": "Sylveon VMAX",
+      "number": "212",
+      "displayNumber": "212/203",
+      "setId": "swsh7",
+      "setName": "Evolving Skies",
+      "series": "Sword & Shield",
+      "artist": "Taira Akitsu",
+      "pokemonIds": [
+        700
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh7/212_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh7.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-sylveon.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 193862,
+      "sha256": "51a9b855a1268b6027d14fdb0f122b136bd371c2e7963763ce80efbde4d9882f",
+      "suggestedPublicPath": "/assets/card-sylveon.webp"
+    },
+    {
+      "kind": "card",
+      "key": "aerodactyl",
+      "id": "swsh11-180",
+      "name": "Aerodactyl V",
+      "number": "180",
+      "displayNumber": "180/196",
+      "setId": "swsh11",
+      "setName": "Lost Origin",
+      "series": "Sword & Shield",
+      "artist": "Nurikabe",
+      "pokemonIds": [
+        142
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh11/180_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh11.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-aerodactyl.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 147482,
+      "sha256": "824f20020870333efa81c098cfa5eab04b70bc10a13097df562b0a07bf22b630",
+      "suggestedPublicPath": "/assets/card-aerodactyl.webp"
+    },
+    {
+      "kind": "card",
+      "key": "arceus",
+      "id": "swsh9-166",
+      "name": "Arceus V",
+      "number": "166",
+      "displayNumber": "166/172",
+      "setId": "swsh9",
+      "setName": "Brilliant Stars",
+      "series": "Sword & Shield",
+      "artist": "kawayoo",
+      "pokemonIds": [
+        493
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh9/166_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh9.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-arceus.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 151330,
+      "sha256": "732a641b83a6fdbea85e8e98fe3d6df480b7e3bf9b8e99aa5f1b6825861e3c26",
+      "suggestedPublicPath": "/assets/card-arceus.webp"
+    },
+    {
+      "kind": "card",
+      "key": "suicune",
+      "id": "swsh12pt5gg-GG38",
+      "name": "Suicune V",
+      "number": "GG38",
+      "displayNumber": "GG38/GG70",
+      "setId": "swsh12pt5gg",
+      "setName": "Crown Zenith Galarian Gallery",
+      "series": "Sword & Shield",
+      "artist": "Atsushi Furusawa",
+      "pokemonIds": [
+        245
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG38_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/swsh12pt5gg.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-suicune.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 179700,
+      "sha256": "8a36bea94c00280fafd40e8cd935019d524a446d79d2798f4b3f8e26abda34ff",
+      "suggestedPublicPath": "/assets/card-suicune.webp"
+    },
+    {
+      "kind": "card",
+      "key": "reshiram",
+      "id": "bw1-113",
+      "name": "Reshiram",
+      "number": "113",
+      "displayNumber": "113/114",
+      "setId": "bw1",
+      "setName": "Black & White",
+      "series": "Black & White",
+      "artist": "5ban Graphics",
+      "pokemonIds": [
+        643
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/bw1/113_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/bw1.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-reshiram.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 84448,
+      "sha256": "2e9c75166b102d6ca53e197a44bb57fa86675674461d7109e88d782124437824",
+      "suggestedPublicPath": "/assets/card-reshiram.webp"
+    },
+    {
+      "kind": "card",
+      "key": "xerneas",
+      "id": "xy1-146",
+      "name": "Xerneas-EX",
+      "number": "146",
+      "displayNumber": "146/146",
+      "setId": "xy1",
+      "setName": "XY",
+      "series": "XY",
+      "artist": "5ban Graphics",
+      "pokemonIds": [
+        716
+      ],
+      "sourceUrl": "https://images.pokemontcg.io/xy1/146_hires.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/cards/en/xy1.json",
+      "httpStatus": 200,
+      "source": "English printed Pok\u00e9mon TCG card artwork mirrored by Pok\u00e9mon TCG API; identity from the MonDex public catalog.",
+      "filename": "card-xerneas.webp",
+      "dimensions": [
+        660,
+        921
+      ],
+      "bytes": 152224,
+      "sha256": "9cd9b672b387331c90df53a25aeec05aefe14b83161ca27cc23b0b935fa53cee",
+      "suggestedPublicPath": "/assets/card-xerneas.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 54,
+      "name": "Psyduck",
+      "generation": 1,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/54/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-54.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 15554,
+      "sha256": "1fd2178afff3beef70bd54bfd652638080bbe6c73c55d322b6229a96ff5de385",
+      "suggestedPublicPath": "/assets/pokemon-54.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 94,
+      "name": "Gengar",
+      "generation": 1,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/94/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-94.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 15084,
+      "sha256": "af264b2ee176ff556c27c9245aaa14ee70cc240043ddbe1e0b075c99268f48f2",
+      "suggestedPublicPath": "/assets/pokemon-94.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 143,
+      "name": "Snorlax",
+      "generation": 1,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/143/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-143.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 15852,
+      "sha256": "9640874f3e8dde437bb718f3c7bb6c506289ddec43f687758b92cb11b3093fdd",
+      "suggestedPublicPath": "/assets/pokemon-143.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 155,
+      "name": "Cyndaquil",
+      "generation": 2,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/155.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/155/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-155.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 16934,
+      "sha256": "a29becd4289582897489d88472eef5e5ff2cecad13008edb1e5c2a7ef727ab29",
+      "suggestedPublicPath": "/assets/pokemon-155.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 175,
+      "name": "Togepi",
+      "generation": 2,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/175.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/175/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-175.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 20360,
+      "sha256": "04d30e0b9823fe649788af46530dd3ae2281da5a8d97c9d63d3d3acd21a8303b",
+      "suggestedPublicPath": "/assets/pokemon-175.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 249,
+      "name": "Lugia",
+      "generation": 2,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/249/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-249.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 19808,
+      "sha256": "d1016cb9ac1b5ed43efe97d82589a77e7589061cc28fc6f8c9beb33aaf5a7e6e",
+      "suggestedPublicPath": "/assets/pokemon-249.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 258,
+      "name": "Mudkip",
+      "generation": 3,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/258/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-258.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 16584,
+      "sha256": "71c6dd5622189f909823b9aac9b9b8079933a7e4daa08516debad02421e8e33b",
+      "suggestedPublicPath": "/assets/pokemon-258.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 282,
+      "name": "Gardevoir",
+      "generation": 3,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/282/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-282.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 18732,
+      "sha256": "95f041569fd1dc15c175e8f44bc2fab83f57c6a45a8e9bb3271fb8ec73511ccb",
+      "suggestedPublicPath": "/assets/pokemon-282.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 384,
+      "name": "Rayquaza",
+      "generation": 3,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/384/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-384.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 24534,
+      "sha256": "ffe8119d41e4bb99475f93acfd139c84ad9b6863c70bb6f0d3c04098f7f688b8",
+      "suggestedPublicPath": "/assets/pokemon-384.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 393,
+      "name": "Piplup",
+      "generation": 4,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/393/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-393.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 15664,
+      "sha256": "81fc7bbeac4f88f5104c89805da987dc389fc1219acd12f1cd7e4afbe1f7f6f5",
+      "suggestedPublicPath": "/assets/pokemon-393.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 448,
+      "name": "Lucario",
+      "generation": 4,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/448/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-448.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 17390,
+      "sha256": "2fe805110b79580776ae932544b05f266e1270db0adbb7e7c4440b4775918cbd",
+      "suggestedPublicPath": "/assets/pokemon-448.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 470,
+      "name": "Leafeon",
+      "generation": 4,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/470/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-470.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 25186,
+      "sha256": "286ee77e62723ed1c8a55583384256725bc617df57e23ac1521acca870bffb8f",
+      "suggestedPublicPath": "/assets/pokemon-470.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 495,
+      "name": "Snivy",
+      "generation": 5,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/495.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/495/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-495.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 20068,
+      "sha256": "6153fd2a5858f67659d63cb3eb646fd393fe7097f0bea4cacb3063dbda6f94b0",
+      "suggestedPublicPath": "/assets/pokemon-495.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 570,
+      "name": "Zorua",
+      "generation": 5,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/570.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/570/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-570.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 15426,
+      "sha256": "75e3a40180b3fb14837386fdf7f7baee1bc198e1a7906ede8ee25c8a7453ea05",
+      "suggestedPublicPath": "/assets/pokemon-570.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 607,
+      "name": "Litwick",
+      "generation": 5,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/607.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/607/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-607.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 12290,
+      "sha256": "a5d90229cd3bd853e18fa49bd6468c86117618248138521c971d2aa16e8302ef",
+      "suggestedPublicPath": "/assets/pokemon-607.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 658,
+      "name": "Greninja",
+      "generation": 6,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/658/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-658.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 17462,
+      "sha256": "d69eda88335771c736e08f74527c726af42321f89e3556e3901b4b6873aaed23",
+      "suggestedPublicPath": "/assets/pokemon-658.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 700,
+      "name": "Sylveon",
+      "generation": 6,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/700/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-700.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 24268,
+      "sha256": "5dc92cd27f86d0820e6ab8abcaafe3ea38acfc54aa2eeb1323f61f02297adf34",
+      "suggestedPublicPath": "/assets/pokemon-700.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 722,
+      "name": "Rowlet",
+      "generation": 7,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/722/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-722.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 15714,
+      "sha256": "5006988d00acd1e50f7c02111def4f611757f00b48e4e2c6cf1da2db64d4425d",
+      "suggestedPublicPath": "/assets/pokemon-722.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 778,
+      "name": "Mimikyu",
+      "generation": 7,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/778/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-778.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 12892,
+      "sha256": "3ec09298647a48fe12adfd531debd4af17b96bc266a3c2ded21ae08e1087f348",
+      "suggestedPublicPath": "/assets/pokemon-778.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 813,
+      "name": "Scorbunny",
+      "generation": 8,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/813.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/813/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-813.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 15376,
+      "sha256": "16662ab52196cb11dc52c6627d5d28a9bf1fde2c97cf652f3ee3da6dc098162b",
+      "suggestedPublicPath": "/assets/pokemon-813.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 887,
+      "name": "Dragapult",
+      "generation": 8,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/887/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-887.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 23562,
+      "sha256": "a5a0336284eeee0d9a71f90dea730b89fc8c32aa1f77551f2300b0ed8c040056",
+      "suggestedPublicPath": "/assets/pokemon-887.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 906,
+      "name": "Sprigatito",
+      "generation": 9,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/906/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-906.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 19520,
+      "sha256": "39faf928ff8b923c30a070efcbd39644f716edb45c073c06936f72e415667016",
+      "suggestedPublicPath": "/assets/pokemon-906.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 909,
+      "name": "Fuecoco",
+      "generation": 9,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/909.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/909/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-909.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 17350,
+      "sha256": "6463e102ed55e3b802113fccd8260f25d14835b720dfc7448532f3bb0e00a23a",
+      "suggestedPublicPath": "/assets/pokemon-909.webp"
+    },
+    {
+      "kind": "portrait",
+      "id": 959,
+      "name": "Tinkaton",
+      "generation": 9,
+      "sourceUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
+      "metadataSourceUrl": "https://pokeapi.co/api/v2/pokemon-species/959/",
+      "source": "Official artwork mirrored by PokeAPI; existing MonDex public Pok\u00e9dex asset resized to WebP with transparency retained.",
+      "filename": "pokemon-959.webp",
+      "dimensions": [
+        320,
+        320
+      ],
+      "bytes": 25482,
+      "sha256": "29e584384e6c9dfcb8cd0b803d289c8d58ab730ff1d9b89e2e3db22320c85fca",
+      "suggestedPublicPath": "/assets/pokemon-959.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "base1",
+      "name": "Base",
+      "series": "Base",
+      "releaseDate": "1999-01-09",
+      "sourceUrl": "https://images.pokemontcg.io/base1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-base1.webp",
+      "dimensions": [
+        312,
+        160
+      ],
+      "bytes": 19684,
+      "sha256": "3f80f001936c5396a3fb35c9cea0d018c54ee0f0f61f4c6f6913a8822c998336",
+      "suggestedPublicPath": "/assets/set-base1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "base2",
+      "name": "Jungle",
+      "series": "Base",
+      "releaseDate": "1999-06-16",
+      "sourceUrl": "https://images.pokemontcg.io/base2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-base2.webp",
+      "dimensions": [
+        160,
+        111
+      ],
+      "bytes": 7118,
+      "sha256": "70fb902e3c1d17de33c52ecf194df2709ba219c40b54d97ec2eb8e96f5d71806",
+      "suggestedPublicPath": "/assets/set-base2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "basep",
+      "name": "Wizards Black Star Promos",
+      "series": "Base",
+      "releaseDate": "1999-07-01",
+      "sourceUrl": "https://images.pokemontcg.io/basep/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-basep.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-basep.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "base3",
+      "name": "Fossil",
+      "series": "Base",
+      "releaseDate": "1999-10-10",
+      "sourceUrl": "https://images.pokemontcg.io/base3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-base3.webp",
+      "dimensions": [
+        184,
+        160
+      ],
+      "bytes": 16806,
+      "sha256": "b46547c1279249e4258544e63459f7fcdfe0a51266929e776aaa458a93bdf276",
+      "suggestedPublicPath": "/assets/set-base3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "base4",
+      "name": "Base Set 2",
+      "series": "Base",
+      "releaseDate": "2000-02-24",
+      "sourceUrl": "https://images.pokemontcg.io/base4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-base4.webp",
+      "dimensions": [
+        121,
+        130
+      ],
+      "bytes": 6740,
+      "sha256": "08f886b06bf1e81d1c69e0edd93b615559f3fce808fb60c2e19ac51ec8c29018",
+      "suggestedPublicPath": "/assets/set-base4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "base5",
+      "name": "Team Rocket",
+      "series": "Base",
+      "releaseDate": "2000-04-24",
+      "sourceUrl": "https://images.pokemontcg.io/base5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-base5.webp",
+      "dimensions": [
+        360,
+        123
+      ],
+      "bytes": 14374,
+      "sha256": "c5aaba7f60ab7a6d9ec99e0a0faedb4985aa3d6e31896c5fd4c656713239dbe2",
+      "suggestedPublicPath": "/assets/set-base5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "series": "Gym",
+      "releaseDate": "2000-08-14",
+      "sourceUrl": "https://images.pokemontcg.io/gym1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-gym1.webp",
+      "dimensions": [
+        250,
+        110
+      ],
+      "bytes": 8420,
+      "sha256": "784909c1ca131d6060cbff635ceaf12cd449fcab84a1a035c187452197d586ee",
+      "suggestedPublicPath": "/assets/set-gym1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "series": "Gym",
+      "releaseDate": "2000-10-16",
+      "sourceUrl": "https://images.pokemontcg.io/gym2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-gym2.webp",
+      "dimensions": [
+        243,
+        112
+      ],
+      "bytes": 8450,
+      "sha256": "a712c8af7551b998ec0efaf4f2720e7449be1d40d609909f54ddd556b8a3ecda",
+      "suggestedPublicPath": "/assets/set-gym2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "series": "Neo",
+      "releaseDate": "2000-12-16",
+      "sourceUrl": "https://images.pokemontcg.io/neo1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-neo1.webp",
+      "dimensions": [
+        360,
+        119
+      ],
+      "bytes": 17170,
+      "sha256": "1da6e389cfbb70079ef67dd3a5653cdbc0abc49ae61b6b8fcb9c1a062f06132a",
+      "suggestedPublicPath": "/assets/set-neo1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "neo2",
+      "name": "Neo Discovery",
+      "series": "Neo",
+      "releaseDate": "2001-06-01",
+      "sourceUrl": "https://images.pokemontcg.io/neo2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-neo2.webp",
+      "dimensions": [
+        200,
+        90
+      ],
+      "bytes": 9586,
+      "sha256": "75c3cb4d943413184ede1be2d8f3e8f3dae38c036d892203fea29420a1ae3b43",
+      "suggestedPublicPath": "/assets/set-neo2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "si1",
+      "name": "Southern Islands",
+      "series": "Other",
+      "releaseDate": "2001-07-31",
+      "sourceUrl": "https://images.pokemontcg.io/si1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-si1.webp",
+      "dimensions": [
+        360,
+        144
+      ],
+      "bytes": 17746,
+      "sha256": "4289b7f13a6d72dad0400a043951192635dac4440b313b6f1133b17f5a0fedcf",
+      "suggestedPublicPath": "/assets/set-si1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "neo3",
+      "name": "Neo Revelation",
+      "series": "Neo",
+      "releaseDate": "2001-09-21",
+      "sourceUrl": "https://images.pokemontcg.io/neo3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-neo3.webp",
+      "dimensions": [
+        211,
+        160
+      ],
+      "bytes": 20298,
+      "sha256": "7f9a896b01d9521d9d5f779e6bc07a4c59a1c961de97c54306020dc38e4b43bb",
+      "suggestedPublicPath": "/assets/set-neo3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "neo4",
+      "name": "Neo Destiny",
+      "series": "Neo",
+      "releaseDate": "2002-02-28",
+      "sourceUrl": "https://images.pokemontcg.io/neo4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-neo4.webp",
+      "dimensions": [
+        200,
+        95
+      ],
+      "bytes": 8798,
+      "sha256": "4f51fe43ea5e7addacf6e9e6bcf93b83856971265f02e0bf5aea3341723298da",
+      "suggestedPublicPath": "/assets/set-neo4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "base6",
+      "name": "Legendary Collection",
+      "series": "Other",
+      "releaseDate": "2002-05-24",
+      "sourceUrl": "https://images.pokemontcg.io/base6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-base6.webp",
+      "dimensions": [
+        198,
+        74
+      ],
+      "bytes": 6194,
+      "sha256": "b7786e418004ad5e5f83594eb2c9795e5d04d571c961f9ec06723aac3fb0d442",
+      "suggestedPublicPath": "/assets/set-base6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ecard1",
+      "name": "Expedition Base Set",
+      "series": "E-Card",
+      "releaseDate": "2002-09-15",
+      "sourceUrl": "https://images.pokemontcg.io/ecard1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ecard1.webp",
+      "dimensions": [
+        360,
+        82
+      ],
+      "bytes": 9886,
+      "sha256": "c4fd890b953cd1f61d230799078f4ccc559a17d8608d5ad4ead382fb8458e5ff",
+      "suggestedPublicPath": "/assets/set-ecard1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bp",
+      "name": "Best of Game",
+      "series": "Other",
+      "releaseDate": "2002-12-01",
+      "sourceUrl": "https://images.pokemontcg.io/bp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bp.webp",
+      "dimensions": [
+        313,
+        160
+      ],
+      "bytes": 19700,
+      "sha256": "ac25838b5d69fb629de3661d42e75e1ac04b8c98e81f8969ac402b21ca7642e8",
+      "suggestedPublicPath": "/assets/set-bp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ecard2",
+      "name": "Aquapolis",
+      "series": "E-Card",
+      "releaseDate": "2003-01-15",
+      "sourceUrl": "https://images.pokemontcg.io/ecard2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ecard2.webp",
+      "dimensions": [
+        182,
+        38
+      ],
+      "bytes": 3770,
+      "sha256": "0124fb79bc27e40c386e059ab2e7adbcccc275c5929925107d9d5bacfbab0454",
+      "suggestedPublicPath": "/assets/set-ecard2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ecard3",
+      "name": "Skyridge",
+      "series": "E-Card",
+      "releaseDate": "2003-05-12",
+      "sourceUrl": "https://images.pokemontcg.io/ecard3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ecard3.webp",
+      "dimensions": [
+        209,
+        64
+      ],
+      "bytes": 4372,
+      "sha256": "722c0e31a2307d6fc136e9beb33ba3b8e30ec90ca64bbfe3a41b351527006444",
+      "suggestedPublicPath": "/assets/set-ecard3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex1",
+      "name": "Ruby & Sapphire",
+      "series": "EX",
+      "releaseDate": "2003-07-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex1.webp",
+      "dimensions": [
+        360,
+        45
+      ],
+      "bytes": 7648,
+      "sha256": "7b0e4e9947025ea997cf7de6ea8b526358ca9f65bed6a351a7b001c1682cdf5d",
+      "suggestedPublicPath": "/assets/set-ex1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex2",
+      "name": "Sandstorm",
+      "series": "EX",
+      "releaseDate": "2003-09-18",
+      "sourceUrl": "https://images.pokemontcg.io/ex2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex2.webp",
+      "dimensions": [
+        360,
+        48
+      ],
+      "bytes": 11432,
+      "sha256": "718c7980b4d82164256312b86ff99267c3f59d54577697269cbb6c08beae6415",
+      "suggestedPublicPath": "/assets/set-ex2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex3",
+      "name": "Dragon",
+      "series": "EX",
+      "releaseDate": "2003-11-24",
+      "sourceUrl": "https://images.pokemontcg.io/ex3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex3.webp",
+      "dimensions": [
+        360,
+        54
+      ],
+      "bytes": 10988,
+      "sha256": "48afd05578ccd2a10639c4b2250252fe47bd3ffc388dfaac952948e14081ba88",
+      "suggestedPublicPath": "/assets/set-ex3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "np",
+      "name": "Nintendo Black Star Promos",
+      "series": "NP",
+      "releaseDate": "2003-10-01",
+      "sourceUrl": "https://images.pokemontcg.io/np/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-np.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-np.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
+      "series": "EX",
+      "releaseDate": "2004-03-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex4.webp",
+      "dimensions": [
+        360,
+        90
+      ],
+      "bytes": 12636,
+      "sha256": "a88618f33626923fe32da9969ed09eda76a45b4d39112a4a8977e19ef24f3c9a",
+      "suggestedPublicPath": "/assets/set-ex4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
+      "series": "EX",
+      "releaseDate": "2004-06-01",
+      "sourceUrl": "https://images.pokemontcg.io/tk1a/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-tk1a.webp",
+      "dimensions": [
+        360,
+        32
+      ],
+      "bytes": 7066,
+      "sha256": "f0b1c21991570fc6abfe0192f2ffb359818a3ea28de1a8a4b72649ad4462db91",
+      "suggestedPublicPath": "/assets/set-tk1a.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "tk1b",
+      "name": "EX Trainer Kit Latios",
+      "series": "EX",
+      "releaseDate": "2004-06-01",
+      "sourceUrl": "https://images.pokemontcg.io/tk1b/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-tk1b.webp",
+      "dimensions": [
+        360,
+        32
+      ],
+      "bytes": 7066,
+      "sha256": "f0b1c21991570fc6abfe0192f2ffb359818a3ea28de1a8a4b72649ad4462db91",
+      "suggestedPublicPath": "/assets/set-tk1b.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex5",
+      "name": "Hidden Legends",
+      "series": "EX",
+      "releaseDate": "2004-06-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex5.webp",
+      "dimensions": [
+        303,
+        160
+      ],
+      "bytes": 15176,
+      "sha256": "422d4406832b0b81f6e7e6579ace3e0236ae87a7536b9e24b3eb0060680cf96f",
+      "suggestedPublicPath": "/assets/set-ex5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex6",
+      "name": "FireRed & LeafGreen",
+      "series": "EX",
+      "releaseDate": "2004-09-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex6.webp",
+      "dimensions": [
+        186,
+        108
+      ],
+      "bytes": 7742,
+      "sha256": "7a6f59190c7cab5e03dfc9c12982eee539fafd0e2c936835c00537309a259dd5",
+      "suggestedPublicPath": "/assets/set-ex6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop1",
+      "name": "POP Series 1",
+      "series": "POP",
+      "releaseDate": "2004-09-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop1.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex7",
+      "name": "Team Rocket Returns",
+      "series": "EX",
+      "releaseDate": "2004-11-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex7.webp",
+      "dimensions": [
+        192,
+        80
+      ],
+      "bytes": 8010,
+      "sha256": "317160199e72ee3df7a51ceccdcaad764b2ea41a4d72922bcf9113799a7986fa",
+      "suggestedPublicPath": "/assets/set-ex7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex8",
+      "name": "Deoxys",
+      "series": "EX",
+      "releaseDate": "2005-02-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex8/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex8.webp",
+      "dimensions": [
+        360,
+        70
+      ],
+      "bytes": 16068,
+      "sha256": "53690cc31235b0526dfd08e38f56d208eda62e803e5a6e501f379ca36a1c28c0",
+      "suggestedPublicPath": "/assets/set-ex8.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex9",
+      "name": "Emerald",
+      "series": "EX",
+      "releaseDate": "2005-05-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex9/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex9.webp",
+      "dimensions": [
+        210,
+        33
+      ],
+      "bytes": 3792,
+      "sha256": "9da7b67c5d5fcf6a1731dccf076e71e912e0c60cdad9a9e6b245b4c6ca9c4d3f",
+      "suggestedPublicPath": "/assets/set-ex9.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex10",
+      "name": "Unseen Forces",
+      "series": "EX",
+      "releaseDate": "2005-08-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex10/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex10.webp",
+      "dimensions": [
+        360,
+        135
+      ],
+      "bytes": 23242,
+      "sha256": "1f8d47bfa7178ebe8182a01664b3f3cf3f9e28cf4f1e2f4306947237b63cb246",
+      "suggestedPublicPath": "/assets/set-ex10.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop2",
+      "name": "POP Series 2",
+      "series": "POP",
+      "releaseDate": "2005-08-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop2.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex11",
+      "name": "Delta Species",
+      "series": "EX",
+      "releaseDate": "2005-10-31",
+      "sourceUrl": "https://images.pokemontcg.io/ex11/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex11.webp",
+      "dimensions": [
+        360,
+        91
+      ],
+      "bytes": 9382,
+      "sha256": "0dbbff2592b5915f8c19c4892aa0b12c24b377fbfaa6eef8e16ec679992d3a1f",
+      "suggestedPublicPath": "/assets/set-ex11.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex12",
+      "name": "Legend Maker",
+      "series": "EX",
+      "releaseDate": "2006-02-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex12/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex12.webp",
+      "dimensions": [
+        360,
+        130
+      ],
+      "bytes": 13176,
+      "sha256": "1081d02b8ec99929c466d9e3a88e345e28fa235b9ec52a505c5452a758a4f1b4",
+      "suggestedPublicPath": "/assets/set-ex12.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "series": "EX",
+      "releaseDate": "2006-03-01",
+      "sourceUrl": "https://images.pokemontcg.io/tk2a/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-tk2a.webp",
+      "dimensions": [
+        360,
+        32
+      ],
+      "bytes": 7066,
+      "sha256": "f0b1c21991570fc6abfe0192f2ffb359818a3ea28de1a8a4b72649ad4462db91",
+      "suggestedPublicPath": "/assets/set-tk2a.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
+      "series": "EX",
+      "releaseDate": "2006-03-01",
+      "sourceUrl": "https://images.pokemontcg.io/tk2b/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-tk2b.webp",
+      "dimensions": [
+        360,
+        32
+      ],
+      "bytes": 7066,
+      "sha256": "f0b1c21991570fc6abfe0192f2ffb359818a3ea28de1a8a4b72649ad4462db91",
+      "suggestedPublicPath": "/assets/set-tk2b.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop3",
+      "name": "POP Series 3",
+      "series": "POP",
+      "releaseDate": "2006-04-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop3.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex13",
+      "name": "Holon Phantoms",
+      "series": "EX",
+      "releaseDate": "2006-05-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex13/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex13.webp",
+      "dimensions": [
+        195,
+        98
+      ],
+      "bytes": 8810,
+      "sha256": "8a2e46dab6d942c824c38ac3f468dc967d72bb485e667a8881b0332707680043",
+      "suggestedPublicPath": "/assets/set-ex13.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex14",
+      "name": "Crystal Guardians",
+      "series": "EX",
+      "releaseDate": "2006-08-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex14/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex14.webp",
+      "dimensions": [
+        203,
+        97
+      ],
+      "bytes": 10284,
+      "sha256": "958a36dcf93020054a1f0acdde570769abe2958a043ef4108a2cf072aba671ea",
+      "suggestedPublicPath": "/assets/set-ex14.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop4",
+      "name": "POP Series 4",
+      "series": "POP",
+      "releaseDate": "2006-08-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop4.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex15",
+      "name": "Dragon Frontiers",
+      "series": "EX",
+      "releaseDate": "2006-11-01",
+      "sourceUrl": "https://images.pokemontcg.io/ex15/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex15.webp",
+      "dimensions": [
+        360,
+        93
+      ],
+      "bytes": 12306,
+      "sha256": "90c39b8e7e3e01909fbd220011724a02141cb6df02e5bd21a7f7a17e93f10744",
+      "suggestedPublicPath": "/assets/set-ex15.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop5",
+      "name": "POP Series 5",
+      "series": "POP",
+      "releaseDate": "2007-03-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop5.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ex16",
+      "name": "Power Keepers",
+      "series": "EX",
+      "releaseDate": "2007-02-02",
+      "sourceUrl": "https://images.pokemontcg.io/ex16/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ex16.webp",
+      "dimensions": [
+        206,
+        92
+      ],
+      "bytes": 8544,
+      "sha256": "63b1ed4db790ea3ce99a84bd53ce89f872acc7e69905d287eee662eba3d6103b",
+      "suggestedPublicPath": "/assets/set-ex16.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dp1",
+      "name": "Diamond & Pearl",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2007-05-01",
+      "sourceUrl": "https://images.pokemontcg.io/dp1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dp1.webp",
+      "dimensions": [
+        360,
+        55
+      ],
+      "bytes": 7510,
+      "sha256": "dd376241e239d54ba380e8c69219d35341e14345b5281c41476daa5d6d58f9b4",
+      "suggestedPublicPath": "/assets/set-dp1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2007-05-01",
+      "sourceUrl": "https://images.pokemontcg.io/dpp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dpp.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-dpp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dp2",
+      "name": "Mysterious Treasures",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2007-08-01",
+      "sourceUrl": "https://images.pokemontcg.io/dp2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dp2.webp",
+      "dimensions": [
+        360,
+        93
+      ],
+      "bytes": 13040,
+      "sha256": "69a9eac3522f58d5f4b973017fcca0160e1ca539e1c404675071ed542b0d72c9",
+      "suggestedPublicPath": "/assets/set-dp2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop6",
+      "name": "POP Series 6",
+      "series": "POP",
+      "releaseDate": "2007-09-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop6.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dp3",
+      "name": "Secret Wonders",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2007-11-01",
+      "sourceUrl": "https://images.pokemontcg.io/dp3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dp3.webp",
+      "dimensions": [
+        360,
+        100
+      ],
+      "bytes": 12366,
+      "sha256": "314bd451856f778c6e227a4cf1fc700ff4590c199c53b87fb60e740f37b1b8bd",
+      "suggestedPublicPath": "/assets/set-dp3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dp4",
+      "name": "Great Encounters",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2008-02-01",
+      "sourceUrl": "https://images.pokemontcg.io/dp4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dp4.webp",
+      "dimensions": [
+        360,
+        81
+      ],
+      "bytes": 12116,
+      "sha256": "da9557229b2c0dbc7e27419422ec17c4931b80254ae5c133b58e8c3b651462dc",
+      "suggestedPublicPath": "/assets/set-dp4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop7",
+      "name": "POP Series 7",
+      "series": "POP",
+      "releaseDate": "2008-03-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop7.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dp5",
+      "name": "Majestic Dawn",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2008-05-01",
+      "sourceUrl": "https://images.pokemontcg.io/dp5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dp5.webp",
+      "dimensions": [
+        360,
+        92
+      ],
+      "bytes": 15222,
+      "sha256": "45a1b88d7968a88d77f60f240011e9b07a1e1f3a4b78b2358aac848565b9253e",
+      "suggestedPublicPath": "/assets/set-dp5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dp6",
+      "name": "Legends Awakened",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2008-08-01",
+      "sourceUrl": "https://images.pokemontcg.io/dp6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dp6.webp",
+      "dimensions": [
+        360,
+        90
+      ],
+      "bytes": 15770,
+      "sha256": "01461e46dbb460f83584824f96e8da3e030479cfc88a53be3149fa9031d4672c",
+      "suggestedPublicPath": "/assets/set-dp6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop8",
+      "name": "POP Series 8",
+      "series": "POP",
+      "releaseDate": "2008-09-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop8/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop8.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop8.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dp7",
+      "name": "Stormfront",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2008-11-01",
+      "sourceUrl": "https://images.pokemontcg.io/dp7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dp7.webp",
+      "dimensions": [
+        360,
+        108
+      ],
+      "bytes": 16936,
+      "sha256": "164599f5e683af0799f8578c573571b7b52f5d3f4ec0adca6bec6b97d39b9d2d",
+      "suggestedPublicPath": "/assets/set-dp7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pl1",
+      "name": "Platinum",
+      "series": "Platinum",
+      "releaseDate": "2009-02-11",
+      "sourceUrl": "https://images.pokemontcg.io/pl1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pl1.webp",
+      "dimensions": [
+        360,
+        70
+      ],
+      "bytes": 6102,
+      "sha256": "f14dae674b6be59d492a3701328c1532d35c25cad65d352ee64be498a0cbe1b8",
+      "suggestedPublicPath": "/assets/set-pl1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pop9",
+      "name": "POP Series 9",
+      "series": "POP",
+      "releaseDate": "2009-03-01",
+      "sourceUrl": "https://images.pokemontcg.io/pop9/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pop9.webp",
+      "dimensions": [
+        131,
+        160
+      ],
+      "bytes": 11282,
+      "sha256": "89e4d972ac4fe4355ab30e8e0f9c2d9e6028b2a5c3bb0fe0e0ef078dc3877b24",
+      "suggestedPublicPath": "/assets/set-pop9.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pl2",
+      "name": "Rising Rivals",
+      "series": "Platinum",
+      "releaseDate": "2009-05-16",
+      "sourceUrl": "https://images.pokemontcg.io/pl2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pl2.webp",
+      "dimensions": [
+        360,
+        106
+      ],
+      "bytes": 11626,
+      "sha256": "509f3523e86dee63aaefd2402dc0945b217c59238149db328d6540536a5fe406",
+      "suggestedPublicPath": "/assets/set-pl2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pl3",
+      "name": "Supreme Victors",
+      "series": "Platinum",
+      "releaseDate": "2009-08-19",
+      "sourceUrl": "https://images.pokemontcg.io/pl3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pl3.webp",
+      "dimensions": [
+        360,
+        102
+      ],
+      "bytes": 12254,
+      "sha256": "f5946c4af1d4c3da4354cd6a0d4ea3d398c43cd661412e737cf2a5d07a66f05a",
+      "suggestedPublicPath": "/assets/set-pl3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pl4",
+      "name": "Arceus",
+      "series": "Platinum",
+      "releaseDate": "2009-11-04",
+      "sourceUrl": "https://images.pokemontcg.io/pl4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pl4.webp",
+      "dimensions": [
+        360,
+        105
+      ],
+      "bytes": 11492,
+      "sha256": "d4ff493396bb84494d101282829d2dcaaf71ac27ff6b1d85d4d39c4e88e74f23",
+      "suggestedPublicPath": "/assets/set-pl4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "ru1",
+      "name": "Pok\u00e9mon Rumble",
+      "series": "Other",
+      "releaseDate": "2009-12-02",
+      "sourceUrl": "https://images.pokemontcg.io/ru1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-ru1.webp",
+      "dimensions": [
+        253,
+        160
+      ],
+      "bytes": 19348,
+      "sha256": "905765b415f2942f9a7e1c09ed96288edf0b52102eabc0b3d39c98b5b2aa58fe",
+      "suggestedPublicPath": "/assets/set-ru1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010-02-10",
+      "sourceUrl": "https://images.pokemontcg.io/hgss1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-hgss1.webp",
+      "dimensions": [
+        360,
+        151
+      ],
+      "bytes": 21704,
+      "sha256": "9f668d3d50a46fa118d3f5fd4bde9fb3559d8dd4aaf44de1a6f9faa3c4c5cfc0",
+      "suggestedPublicPath": "/assets/set-hgss1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010-02-10",
+      "sourceUrl": "https://images.pokemontcg.io/hsp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-hsp.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-hsp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "hgss2",
+      "name": "HS\u2014Unleashed",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010-05-12",
+      "sourceUrl": "https://images.pokemontcg.io/hgss2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-hgss2.webp",
+      "dimensions": [
+        360,
+        81
+      ],
+      "bytes": 13606,
+      "sha256": "5a3c6e42bd34cc12f8af281a793470edafb548d6ab0b2a0a0018ca63537df8f0",
+      "suggestedPublicPath": "/assets/set-hgss2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "hgss3",
+      "name": "HS\u2014Undaunted",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010-08-18",
+      "sourceUrl": "https://images.pokemontcg.io/hgss3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-hgss3.webp",
+      "dimensions": [
+        360,
+        86
+      ],
+      "bytes": 10758,
+      "sha256": "736b9386cbe3b7f7ec697a98a288093ea5cfd3655cffc8acc6d0827da97f9767",
+      "suggestedPublicPath": "/assets/set-hgss3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "hgss4",
+      "name": "HS\u2014Triumphant",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010-11-03",
+      "sourceUrl": "https://images.pokemontcg.io/hgss4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-hgss4.webp",
+      "dimensions": [
+        360,
+        94
+      ],
+      "bytes": 12368,
+      "sha256": "6d031c129a1da3381021f3ca5fe9a2f5fcf9c175af6ffd3c7007f9d3744f9680",
+      "suggestedPublicPath": "/assets/set-hgss4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "col1",
+      "name": "Call of Legends",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2011-02-09",
+      "sourceUrl": "https://images.pokemontcg.io/col1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-col1.webp",
+      "dimensions": [
+        360,
+        85
+      ],
+      "bytes": 10714,
+      "sha256": "64cd3ad23b23d89bae4be00500df588d92044c31d2fded5fb60a0821a213f5e0",
+      "suggestedPublicPath": "/assets/set-col1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bwp",
+      "name": "BW Black Star Promos",
+      "series": "Black & White",
+      "releaseDate": "2011-03-01",
+      "sourceUrl": "https://images.pokemontcg.io/bwp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bwp.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-bwp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw1",
+      "name": "Black & White",
+      "series": "Black & White",
+      "releaseDate": "2011-04-25",
+      "sourceUrl": "https://images.pokemontcg.io/bw1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw1.webp",
+      "dimensions": [
+        360,
+        38
+      ],
+      "bytes": 7902,
+      "sha256": "f394e790e67b5aaea6589007b6d06dd4a19fce7092277a582fa3ab17d3893527",
+      "suggestedPublicPath": "/assets/set-bw1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "series": "Other",
+      "releaseDate": "2011-06-17",
+      "sourceUrl": "https://images.pokemontcg.io/mcd11/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd11.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd11.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "series": "Black & White",
+      "releaseDate": "2011-08-31",
+      "sourceUrl": "https://images.pokemontcg.io/bw2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw2.webp",
+      "dimensions": [
+        360,
+        86
+      ],
+      "bytes": 16610,
+      "sha256": "629179d7246993274a9ffcc4d5169636a19315c92868085d001433ab0b7f20f1",
+      "suggestedPublicPath": "/assets/set-bw2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw3",
+      "name": "Noble Victories",
+      "series": "Black & White",
+      "releaseDate": "2011-11-16",
+      "sourceUrl": "https://images.pokemontcg.io/bw3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw3.webp",
+      "dimensions": [
+        360,
+        86
+      ],
+      "bytes": 17180,
+      "sha256": "4913d908223fb1e580fcc1c4fc2170c8a50efe292eddb1d34a3a2e7a9b886614",
+      "suggestedPublicPath": "/assets/set-bw3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw4",
+      "name": "Next Destinies",
+      "series": "Black & White",
+      "releaseDate": "2012-02-08",
+      "sourceUrl": "https://images.pokemontcg.io/bw4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw4.webp",
+      "dimensions": [
+        360,
+        121
+      ],
+      "bytes": 20828,
+      "sha256": "18af7e011b23fe671e9ed88f35d7ac28f1bb394bd87319ff0a88634457219c49",
+      "suggestedPublicPath": "/assets/set-bw4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw5",
+      "name": "Dark Explorers",
+      "series": "Black & White",
+      "releaseDate": "2012-05-09",
+      "sourceUrl": "https://images.pokemontcg.io/bw5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw5.webp",
+      "dimensions": [
+        360,
+        103
+      ],
+      "bytes": 16678,
+      "sha256": "692169b8e5386ee8b7259131d526771e4e6ebd8fd637066d0c939a0c4c713b47",
+      "suggestedPublicPath": "/assets/set-bw5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd12",
+      "name": "McDonald's Collection 2012",
+      "series": "Other",
+      "releaseDate": "2012-06-15",
+      "sourceUrl": "https://images.pokemontcg.io/mcd12/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd12.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd12.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw6",
+      "name": "Dragons Exalted",
+      "series": "Black & White",
+      "releaseDate": "2012-08-15",
+      "sourceUrl": "https://images.pokemontcg.io/bw6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw6.webp",
+      "dimensions": [
+        360,
+        110
+      ],
+      "bytes": 18160,
+      "sha256": "c18d837316dc68669e728a21b74abc49a4edcf1e5fdafedab15b62bb90185fdc",
+      "suggestedPublicPath": "/assets/set-bw6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dv1",
+      "name": "Dragon Vault",
+      "series": "Black & White",
+      "releaseDate": "2012-10-05",
+      "sourceUrl": "https://images.pokemontcg.io/dv1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dv1.webp",
+      "dimensions": [
+        325,
+        82
+      ],
+      "bytes": 11358,
+      "sha256": "37af1c485612c86a0ea3ec6464c65fe9047ae57c30aef6a3685db1cfc9881f63",
+      "suggestedPublicPath": "/assets/set-dv1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw7",
+      "name": "Boundaries Crossed",
+      "series": "Black & White",
+      "releaseDate": "2012-11-07",
+      "sourceUrl": "https://images.pokemontcg.io/bw7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw7.webp",
+      "dimensions": [
+        360,
+        135
+      ],
+      "bytes": 23408,
+      "sha256": "7099795a014e30a062d8b06bbb1dd93e08334e4856f09903722b7a1d895d0e70",
+      "suggestedPublicPath": "/assets/set-bw7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw8",
+      "name": "Plasma Storm",
+      "series": "Black & White",
+      "releaseDate": "2013-02-06",
+      "sourceUrl": "https://images.pokemontcg.io/bw8/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw8.webp",
+      "dimensions": [
+        360,
+        82
+      ],
+      "bytes": 13022,
+      "sha256": "29db53d9ba1ff7a33d704e014626d49dc9d701988e5ae0d5f75ece63ad7e2c3c",
+      "suggestedPublicPath": "/assets/set-bw8.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw9",
+      "name": "Plasma Freeze",
+      "series": "Black & White",
+      "releaseDate": "2013-05-08",
+      "sourceUrl": "https://images.pokemontcg.io/bw9/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw9.webp",
+      "dimensions": [
+        360,
+        90
+      ],
+      "bytes": 16494,
+      "sha256": "662d4572db3a96fc85f3a8aadbf54633e7d394e298cdeb14fa7c9f7b5e86b37a",
+      "suggestedPublicPath": "/assets/set-bw9.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw10",
+      "name": "Plasma Blast",
+      "series": "Black & White",
+      "releaseDate": "2013-08-14",
+      "sourceUrl": "https://images.pokemontcg.io/bw10/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw10.webp",
+      "dimensions": [
+        360,
+        95
+      ],
+      "bytes": 17086,
+      "sha256": "29f5a863aa8c7a3cb603302e1e0e31d9ad2420f3e58a3621c1e8fad30f483b5b",
+      "suggestedPublicPath": "/assets/set-bw10.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "series": "XY",
+      "releaseDate": "2013-10-12",
+      "sourceUrl": "https://images.pokemontcg.io/xyp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xyp.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-xyp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "bw11",
+      "name": "Legendary Treasures",
+      "series": "Black & White",
+      "releaseDate": "2013-11-06",
+      "sourceUrl": "https://images.pokemontcg.io/bw11/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-bw11.webp",
+      "dimensions": [
+        360,
+        102
+      ],
+      "bytes": 17936,
+      "sha256": "fc8cc074b3d06252bb3e4c2842bed042a5475e6dce83d3e6c196d5a4bd4de0fe",
+      "suggestedPublicPath": "/assets/set-bw11.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy0",
+      "name": "Kalos Starter Set",
+      "series": "XY",
+      "releaseDate": "2013-11-08",
+      "sourceUrl": "https://images.pokemontcg.io/xy0/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy0.webp",
+      "dimensions": [
+        360,
+        123
+      ],
+      "bytes": 23056,
+      "sha256": "f01e3ecdf306d43fea74b98bfbe2974ea45e23991af2d638d6d9acc9c64e2fb0",
+      "suggestedPublicPath": "/assets/set-xy0.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy1",
+      "name": "XY",
+      "series": "XY",
+      "releaseDate": "2014-02-05",
+      "sourceUrl": "https://images.pokemontcg.io/xy1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy1.webp",
+      "dimensions": [
+        360,
+        90
+      ],
+      "bytes": 14158,
+      "sha256": "5d373ada0cbf85d041514917917a2ef6b71279fdc1142106c050decd38191681",
+      "suggestedPublicPath": "/assets/set-xy1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy2",
+      "name": "Flashfire",
+      "series": "XY",
+      "releaseDate": "2014-05-07",
+      "sourceUrl": "https://images.pokemontcg.io/xy2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy2.webp",
+      "dimensions": [
+        360,
+        148
+      ],
+      "bytes": 26770,
+      "sha256": "f28233f527a401674fa77a8f77a27162892983f2ef4150787cec08c72b521842",
+      "suggestedPublicPath": "/assets/set-xy2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
+      "series": "Other",
+      "releaseDate": "2014-05-23",
+      "sourceUrl": "https://images.pokemontcg.io/mcd14/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd14.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd14.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy3",
+      "name": "Furious Fists",
+      "series": "XY",
+      "releaseDate": "2014-08-13",
+      "sourceUrl": "https://images.pokemontcg.io/xy3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy3.webp",
+      "dimensions": [
+        360,
+        142
+      ],
+      "bytes": 20248,
+      "sha256": "e1f6cf976b3e193eb2d563dd86d07332d7263f77ea634bee6f286ac31a821b1a",
+      "suggestedPublicPath": "/assets/set-xy3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy4",
+      "name": "Phantom Forces",
+      "series": "XY",
+      "releaseDate": "2014-11-05",
+      "sourceUrl": "https://images.pokemontcg.io/xy4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy4.webp",
+      "dimensions": [
+        334,
+        160
+      ],
+      "bytes": 26882,
+      "sha256": "1d169ae23d4148f77331c4e75e3431e4845ca471014c11b0fedd07cb09e34c08",
+      "suggestedPublicPath": "/assets/set-xy4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy5",
+      "name": "Primal Clash",
+      "series": "XY",
+      "releaseDate": "2015-02-04",
+      "sourceUrl": "https://images.pokemontcg.io/xy5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy5.webp",
+      "dimensions": [
+        360,
+        120
+      ],
+      "bytes": 19974,
+      "sha256": "1883037f431d784e693596cd3f6cd5d234a6941555bb6fd1910c040578a133aa",
+      "suggestedPublicPath": "/assets/set-xy5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "dc1",
+      "name": "Double Crisis",
+      "series": "XY",
+      "releaseDate": "2015-03-25",
+      "sourceUrl": "https://images.pokemontcg.io/dc1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-dc1.webp",
+      "dimensions": [
+        360,
+        159
+      ],
+      "bytes": 16820,
+      "sha256": "90694d3b664d8bbb71beb8ef98604ca3f6cc1c0d250a493740050981d2f87b35",
+      "suggestedPublicPath": "/assets/set-dc1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy6",
+      "name": "Roaring Skies",
+      "series": "XY",
+      "releaseDate": "2015-05-06",
+      "sourceUrl": "https://images.pokemontcg.io/xy6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy6.webp",
+      "dimensions": [
+        353,
+        160
+      ],
+      "bytes": 20992,
+      "sha256": "83e3347cd3b8918ead1082da1294945c5451467f20528a540b84c333de13e1e1",
+      "suggestedPublicPath": "/assets/set-xy6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy7",
+      "name": "Ancient Origins",
+      "series": "XY",
+      "releaseDate": "2015-08-12",
+      "sourceUrl": "https://images.pokemontcg.io/xy7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy7.webp",
+      "dimensions": [
+        360,
+        152
+      ],
+      "bytes": 25116,
+      "sha256": "1a20c02f96760838f9b1bb36a25211220b8dc815e3045627dc8ae8e06faa2f12",
+      "suggestedPublicPath": "/assets/set-xy7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy8",
+      "name": "BREAKthrough",
+      "series": "XY",
+      "releaseDate": "2015-11-04",
+      "sourceUrl": "https://images.pokemontcg.io/xy8/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy8.webp",
+      "dimensions": [
+        360,
+        124
+      ],
+      "bytes": 15570,
+      "sha256": "87beb46a3fb64bb4521d3693782e5882dea928df4d698b0d363f260834d13603",
+      "suggestedPublicPath": "/assets/set-xy8.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd15",
+      "name": "McDonald's Collection 2015",
+      "series": "Other",
+      "releaseDate": "2015-11-27",
+      "sourceUrl": "https://images.pokemontcg.io/mcd15/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd15.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd15.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy9",
+      "name": "BREAKpoint",
+      "series": "XY",
+      "releaseDate": "2016-02-03",
+      "sourceUrl": "https://images.pokemontcg.io/xy9/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy9.webp",
+      "dimensions": [
+        360,
+        76
+      ],
+      "bytes": 13900,
+      "sha256": "de30a76639f03200f3040f8bb4f8526324efd210252e441ce72e7caa2efc1d34",
+      "suggestedPublicPath": "/assets/set-xy9.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "g1",
+      "name": "Generations",
+      "series": "XY",
+      "releaseDate": "2016-02-22",
+      "sourceUrl": "https://images.pokemontcg.io/g1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-g1.webp",
+      "dimensions": [
+        360,
+        78
+      ],
+      "bytes": 13130,
+      "sha256": "bc7f402df089a8f8829912455077609ad358647bb2964db25a4b8ac0d5278a7d",
+      "suggestedPublicPath": "/assets/set-g1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy10",
+      "name": "Fates Collide",
+      "series": "XY",
+      "releaseDate": "2016-05-02",
+      "sourceUrl": "https://images.pokemontcg.io/xy10/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy10.webp",
+      "dimensions": [
+        360,
+        105
+      ],
+      "bytes": 13870,
+      "sha256": "7e16b906030d17918b7614125696496032c4535c8cd14e9dab64234f737f44a4",
+      "suggestedPublicPath": "/assets/set-xy10.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy11",
+      "name": "Steam Siege",
+      "series": "XY",
+      "releaseDate": "2016-08-03",
+      "sourceUrl": "https://images.pokemontcg.io/xy11/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy11.webp",
+      "dimensions": [
+        360,
+        120
+      ],
+      "bytes": 19884,
+      "sha256": "e3e7cd67e01cab9c0f72fd44266a173f57f64562666f11756dcddc48e9dd3c55",
+      "suggestedPublicPath": "/assets/set-xy11.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd16",
+      "name": "McDonald's Collection 2016",
+      "series": "Other",
+      "releaseDate": "2016-08-19",
+      "sourceUrl": "https://images.pokemontcg.io/mcd16/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd16.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd16.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "xy12",
+      "name": "Evolutions",
+      "series": "XY",
+      "releaseDate": "2016-11-02",
+      "sourceUrl": "https://images.pokemontcg.io/xy12/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-xy12.webp",
+      "dimensions": [
+        360,
+        87
+      ],
+      "bytes": 13156,
+      "sha256": "e542dce85bb3d04a813565d709da8c8415e98790e3859ec658931f3e0a10fd04",
+      "suggestedPublicPath": "/assets/set-xy12.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "series": "Sun & Moon",
+      "releaseDate": "2017-02-03",
+      "sourceUrl": "https://images.pokemontcg.io/sm1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm1.webp",
+      "dimensions": [
+        360,
+        83
+      ],
+      "bytes": 13142,
+      "sha256": "a61ec3d442ca5294a276ff3d5b0868e35a0824c656315b336b27eb44aa379d34",
+      "suggestedPublicPath": "/assets/set-sm1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017-02-03",
+      "sourceUrl": "https://images.pokemontcg.io/smp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-smp.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-smp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm2",
+      "name": "Guardians Rising",
+      "series": "Sun & Moon",
+      "releaseDate": "2017-05-05",
+      "sourceUrl": "https://images.pokemontcg.io/sm2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm2.webp",
+      "dimensions": [
+        360,
+        127
+      ],
+      "bytes": 20068,
+      "sha256": "18cb9478dbc51037c84f69bec5664dd395961c6a48738c1db23ff9c407e641da",
+      "suggestedPublicPath": "/assets/set-sm2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm3",
+      "name": "Burning Shadows",
+      "series": "Sun & Moon",
+      "releaseDate": "2017-08-05",
+      "sourceUrl": "https://images.pokemontcg.io/sm3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm3.webp",
+      "dimensions": [
+        360,
+        125
+      ],
+      "bytes": 22244,
+      "sha256": "d420bc8a4cb322dc0d75f51ad00efac40dc30bbb2117e84f07ee4fe221093204",
+      "suggestedPublicPath": "/assets/set-sm3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm35",
+      "name": "Shining Legends",
+      "series": "Sun & Moon",
+      "releaseDate": "2017-10-06",
+      "sourceUrl": "https://images.pokemontcg.io/sm35/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm35.webp",
+      "dimensions": [
+        360,
+        140
+      ],
+      "bytes": 14574,
+      "sha256": "4c30371e3b05d8367150fe424e8ba1d92e476c613094ab67a3d06099f8f29195",
+      "suggestedPublicPath": "/assets/set-sm35.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm4",
+      "name": "Crimson Invasion",
+      "series": "Sun & Moon",
+      "releaseDate": "2017-11-03",
+      "sourceUrl": "https://images.pokemontcg.io/sm4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm4.webp",
+      "dimensions": [
+        360,
+        141
+      ],
+      "bytes": 24624,
+      "sha256": "2c79412b797848f60538ecd3d4997a06bbd15d72e5ef783ebdd0ab7d6f0d2d2a",
+      "suggestedPublicPath": "/assets/set-sm4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd17",
+      "name": "McDonald's Collection 2017",
+      "series": "Other",
+      "releaseDate": "2017-11-07",
+      "sourceUrl": "https://images.pokemontcg.io/mcd17/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd17.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd17.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm5",
+      "name": "Ultra Prism",
+      "series": "Sun & Moon",
+      "releaseDate": "2018-02-02",
+      "sourceUrl": "https://images.pokemontcg.io/sm5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm5.webp",
+      "dimensions": [
+        360,
+        151
+      ],
+      "bytes": 17154,
+      "sha256": "b3f0272984b2968f3c395dabc37734aff73946b9d1efc882eb9877388160d102",
+      "suggestedPublicPath": "/assets/set-sm5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm6",
+      "name": "Forbidden Light",
+      "series": "Sun & Moon",
+      "releaseDate": "2018-05-04",
+      "sourceUrl": "https://images.pokemontcg.io/sm6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm6.webp",
+      "dimensions": [
+        305,
+        160
+      ],
+      "bytes": 14656,
+      "sha256": "35ea094b1df42c5f729b32b0e74a566ab7598cc85282d029b2b81d3b8af875c3",
+      "suggestedPublicPath": "/assets/set-sm6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm7",
+      "name": "Celestial Storm",
+      "series": "Sun & Moon",
+      "releaseDate": "2018-08-03",
+      "sourceUrl": "https://images.pokemontcg.io/sm7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm7.webp",
+      "dimensions": [
+        331,
+        160
+      ],
+      "bytes": 22170,
+      "sha256": "b466daa00c9764ab8f13fecc93ed6976edab7d937b48021167e228b62d3b9ae0",
+      "suggestedPublicPath": "/assets/set-sm7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm75",
+      "name": "Dragon Majesty",
+      "series": "Sun & Moon",
+      "releaseDate": "2018-09-07",
+      "sourceUrl": "https://images.pokemontcg.io/sm75/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm75.webp",
+      "dimensions": [
+        308,
+        160
+      ],
+      "bytes": 14342,
+      "sha256": "dc843376bbf4530166c5e2d72bb066f46016738f83418ad597f3792bc9151577",
+      "suggestedPublicPath": "/assets/set-sm75.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd18",
+      "name": "McDonald's Collection 2018",
+      "series": "Other",
+      "releaseDate": "2018-10-16",
+      "sourceUrl": "https://images.pokemontcg.io/mcd18/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd18.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd18.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm8",
+      "name": "Lost Thunder",
+      "series": "Sun & Moon",
+      "releaseDate": "2018-11-02",
+      "sourceUrl": "https://images.pokemontcg.io/sm8/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm8.webp",
+      "dimensions": [
+        360,
+        116
+      ],
+      "bytes": 19264,
+      "sha256": "eb8a01b784c939b8fd45326fd7db4ed79e93db819c1e8f406d88df72fd3d46cc",
+      "suggestedPublicPath": "/assets/set-sm8.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm9",
+      "name": "Team Up",
+      "series": "Sun & Moon",
+      "releaseDate": "2019-02-01",
+      "sourceUrl": "https://images.pokemontcg.io/sm9/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm9.webp",
+      "dimensions": [
+        360,
+        133
+      ],
+      "bytes": 14638,
+      "sha256": "2c5a8de154a0d4d913628accb8d8c2666972b5013b6bda87fac166caf83b5b30",
+      "suggestedPublicPath": "/assets/set-sm9.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "series": "Sun & Moon",
+      "releaseDate": "2019-04-05",
+      "sourceUrl": "https://images.pokemontcg.io/det1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-det1.webp",
+      "dimensions": [
+        325,
+        160
+      ],
+      "bytes": 21358,
+      "sha256": "a6a6d136347990f6e357c8f3a5bb9b5923ee46fd8ed37155c653a8bb4f213f5a",
+      "suggestedPublicPath": "/assets/set-det1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm10",
+      "name": "Unbroken Bonds",
+      "series": "Sun & Moon",
+      "releaseDate": "2019-05-03",
+      "sourceUrl": "https://images.pokemontcg.io/sm10/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm10.webp",
+      "dimensions": [
+        360,
+        152
+      ],
+      "bytes": 19800,
+      "sha256": "92a3a0f5b8ecd1d242b6097a16dd07b2ba9a2eba1c247fb6d6290a49161f3dd4",
+      "suggestedPublicPath": "/assets/set-sm10.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm11",
+      "name": "Unified Minds",
+      "series": "Sun & Moon",
+      "releaseDate": "2019-08-02",
+      "sourceUrl": "https://images.pokemontcg.io/sm11/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm11.webp",
+      "dimensions": [
+        344,
+        160
+      ],
+      "bytes": 23838,
+      "sha256": "04e5d94eb5bb39366fe3ee6df6969a02ef79c5c67b5ebacb334842286831e057",
+      "suggestedPublicPath": "/assets/set-sm11.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "series": "Sun & Moon",
+      "releaseDate": "2019-08-23",
+      "sourceUrl": "https://images.pokemontcg.io/sm115/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm115.webp",
+      "dimensions": [
+        350,
+        160
+      ],
+      "bytes": 19798,
+      "sha256": "2fd5b10ebee5ab875db39e19302094ff40a2d92fee0d7857baeeec761ffb0446",
+      "suggestedPublicPath": "/assets/set-sm115.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "series": "Sun & Moon",
+      "releaseDate": "2019-08-23",
+      "sourceUrl": "https://images.pokemontcg.io/sma/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sma.webp",
+      "dimensions": [
+        350,
+        160
+      ],
+      "bytes": 18342,
+      "sha256": "f52061c759a7737cd80c41d029aa3e9aba18225aa4dfa37811b8de4b5bf2c293",
+      "suggestedPublicPath": "/assets/set-sma.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
+      "series": "Other",
+      "releaseDate": "2019-10-15",
+      "sourceUrl": "https://images.pokemontcg.io/mcd19/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd19.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd19.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "series": "Sun & Moon",
+      "releaseDate": "2019-11-01",
+      "sourceUrl": "https://images.pokemontcg.io/sm12/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sm12.webp",
+      "dimensions": [
+        334,
+        160
+      ],
+      "bytes": 19430,
+      "sha256": "2fdfba35d4e10a1b5b03c7badf2cf706a75cecba594db2080035a8d6e58b5745",
+      "suggestedPublicPath": "/assets/set-sm12.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "series": "Sword & Shield",
+      "releaseDate": "2019-11-15",
+      "sourceUrl": "https://images.pokemontcg.io/swshp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swshp.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-swshp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "series": "Sword & Shield",
+      "releaseDate": "2020-02-07",
+      "sourceUrl": "https://images.pokemontcg.io/swsh1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh1.webp",
+      "dimensions": [
+        360,
+        70
+      ],
+      "bytes": 11762,
+      "sha256": "1ef1aefdbfbb64fb92b238dcaa39c4eb6e16a0623fccda786f89706222726a5c",
+      "suggestedPublicPath": "/assets/set-swsh1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "series": "Sword & Shield",
+      "releaseDate": "2020-05-01",
+      "sourceUrl": "https://images.pokemontcg.io/swsh2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh2.webp",
+      "dimensions": [
+        360,
+        121
+      ],
+      "bytes": 20116,
+      "sha256": "eb50fdd122fc621f79225ce776ea8586f20817365492c374c7e34b013574310d",
+      "suggestedPublicPath": "/assets/set-swsh2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "series": "Sword & Shield",
+      "releaseDate": "2020-08-14",
+      "sourceUrl": "https://images.pokemontcg.io/swsh3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh3.webp",
+      "dimensions": [
+        360,
+        97
+      ],
+      "bytes": 12682,
+      "sha256": "f230dc87b74805437ac365b05b5ef1daeec9d10ca28775e980866a7f93f2f4c4",
+      "suggestedPublicPath": "/assets/set-swsh3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "fut20",
+      "name": "Pok\u00e9mon Futsal Collection",
+      "series": "Other",
+      "releaseDate": "2020-09-11",
+      "sourceUrl": "https://images.pokemontcg.io/fut20/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-fut20.webp",
+      "dimensions": [
+        120,
+        160
+      ],
+      "bytes": 11014,
+      "sha256": "c844809a1a026c863873f0a6487cb8695f13f708432c7c52def2bfc208b13535",
+      "suggestedPublicPath": "/assets/set-fut20.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh35",
+      "name": "Champion's Path",
+      "series": "Sword & Shield",
+      "releaseDate": "2020-09-25",
+      "sourceUrl": "https://images.pokemontcg.io/swsh35/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh35.webp",
+      "dimensions": [
+        360,
+        132
+      ],
+      "bytes": 22970,
+      "sha256": "513381967f4378d898eead74c7b99555e5d1b40e16d61e081c0fe8856e70a696",
+      "suggestedPublicPath": "/assets/set-swsh35.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "series": "Sword & Shield",
+      "releaseDate": "2020-11-13",
+      "sourceUrl": "https://images.pokemontcg.io/swsh4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh4.webp",
+      "dimensions": [
+        360,
+        143
+      ],
+      "bytes": 22140,
+      "sha256": "a4ec6028cc079865726544558b7803e9a2ccf491e213cfac787e8d835fe95b64",
+      "suggestedPublicPath": "/assets/set-swsh4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh45",
+      "name": "Shining Fates",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-02-19",
+      "sourceUrl": "https://images.pokemontcg.io/swsh45/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh45.webp",
+      "dimensions": [
+        323,
+        160
+      ],
+      "bytes": 25124,
+      "sha256": "4f79aec8d5467eb3b9aa268ed71a1e0a080fb82d22102e140837086e4a8fad20",
+      "suggestedPublicPath": "/assets/set-swsh45.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-02-19",
+      "sourceUrl": "https://images.pokemontcg.io/swsh45sv/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh45sv.webp",
+      "dimensions": [
+        323,
+        160
+      ],
+      "bytes": 25124,
+      "sha256": "4f79aec8d5467eb3b9aa268ed71a1e0a080fb82d22102e140837086e4a8fad20",
+      "suggestedPublicPath": "/assets/set-swsh45sv.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh5",
+      "name": "Battle Styles",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-03-19",
+      "sourceUrl": "https://images.pokemontcg.io/swsh5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh5.webp",
+      "dimensions": [
+        360,
+        119
+      ],
+      "bytes": 22604,
+      "sha256": "11cdfe026c10e0b18ba43ced22682a9767687f95bba31e6d5bdc5a3243b83dcc",
+      "suggestedPublicPath": "/assets/set-swsh5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh6",
+      "name": "Chilling Reign",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-06-18",
+      "sourceUrl": "https://images.pokemontcg.io/swsh6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh6.webp",
+      "dimensions": [
+        300,
+        160
+      ],
+      "bytes": 21810,
+      "sha256": "756eefa1a697bbd857846bdf17a6a0f47c7239f07ec9691729dba82b70d466c8",
+      "suggestedPublicPath": "/assets/set-swsh6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh7",
+      "name": "Evolving Skies",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-08-27",
+      "sourceUrl": "https://images.pokemontcg.io/swsh7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh7.webp",
+      "dimensions": [
+        360,
+        144
+      ],
+      "bytes": 21386,
+      "sha256": "0b4e10cdadeb3e732a5a632b7066a45bd74a97cab7e66bd7170e7b0e8973e2ec",
+      "suggestedPublicPath": "/assets/set-swsh7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd21",
+      "name": "McDonald's Collection 2021",
+      "series": "Other",
+      "releaseDate": "2021-02-09",
+      "sourceUrl": "https://images.pokemontcg.io/mcd21/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd21.webp",
+      "dimensions": [
+        163,
+        160
+      ],
+      "bytes": 10110,
+      "sha256": "886726abef092c19337dcc6667fed9096910d47024891a8b571a4fdc86de7925",
+      "suggestedPublicPath": "/assets/set-mcd21.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "cel25",
+      "name": "Celebrations",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-10-08",
+      "sourceUrl": "https://images.pokemontcg.io/cel25/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-cel25.webp",
+      "dimensions": [
+        360,
+        84
+      ],
+      "bytes": 16078,
+      "sha256": "995c618fba1e98741f0fe3802c53990028485da11a47794e78d4c306cba28ee9",
+      "suggestedPublicPath": "/assets/set-cel25.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "cel25c",
+      "name": "Celebrations: Classic Collection",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-10-08",
+      "sourceUrl": "https://images.pokemontcg.io/cel25c/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-cel25c.webp",
+      "dimensions": [
+        360,
+        84
+      ],
+      "bytes": 16078,
+      "sha256": "995c618fba1e98741f0fe3802c53990028485da11a47794e78d4c306cba28ee9",
+      "suggestedPublicPath": "/assets/set-cel25c.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "series": "Sword & Shield",
+      "releaseDate": "2021-11-12",
+      "sourceUrl": "https://images.pokemontcg.io/swsh8/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh8.webp",
+      "dimensions": [
+        360,
+        146
+      ],
+      "bytes": 26772,
+      "sha256": "83a9d90c6cc1e8f567cb0f0fdde13d16a605875f061a8aed190197b7f416fa94",
+      "suggestedPublicPath": "/assets/set-swsh8.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh9",
+      "name": "Brilliant Stars",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-02-25",
+      "sourceUrl": "https://images.pokemontcg.io/swsh9/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh9.webp",
+      "dimensions": [
+        360,
+        149
+      ],
+      "bytes": 26176,
+      "sha256": "a1a755475402094363011dd6db2e77139a54843cbf28d2e530fb02dbf77b483b",
+      "suggestedPublicPath": "/assets/set-swsh9.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-02-25",
+      "sourceUrl": "https://images.pokemontcg.io/swsh9tg/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh9tg.webp",
+      "dimensions": [
+        360,
+        149
+      ],
+      "bytes": 26176,
+      "sha256": "a1a755475402094363011dd6db2e77139a54843cbf28d2e530fb02dbf77b483b",
+      "suggestedPublicPath": "/assets/set-swsh9tg.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh10",
+      "name": "Astral Radiance",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-05-27",
+      "sourceUrl": "https://images.pokemontcg.io/swsh10/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh10.webp",
+      "dimensions": [
+        360,
+        133
+      ],
+      "bytes": 17862,
+      "sha256": "6023c9168967d8d362dbc4df4a81b90712a5b65c327c122ac70629c1a2bd11f8",
+      "suggestedPublicPath": "/assets/set-swsh10.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-05-27",
+      "sourceUrl": "https://images.pokemontcg.io/swsh10tg/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh10tg.webp",
+      "dimensions": [
+        360,
+        133
+      ],
+      "bytes": 17862,
+      "sha256": "6023c9168967d8d362dbc4df4a81b90712a5b65c327c122ac70629c1a2bd11f8",
+      "suggestedPublicPath": "/assets/set-swsh10tg.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "pgo",
+      "name": "Pok\u00e9mon GO",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-07-01",
+      "sourceUrl": "https://images.pokemontcg.io/pgo/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-pgo.webp",
+      "dimensions": [
+        220,
+        137
+      ],
+      "bytes": 13080,
+      "sha256": "4445bd5832c53bb61f847250382cc2087d49a56b50c418f6933ed8856b2aaeea",
+      "suggestedPublicPath": "/assets/set-pgo.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "mcd22",
+      "name": "McDonald's Collection 2022",
+      "series": "Other",
+      "releaseDate": "2022-08-03",
+      "sourceUrl": "https://images.pokemontcg.io/mcd22/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-mcd22.webp",
+      "dimensions": [
+        360,
+        123
+      ],
+      "bytes": 11058,
+      "sha256": "8a448401b6ed73e53c3c62fce74412146040135b3bc31c739a154e423720c231",
+      "suggestedPublicPath": "/assets/set-mcd22.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-09-09",
+      "sourceUrl": "https://images.pokemontcg.io/swsh11/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh11.webp",
+      "dimensions": [
+        360,
+        139
+      ],
+      "bytes": 17560,
+      "sha256": "dd998bf8f6f935d5fcba8f43ca1c31aa8dc9e1c131df8d11e38500215550702d",
+      "suggestedPublicPath": "/assets/set-swsh11.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-09-09",
+      "sourceUrl": "https://images.pokemontcg.io/swsh11tg/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh11tg.webp",
+      "dimensions": [
+        360,
+        139
+      ],
+      "bytes": 17560,
+      "sha256": "dd998bf8f6f935d5fcba8f43ca1c31aa8dc9e1c131df8d11e38500215550702d",
+      "suggestedPublicPath": "/assets/set-swsh11tg.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh12",
+      "name": "Silver Tempest",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-11-11",
+      "sourceUrl": "https://images.pokemontcg.io/swsh12/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh12.webp",
+      "dimensions": [
+        341,
+        160
+      ],
+      "bytes": 21528,
+      "sha256": "951aee5ce55e21c5e5eb88aa53660c5546006f8fefcbc79b11526b49a6cc8709",
+      "suggestedPublicPath": "/assets/set-swsh12.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
+      "series": "Sword & Shield",
+      "releaseDate": "2022-11-11",
+      "sourceUrl": "https://images.pokemontcg.io/swsh12tg/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh12tg.webp",
+      "dimensions": [
+        341,
+        160
+      ],
+      "bytes": 21528,
+      "sha256": "951aee5ce55e21c5e5eb88aa53660c5546006f8fefcbc79b11526b49a6cc8709",
+      "suggestedPublicPath": "/assets/set-swsh12tg.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh12pt5",
+      "name": "Crown Zenith",
+      "series": "Sword & Shield",
+      "releaseDate": "2023-01-20",
+      "sourceUrl": "https://images.pokemontcg.io/swsh12pt5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh12pt5.webp",
+      "dimensions": [
+        360,
+        136
+      ],
+      "bytes": 14910,
+      "sha256": "2bb1fb812a9820f0e71aaf17d9438b3f16451666c495b459adda861ae32cf6c0",
+      "suggestedPublicPath": "/assets/set-swsh12pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "swsh12pt5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "series": "Sword & Shield",
+      "releaseDate": "2023-01-20",
+      "sourceUrl": "https://images.pokemontcg.io/swsh12pt5gg/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-swsh12pt5gg.webp",
+      "dimensions": [
+        360,
+        136
+      ],
+      "bytes": 14910,
+      "sha256": "2bb1fb812a9820f0e71aaf17d9438b3f16451666c495b459adda861ae32cf6c0",
+      "suggestedPublicPath": "/assets/set-swsh12pt5gg.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023-01-01",
+      "sourceUrl": "https://images.pokemontcg.io/svp/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-svp.webp",
+      "dimensions": [
+        177,
+        160
+      ],
+      "bytes": 8182,
+      "sha256": "416b226f3967a239a1e4ff528f13c20cd9ce03436d403cd6c66065162bbd10c9",
+      "suggestedPublicPath": "/assets/set-svp.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sve",
+      "name": "Scarlet & Violet Energies",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023-03-31",
+      "sourceUrl": "https://images.pokemontcg.io/sve/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sve.webp",
+      "dimensions": [
+        312,
+        160
+      ],
+      "bytes": 19684,
+      "sha256": "3f80f001936c5396a3fb35c9cea0d018c54ee0f0f61f4c6f6913a8822c998336",
+      "suggestedPublicPath": "/assets/set-sve.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023-03-31",
+      "sourceUrl": "https://images.pokemontcg.io/sv1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv1.webp",
+      "dimensions": [
+        360,
+        104
+      ],
+      "bytes": 19096,
+      "sha256": "0ef9ff9e07c0f74bbb64a15006a0b09101dfbf0bbbdfb35f1dbc67526909cdc4",
+      "suggestedPublicPath": "/assets/set-sv1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023-06-09",
+      "sourceUrl": "https://images.pokemontcg.io/sv2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv2.webp",
+      "dimensions": [
+        360,
+        118
+      ],
+      "bytes": 22790,
+      "sha256": "6d82944bf07ce866383464fba1471187e10fea2a5438ee5ce947827c440993e0",
+      "suggestedPublicPath": "/assets/set-sv2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv3",
+      "name": "Obsidian Flames",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023-08-11",
+      "sourceUrl": "https://images.pokemontcg.io/sv3/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv3.webp",
+      "dimensions": [
+        360,
+        149
+      ],
+      "bytes": 18752,
+      "sha256": "b74599ec92593926edcf06694b55daea4d66dea8c6a8a6089c9eeec2aec839e8",
+      "suggestedPublicPath": "/assets/set-sv3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv3pt5",
+      "name": "151",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023-09-22",
+      "sourceUrl": "https://images.pokemontcg.io/sv3pt5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv3pt5.webp",
+      "dimensions": [
+        211,
+        160
+      ],
+      "bytes": 11690,
+      "sha256": "a409d201dbb57078f52c4e5c513132f6cca47d39e9a676975384a104468a24f8",
+      "suggestedPublicPath": "/assets/set-sv3pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv4",
+      "name": "Paradox Rift",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023-11-03",
+      "sourceUrl": "https://images.pokemontcg.io/sv4/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv4.webp",
+      "dimensions": [
+        360,
+        120
+      ],
+      "bytes": 21458,
+      "sha256": "f8edf8b90f8237901d90699ee40f5bbde6eb361e98a01e68bf773cbb1cded8c9",
+      "suggestedPublicPath": "/assets/set-sv4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024-01-26",
+      "sourceUrl": "https://images.pokemontcg.io/sv4pt5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv4pt5.webp",
+      "dimensions": [
+        292,
+        160
+      ],
+      "bytes": 23578,
+      "sha256": "fd6d896a15dc7d281c7c7e381faad6c7d24a2b18b0eef165facd1c6e69d3c30a",
+      "suggestedPublicPath": "/assets/set-sv4pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv5",
+      "name": "Temporal Forces",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024-03-22",
+      "sourceUrl": "https://images.pokemontcg.io/sv5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv5.webp",
+      "dimensions": [
+        360,
+        143
+      ],
+      "bytes": 18418,
+      "sha256": "d4d51ba1f8209f577fd76ece0bcbe4b53c9547c40b474213621b0f5a293a7a6a",
+      "suggestedPublicPath": "/assets/set-sv5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv6",
+      "name": "Twilight Masquerade",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024-05-24",
+      "sourceUrl": "https://images.pokemontcg.io/sv6/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv6.webp",
+      "dimensions": [
+        360,
+        154
+      ],
+      "bytes": 28056,
+      "sha256": "39740c82177661bc465fdb6aa85524cc44119283976579e84900f83d34f22f39",
+      "suggestedPublicPath": "/assets/set-sv6.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024-08-02",
+      "sourceUrl": "https://images.pokemontcg.io/sv6pt5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv6pt5.webp",
+      "dimensions": [
+        341,
+        160
+      ],
+      "bytes": 22998,
+      "sha256": "e482cae204ecb3685cd1c37b2cf177639c0ad93bae91527b13144d71d2894ab5",
+      "suggestedPublicPath": "/assets/set-sv6pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv7",
+      "name": "Stellar Crown",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024-09-13",
+      "sourceUrl": "https://images.pokemontcg.io/sv7/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv7.webp",
+      "dimensions": [
+        360,
+        133
+      ],
+      "bytes": 24648,
+      "sha256": "833e79561f924f22ba98f7fc8cc37892239e5ac2a814293521f9e94ba448d2fb",
+      "suggestedPublicPath": "/assets/set-sv7.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024-11-08",
+      "sourceUrl": "https://images.pokemontcg.io/sv8/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv8.webp",
+      "dimensions": [
+        360,
+        159
+      ],
+      "bytes": 28602,
+      "sha256": "5287cc62aae76e9f77c961f7e86d22f19b1d296d50decb814e5df4b98bf63e35",
+      "suggestedPublicPath": "/assets/set-sv8.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025-01-17",
+      "sourceUrl": "https://images.pokemontcg.io/sv8pt5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv8pt5.webp",
+      "dimensions": [
+        345,
+        160
+      ],
+      "bytes": 22942,
+      "sha256": "e3f42346d87df933f8651f20748c40b2d0c02b4e2861b958fe7d924c2f627f59",
+      "suggestedPublicPath": "/assets/set-sv8pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv9",
+      "name": "Journey Together",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025-03-28",
+      "sourceUrl": "https://images.pokemontcg.io/sv9/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv9.webp",
+      "dimensions": [
+        360,
+        113
+      ],
+      "bytes": 20362,
+      "sha256": "eb1477f1f0be45901a0a24817c10bab614cbc07ecf8174cc382139797ee3e24b",
+      "suggestedPublicPath": "/assets/set-sv9.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "sv10",
+      "name": "Destined Rivals",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025-05-30",
+      "sourceUrl": "https://images.pokemontcg.io/sv10/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-sv10.webp",
+      "dimensions": [
+        360,
+        135
+      ],
+      "bytes": 18714,
+      "sha256": "98e9561f2b9bd9357eef1409e99f54caf806f28022f76615b9467ebe0428dfe6",
+      "suggestedPublicPath": "/assets/set-sv10.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025-07-18",
+      "sourceUrl": "https://images.pokemontcg.io/zsv10pt5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-zsv10pt5.webp",
+      "dimensions": [
+        255,
+        160
+      ],
+      "bytes": 16666,
+      "sha256": "b6c22a174b80feb0bb8c04ea5efa8f5b4587f94df65f74d7849e21b93cde075f",
+      "suggestedPublicPath": "/assets/set-zsv10pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "rsv10pt5",
+      "name": "White Flare",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025-07-18",
+      "sourceUrl": "https://images.pokemontcg.io/rsv10pt5/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-rsv10pt5.webp",
+      "dimensions": [
+        263,
+        160
+      ],
+      "bytes": 17398,
+      "sha256": "c94ae0679a9e70b3c909ee4e7e0e89ec37448dbc964e2ad32ad8731092674820",
+      "suggestedPublicPath": "/assets/set-rsv10pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "me1",
+      "name": "Mega Evolution",
+      "series": "Mega Evolution",
+      "releaseDate": "2025-09-26",
+      "sourceUrl": "https://images.pokemontcg.io/me1/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-me1.webp",
+      "dimensions": [
+        360,
+        73
+      ],
+      "bytes": 13152,
+      "sha256": "501e082251dbb83895eca5f5fdee5ee3bc62b56cfa18dd5f97086ba7b6569f88",
+      "suggestedPublicPath": "/assets/set-me1.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "me2",
+      "name": "Phantasmal Flames",
+      "series": "Mega Evolution",
+      "releaseDate": "2025-11-14",
+      "sourceUrl": "https://images.pokemontcg.io/me2/logo.png",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-me2.webp",
+      "dimensions": [
+        347,
+        150
+      ],
+      "bytes": 24050,
+      "sha256": "45081f86c332b8de95fb6a2c11e9f43c39ae31ef977494ce8bba64b11f1b6d61",
+      "suggestedPublicPath": "/assets/set-me2.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "me2pt5",
+      "name": "Ascended Heroes",
+      "series": "Mega Evolution",
+      "releaseDate": "2026-01-30",
+      "sourceUrl": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-me2pt5.webp",
+      "dimensions": [
+        278,
+        140
+      ],
+      "bytes": 16222,
+      "sha256": "96adc61841edd0dd59dacd32a1bf4d67e38c22809f30f25486b744eec9220ac6",
+      "suggestedPublicPath": "/assets/set-me2pt5.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "me3",
+      "name": "Perfect Order",
+      "series": "Mega Evolution",
+      "releaseDate": "2026-03-27",
+      "sourceUrl": "https://images.scrydex.com/pokemon/me3-logo/logo",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-me3.webp",
+      "dimensions": [
+        314,
+        140
+      ],
+      "bytes": 14472,
+      "sha256": "f366ca72a3396d642261acf83ecbc97eada77fe759300513fd9622167210387f",
+      "suggestedPublicPath": "/assets/set-me3.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "me4",
+      "name": "Chaos Rising",
+      "series": "Mega Evolution",
+      "releaseDate": "2026-05-22",
+      "sourceUrl": "https://images.scrydex.com/pokemon/me4-logo/logo",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-me4.webp",
+      "dimensions": [
+        360,
+        121
+      ],
+      "bytes": 22676,
+      "sha256": "44aa0d52d22bbdc69e4336ade5c1a1dd543671ebb00f638fd0c6927bad8079d2",
+      "suggestedPublicPath": "/assets/set-me4.webp"
+    },
+    {
+      "kind": "set-logo",
+      "id": "me5",
+      "name": "Pitch Black",
+      "series": "Mega Evolution",
+      "releaseDate": "2026-07-17",
+      "sourceUrl": "https://images.scrydex.com/pokemon/me5-logo/logo",
+      "metadataSourceUrl": "https://github.com/PokemonTCG/pokemon-tcg-data/blob/master/sets/en.json",
+      "source": "English set logo URL from the complete 174-entry MonDex public set catalog snapshot dated 2026-09-11.",
+      "available": true,
+      "httpStatus": 200,
+      "filename": "set-me5.webp",
+      "dimensions": [
+        360,
+        119
+      ],
+      "bytes": 18850,
+      "sha256": "384fa2c78adb91382287a0117a5080f4907fd42eea2052d6fd872731a4c079bb",
+      "suggestedPublicPath": "/assets/set-me5.webp"
+    }
+  ]
+}

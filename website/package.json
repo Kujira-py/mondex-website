@@ -1,0 +1,43 @@
+{
+  "name": "mondex-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "python3 -m http.server 3101 --bind 127.0.0.1 --directory out",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write src scripts",
+    "qa:browser": "node scripts/verify-v2.mjs",
+    "qa:corrections": "node scripts/verify-corrections.mjs",
+    "qa:record": "node scripts/record-v2.mjs",
+    "qa:language": "node scripts/verify-language.mjs",
+    "qa:refinement": "node scripts/verify-refinement.mjs",
+    "qa:motion": "node scripts/verify-motion.mjs",
+    "build:pages": "next build && node scripts/prepare-pages.mjs",
+    "verify:pages": "node scripts/verify-pages.mjs"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "gsap": "^3.15.0",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.186.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "prettier": "3.9.8",
+    "typescript": "^5"
+  }
+}
