@@ -1,6 +1,8 @@
 import { chromium, expect } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
-const out = 'qa/orbit-loop';
+const openingOnly = process.env.OPENING_ONLY === '1';
+const origin = process.env.REVIEW_ORIGIN || 'http://127.0.0.1:3101';
+const out = openingOnly ? 'qa/opening-float' : 'qa/orbit-loop';
 await mkdir(out, { recursive: true });
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 const report = [];
@@ -41,7 +43,7 @@ try {
         onCommitFiberUnmount() {},
       };
     });
-    await page.goto('http://127.0.0.1:3101/');
+    await page.goto(origin);
     await page.waitForSelector('.scene-ready');
     await page.waitForTimeout(800);
     await page.evaluate(() => {
@@ -84,8 +86,25 @@ try {
             [-1.18, 1.18].flatMap((x) => [-1.645, 1.645].map((y) => [x, y, 0.03])),
           ),
         );
+        const models = Array.from({ length: 5 }, (_, i) =>
+          scene.getObjectByName(`product-card-${i}`),
+        );
+        const depth = models.map((card) => {
+          const m = card.matrixWorld.elements;
+          const half =
+            (Math.abs(m[2]) * 2.355) / 2 +
+            (Math.abs(m[6]) * 3.29) / 2 +
+            (Math.abs(m[10]) * 0.06) / 2;
+          return { min: m[14] - half, max: m[14] + half };
+        });
+        const order = [0, 4, 1, 3, 2];
         return {
           orbit,
+          cardY: models.map((card) => card.position.y),
+          cardTop: Math.min(...cards.map((card) => card.top)),
+          copyBottom: document.querySelector('.chapter-0 .chapter-copy').getBoundingClientRect()
+            .bottom,
+          depthGap: Math.min(...order.slice(1).map((id, i) => depth[id].min - depth[order[i]].max)),
           rotation: logo.rotation.toArray().slice(0, 3),
           y: logo.position.y,
           clearance: Math.min(
@@ -102,12 +121,41 @@ try {
         };
       };
     });
-    const idle = await page.evaluate(() => window.__snapshot());
-    await page.waitForTimeout(450);
-    expect((await page.evaluate(() => window.__snapshot())).draws).toBe(idle.draws);
-    record.openingStill = true;
-    await page.screenshot({ path: `${out}/${width}-opening.png` });
-    for (const [i, target] of ['#reise', '#ankommen', '#ueberblick'].entries()) {
+    const opening = [];
+    for (let n = 0; n < 25; n++) {
+      opening.push(await page.evaluate(() => window.__snapshot()));
+      if (n === 0 || n === 12 || n === 24)
+        await page.screenshot({ path: `${out}/${width}-opening-${n}.png` });
+      await page.waitForTimeout(500);
+    }
+    const range = (values) => Math.max(...values) - Math.min(...values);
+    record.openingFloat = {
+      logoPixels: range(opening.map((s) => s.orbit.top)),
+      cardPixels: range(opening.map((s) => s.cardTop)),
+      minimumDepthGap: Math.min(...opening.map((s) => s.depthGap)),
+      textGap: Math.min(...opening.map((s) => s.cardTop - s.copyBottom)),
+    };
+    expect(record.openingFloat.logoPixels).toBeGreaterThan(2);
+    expect(record.openingFloat.logoPixels).toBeLessThan(25);
+    expect(record.openingFloat.cardPixels).toBeGreaterThan(2);
+    expect(record.openingFloat.cardPixels).toBeLessThan(20);
+    expect(record.openingFloat.minimumDepthGap).toBeGreaterThanOrEqual(0.1199);
+    expect(record.openingFloat.textGap).toBeGreaterThan(10);
+    // The fan follows the same vertical rhythm as the logo, rather than unrelated bobbing.
+    const logo = opening.map((s) => s.y),
+      card = opening.map((s) => s.cardY[2]);
+    const mean = (list) => list.reduce((a, b) => a + b, 0) / list.length;
+    const a = logo.map((v) => v - mean(logo)),
+      b = card.map((v) => v - mean(card));
+    const correlation =
+      a.reduce((sum, v, i) => sum + v * b[i], 0) /
+      Math.sqrt(a.reduce((sum, v) => sum + v * v, 0) * b.reduce((sum, v) => sum + v * v, 0));
+    expect(correlation).toBeGreaterThan(0.98);
+    record.openingFloat.correlation = correlation;
+    for (const [i, target] of (openingOnly
+      ? []
+      : ['#reise', '#ankommen', '#ueberblick']
+    ).entries()) {
       await page.evaluate((hash) => {
         location.hash = hash;
       }, target);
@@ -169,6 +217,7 @@ try {
     console.log(
       JSON.stringify({
         width,
+        opening: record.openingFloat,
         gap: record.gap,
         clearance: record.chapters.map((c) => c.minClearance),
         yawRange: record.chapters.map((c) => c.yawRange),
@@ -183,7 +232,7 @@ try {
     viewport: { width: 390, height: 844 },
     reducedMotion: 'reduce',
   });
-  await reduced.goto('http://127.0.0.1:3101/');
+  await reduced.goto(origin);
   await expect(reduced.locator('.showcase')).toHaveClass(/is-static/);
   await expect(reduced.locator('.scene-canvas')).toHaveCount(0);
   report.push({ reducedMotionStatic: true });

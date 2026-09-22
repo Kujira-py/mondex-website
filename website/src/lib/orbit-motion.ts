@@ -63,5 +63,9 @@ export function orbitPose(progress: number, mobile: boolean, seconds = 0): CardP
   pose.rx += breath.lift * 0.12;
   pose.ry += breath.sway * 0.34;
   pose.rz += breath.sway * 0.2;
+  // The opening mark stays behind the fan and gently rises with the same air current.
+  pose.y += breath.float * (mobile ? 0.11 : 0.13);
+  pose.rx += breath.float * 0.025;
+  pose.rz += breath.float * 0.014;
   return pose;
 }

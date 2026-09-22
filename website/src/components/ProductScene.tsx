@@ -5,7 +5,6 @@ import { Suspense, useEffect, useMemo, useRef, type RefObject } from 'react';
 import { Canvas, useFrame, useThree, type ThreeEvent } from '@react-three/fiber';
 import { Environment, Lightformer, RoundedBox, useTexture } from '@react-three/drei';
 import { orbitPose } from '@/lib/orbit-motion';
-import { sharedStageAmount } from '@/lib/shared-stage';
 import { ensembleMotion } from '@/lib/ensemble-motion';
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader.js';
 import * as THREE from 'three';
@@ -234,7 +233,6 @@ function Orbit({
     )
       return;
     const c = controller.current;
-    const moving = sharedStageAmount(c.progress) > 0.001;
     const p = orbitPose(c.progress, size.width < 1001, motionTime.current);
     // Match the cards' damped follow-through, including pointer movement and reversed scroll.
     const alpha = 1 - Math.exp(-Math.min(dt, 0.04) * 9);
@@ -253,7 +251,8 @@ function Orbit({
     g.position.set(next[0], next[1], next[2]);
     g.rotation.set(next[3], next[4], next[5]);
     g.scale.set(next[6], -next[6], next[6]);
-    if (moving || current.some((value, i) => Math.abs(value - target[i]) > 0.0002)) invalidate();
+    // Both the opening float and later chapter motion run only while visible and enabled.
+    invalidate();
   });
   const initial = orbitPose(0, size.width < 1001);
   return (
@@ -345,7 +344,7 @@ function World({ controller, onReady, onSelect, onFailure }: Props) {
     const c = controller.current;
     if (!c.motionEnabled || !c.visible || document.hidden) return;
     const mobile = size.width < 1001;
-    if (sharedStageAmount(c.progress) > 0.001) motionTime.current += Math.min(dt, 0.05);
+    if (readyFrames.current >= 3) motionTime.current += Math.min(dt, 0.05);
     const breath = ensembleMotion(c.progress, motionTime.current);
     const alpha = 1 - Math.exp(-Math.min(dt, 0.04) * 9);
     const targets = Array.from({ length: 5 }, (_, index) => {
@@ -378,6 +377,8 @@ function World({ controller, onReady, onSelect, onFailure }: Props) {
       target.x -= breath.sway * (mobile ? 0.025 : 0.045);
       target.y += breath.lift * (mobile ? 0.045 : 0.07);
       target.rz -= breath.sway * 0.008;
+      target.y += breath.float * (mobile ? 0.075 : 0.09);
+      target.rx += breath.float * 0.009;
       target.x += c.pointer.x * (mobile ? 0.04 : 0.15);
       target.y += c.pointer.y * 0.07;
       return target;
