@@ -7,8 +7,9 @@ import { homeCopy } from './copy';
 import { HeroScan } from './HeroScan';
 import { DexWave } from './DexWave';
 import { Shelf } from './Shelf';
+import { Openings } from './Openings';
 import { attachDepth } from './depth';
-import { Collection, Faq, Phone, Reveal, Title, Waitlist } from './Sections';
+import { Collection, Faq, Note, Phone, Reveal, Title, Waitlist } from './Sections';
 
 export default function Home() {
   const { locale } = useLanguage();
@@ -93,10 +94,13 @@ export default function Home() {
             <p className="mx-lead">{c.scan.body}</p>
           </Reveal>
           <ul className="mx-facts">
-            {c.scan.facts.map(([title, text]) => (
+            {c.scan.facts.map(([title, text, note]) => (
               <Reveal as="li" key={title} depth>
                 <b>{title}</b>
-                <span>{text}</span>
+                <span>
+                  {text}
+                  {note ? <Note n={note} /> : null}
+                </span>
               </Reveal>
             ))}
           </ul>
@@ -135,10 +139,24 @@ export default function Home() {
           <Collection c={c.collection} />
         </section>
 
+        <section className="mx-section mx-openings" id="openings">
+          <div className="mx-openings-grid">
+            <Reveal className="mx-section-head">
+              <p className="mx-eyebrow">{c.openings.eyebrow}</p>
+              <Title lines={c.openings.title} />
+              <p className="mx-lead">{c.openings.body}</p>
+            </Reveal>
+            <Openings c={c.openings} />
+          </div>
+        </section>
+
         <section className="mx-section mx-gallery">
           <Reveal className="mx-section-head">
             <p className="mx-eyebrow">{c.gallery.eyebrow}</p>
-            <h2 className="mx-title">{c.gallery.title}</h2>
+            <h2 className="mx-title">
+              {c.gallery.title}
+              <Note n={3} />
+            </h2>
           </Reveal>
           <div className="mx-shots">
             {(['home', 'dex', 'cards', 'card'] as const).map((shot, i) => (
@@ -178,6 +196,13 @@ export default function Home() {
             <a href="/impressum/">{c.footer.imprint}</a>
           </nav>
         </div>
+        <ol className="mx-notes">
+          {c.footer.notes.map((note, i) => (
+            <li key={note} id={`note-${i + 1}`}>
+              {note}
+            </li>
+          ))}
+        </ol>
         <p className="mx-legal">
           © {new Date().getFullYear()} MonDex. {c.footer.legal}
         </p>

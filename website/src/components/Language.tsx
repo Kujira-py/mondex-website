@@ -1,14 +1,20 @@
 'use client';
 
-import { createContext, useContext, useEffect, useSyncExternalStore, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useSyncExternalStore, type ReactNode } from 'react';
+import { useRouter } from 'next/navigation';
 import { localeCookie, messages, resolveLocale, type Locale, type Messages } from '@/lib/messages';
 
 // A device-local preference for the statically hosted website.
 let sessionLocale: Locale | undefined;
 const languageEvent = 'mondex-language-change';
+// The home page exists twice, at / and /de/, so search engines can index
+// both languages; there the path decides. Other pages switch in place.
+const germanHome = () => /^\/de\/?$/.test(window.location.pathname);
+const englishHome = () => window.location.pathname === '/';
 function readLocale(): Locale {
   if (sessionLocale) return sessionLocale;
   try {
+    if (germanHome()) return 'de';
     const requested = new URLSearchParams(window.location.search).get('lang');
     if (requested === 'de' || requested === 'en') return requested;
     const value = document.cookie
@@ -38,17 +44,23 @@ export function LanguageProvider({
   children: ReactNode;
   initialLocale: Locale;
 }) {
+  const router = useRouter();
   const locale = useSyncExternalStore(subscribe, readLocale, () => initialLocale);
   const copy = messages[locale];
-  function setLocale(next: Locale) {
+  const setLocale = useCallback((next: Locale) => {
     sessionLocale = next;
     try {
       document.cookie = `${localeCookie}=${next}; Path=/; Max-Age=31536000; SameSite=Lax${location.protocol === 'https:' ? '; Secure' : ''}`;
     } catch {
       // The current page still switches if the browser blocks preference storage.
     }
+    const query = new URLSearchParams(window.location.search);
+    query.delete('lang');
+    const tail = (query.size ? `?${query}` : '') + window.location.hash;
+    if (next === 'de' && englishHome()) router.push(`/de/${tail}`);
+    else if (next === 'en' && germanHome()) router.push(`/${tail}`);
     window.dispatchEvent(new Event(languageEvent));
-  }
+  }, [router]);
   useEffect(() => {
     document.documentElement.lang = locale;
     const url = new URL(window.location.href);
@@ -58,7 +70,7 @@ export function LanguageProvider({
       url.searchParams.delete('lang');
       window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
     }
-  }, [locale]);
+  }, [locale, setLocale]);
   return (
     <LanguageContext.Provider value={{ locale, copy, setLocale }}>
       {children}
