@@ -2,6 +2,7 @@ import { type Metadata } from 'next';
 import Home from '@/home/Home';
 import { homeCopy } from '@/home/copy';
 import '@/home/home.css';
+import '@/home/hero.css';
 
 const { title, description } = homeCopy.en.meta;
 export const metadata: Metadata = {

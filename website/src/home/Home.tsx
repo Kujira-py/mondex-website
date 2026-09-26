@@ -1,12 +1,13 @@
 'use client';
 // mondextcg.com: the Pokédex leads. Six sections, one moment each.
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Brand } from '@/components/Primitives';
 import { LanguageSwitch, useLanguage } from '@/components/Language';
 import { homeCopy } from './copy';
 import { HeroScan } from './HeroScan';
 import { DexWave } from './DexWave';
 import { Shelf } from './Shelf';
+import { attachDepth } from './depth';
 import { Collection, Faq, Phone, Reveal, Title, Waitlist } from './Sections';
 
 export default function Home() {
@@ -15,6 +16,8 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [dark, setDark] = useState(false);
   const [menu, setMenu] = useState(false);
+  const page = useRef<HTMLDivElement>(null);
+  useEffect(() => (page.current ? attachDepth(page.current) : undefined), []);
   useEffect(() => {
     document.title = c.meta.title;
     const dex = document.getElementById('entdecken');
@@ -35,7 +38,7 @@ export default function Home() {
     ['#fragen', c.nav.faq],
   ];
   return (
-    <div className="mx">
+    <div className="mx" ref={page}>
       <a className="mx-skip" href="#inhalt">
         {locale === 'de' ? 'Zum Inhalt' : 'Skip to content'}
       </a>
@@ -79,7 +82,7 @@ export default function Home() {
               <p className="mx-lead">{c.hero.body}</p>
               <Waitlist c={c.waitlist} locale={locale} compact />
             </div>
-            <HeroScan found={c.hero.found} slot={c.hero.slot} replay={c.replay} />
+            <HeroScan phone={c.phone} german={locale === 'de'} replay={c.replay} />
           </div>
         </section>
 
@@ -91,7 +94,7 @@ export default function Home() {
           </Reveal>
           <ul className="mx-facts">
             {c.scan.facts.map(([title, text]) => (
-              <Reveal as="li" key={title} lock>
+              <Reveal as="li" key={title} depth>
                 <b>{title}</b>
                 <span>{text}</span>
               </Reveal>

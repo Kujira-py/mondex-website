@@ -5,18 +5,20 @@ import { onceInView } from './motion';
 import type { HomeCopy } from './copy';
 
 /** Children rise in once when they come into view (CSS does the motion). */
-export function Reveal({ children, className = '', as: Tag = 'div', lock = false }: {
+export function Reveal({ children, className = '', as: Tag = 'div', lock = false, depth = false }: {
   children: ReactNode;
   className?: string;
   as?: 'div' | 'section' | 'li' | 'header';
   /** Framed by the scanner's corners under the pointer. */
   lock?: boolean;
+  /** Comes apart into layers under the pointer. */
+  depth?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [shown, setShown] = useState(false);
   useEffect(() => (ref.current ? onceInView(ref.current, () => setShown(true), 0.2) : undefined), []);
   return (
-    <Tag ref={ref as never} className={`mx-reveal ${shown ? 'is-in' : ''} ${className}`} data-lock={lock || undefined}>
+    <Tag ref={ref as never} className={`mx-reveal ${shown ? 'is-in' : ''} ${className}`} data-lock={lock || undefined} data-depth={depth || undefined}>
       {children}
     </Tag>
   );
@@ -63,7 +65,7 @@ export function Collection({ c }: { c: HomeCopy['collection'] }) {
   const [values, setValues] = useState(true);
   return (
     <div className="mx-bento">
-      <Reveal className="mx-tile mx-tile-sets" lock>
+      <Reveal className="mx-tile mx-tile-sets" depth>
         <h3>{c.sets[0]}</h3>
         <p>{c.sets[1]}</p>
         <div className="mx-set">
@@ -82,7 +84,7 @@ export function Collection({ c }: { c: HomeCopy['collection'] }) {
           </div>
         </div>
       </Reveal>
-      <Reveal className="mx-tile mx-tile-values" lock>
+      <Reveal className="mx-tile mx-tile-values" depth>
         <h3>{c.values[0]}</h3>
         <p>{c.values[1]}</p>
         <label className="mx-switch">
@@ -103,7 +105,7 @@ export function Collection({ c }: { c: HomeCopy['collection'] }) {
           ))}
         </ul>
       </Reveal>
-      <Reveal className="mx-tile mx-tile-goals" lock>
+      <Reveal className="mx-tile mx-tile-goals" depth>
         <h3>{c.goals[0]}</h3>
         <p>{c.goals[1]}</p>
         <ul className="mx-goals">

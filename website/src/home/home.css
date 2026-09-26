@@ -396,209 +396,15 @@
   margin: 0 auto;
   padding: 88px var(--mx-gutter) 24px;
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: clamp(32px, 5vw, 80px);
+  gap: clamp(32px, 5vw, 88px);
 }
 .mx-hero .mx-title {
-  font-size: clamp(40px, 4vw, 58px);
+  font-size: clamp(40px, 3.6vw, 54px);
 }
 .mx-hero .mx-form {
   margin-top: 36px;
-}
-
-/* The hero phone and its story. Everything the story reveals starts hidden
-   in CSS, so nothing flashes before the script takes over. */
-.hs-card,
-.hs-corner,
-.hs-sweep,
-.hs-found,
-.hs-dex,
-.hs-slot-art,
-.hs-count-new {
-  opacity: 0;
-}
-.hs {
-  justify-self: center;
-}
-.hs-phone {
-  position: relative;
-  width: clamp(250px, 23vw, 312px);
-  aspect-ratio: 9 / 19.2;
-  padding: 11px;
-  border-radius: 54px;
-  background: linear-gradient(145deg, #2b2a33, #0f0f14);
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.06) inset,
-    0 40px 80px -30px rgba(40, 30, 80, 0.45),
-    0 18px 40px -20px rgba(20, 20, 40, 0.35);
-}
-.hs-island {
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  width: 30%;
-  height: 26px;
-  border-radius: 20px;
-  background: #000;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-.hs-screen {
-  position: relative;
-  height: 100%;
-  border-radius: 44px;
-  overflow: hidden;
-  background: var(--mx-bg);
-}
-.hs-camera {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  background: radial-gradient(120% 90% at 50% 40%, #3a3547, #121118 70%);
-}
-.hs-viewfinder {
-  position: relative;
-  width: 64%;
-  aspect-ratio: 245 / 342;
-}
-.hs-card {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6%;
-  box-shadow: 0 24px 40px -18px rgba(0, 0, 0, 0.7);
-}
-.hs-corner {
-  position: absolute;
-  width: 20%;
-  aspect-ratio: 1;
-  border: 3px solid var(--mx-lilac);
-}
-.hs-tl { top: -9px; left: -9px; border-right: 0; border-bottom: 0; border-top-left-radius: 12px; }
-.hs-tr { top: -9px; right: -9px; border-left: 0; border-bottom: 0; border-top-right-radius: 12px; }
-.hs-bl { bottom: -9px; left: -9px; border-right: 0; border-top: 0; border-bottom-left-radius: 12px; }
-.hs-br { bottom: -9px; right: -9px; border-left: 0; border-top: 0; border-bottom-right-radius: 12px; }
-.hs-sweep {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 26%;
-  border-radius: 6%;
-  background: linear-gradient(180deg, transparent, rgba(177, 154, 249, 0.45) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(177, 154, 249, 0.45) 55%, transparent);
-  mix-blend-mode: screen;
-}
-.hs-found {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 16px 9px 9px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.96);
-  color: var(--mx-text);
-  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.5);
-}
-.hs-found b {
-  display: block;
-  font-size: 13px;
-}
-.hs-found small {
-  display: block;
-  font-size: 11px;
-  color: var(--mx-muted);
-}
-.hs-check {
-  display: grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: var(--mx-accent);
-  color: #fff;
-  font-size: 13px;
-}
-.hs-dex {
-  position: absolute;
-  inset: 0;
-  padding: 62px 14px 14px;
-  background: var(--mx-bg);
-}
-.hs-dex-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin: 0 4px 14px;
-}
-.hs-dex-head b {
-  font-size: 24px;
-  letter-spacing: -0.03em;
-}
-.hs-count {
-  position: relative;
-  display: inline-block;
-  font-size: 12px;
-  color: var(--mx-muted);
-  font-variant-numeric: tabular-nums;
-}
-.hs-count-old,
-.hs-count-new {
-  display: inline-block;
-  color: var(--mx-text);
-  font-weight: 600;
-}
-.hs-count-new {
-  position: absolute;
-  left: 0;
-  color: var(--mx-accent);
-}
-.hs-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-.hs-tile {
-  position: relative;
-  padding: 6px 4px 8px;
-  border-radius: 14px;
-  background: var(--mx-surface);
-  text-align: center;
-}
-.hs-tile small {
-  font-size: 9px;
-  color: var(--mx-muted);
-}
-.hs-art {
-  position: relative;
-  aspect-ratio: 1;
-  margin: 2px 6px 0;
-}
-.hs-art img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.hs-silhouette {
-  filter: brightness(0);
-  opacity: 0.16;
-}
-.hs-slot-name {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 2px;
-  font-size: 9px !important;
-  color: var(--mx-accent) !important;
-  font-weight: 600;
-}
-.hs-replay {
-  display: none;
 }
 
 /* ---------- Scan ---------- */
@@ -1238,6 +1044,13 @@
 .sh-row {
   overflow: hidden;
   padding: 22px 0;
+}
+/* Room above the cards for a Pokémon to step out. */
+.sh-row:first-child {
+  padding-top: 110px;
+  margin-top: -88px;
+}
+.sh-row {
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
@@ -1250,13 +1063,18 @@
 }
 .sh-card {
   --pale: 0;
+  position: relative;
   flex: none;
   width: clamp(120px, 11vw, 168px);
   border-radius: 9px;
-  transition: transform 0.6s var(--mx-ease);
+  perspective: 700px;
+}
+.sh-face {
+  transform-origin: 50% 100%;
+  transition: transform 0.7s var(--mx-ease), filter 0.7s var(--mx-ease);
 }
 /* Undiscovered cards wait pale; where you look, they take their colour. */
-.sh-card img {
+.sh-face img {
   width: 100%;
   height: auto;
   border-radius: 5.5%;
@@ -1269,6 +1087,20 @@
     opacity 0.5s var(--mx-ease),
     transform 0.5s var(--mx-ease),
     box-shadow 0.6s var(--mx-ease);
+}
+.sh-pop {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  width: 92%;
+  height: auto;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -10%) scale(0.55);
+  filter: drop-shadow(0 16px 14px rgba(30, 20, 60, 0.35));
+  transition:
+    transform 0.5s var(--mx-ease),
+    opacity 0.35s var(--mx-ease) 0.1s;
 }
 .sh.is-still .sh-card {
   --pale: 0 !important;
@@ -1291,13 +1123,85 @@
   object-fit: contain;
 }
 @media (hover: hover) and (pointer: fine) {
-  .sh-card:hover {
-    transform: translateY(-8px);
+  /* Signature: the Pokémon steps out of its card. The card leans back
+     like a page of a pop-up book and its Pokémon rises in front of it. */
+  .sh-card:hover .sh-face {
+    transform: rotateX(16deg) translateY(-4px);
+    filter: brightness(0.86);
+  }
+  .sh-card.has-pop:hover .sh-pop {
+    opacity: 1;
+    transform: translate(-50%, -74%) scale(1);
+    transition:
+      transform 0.75s cubic-bezier(0.34, 1.4, 0.64, 1),
+      opacity 0.3s var(--mx-ease);
   }
   .sh-logo:hover {
     transform: translateY(-4px);
     box-shadow: 0 18px 30px -20px rgba(30, 20, 60, 0.35);
   }
+}
+
+/* ---------- Depth: tiles come apart into layers ---------- */
+/* Under the pointer a tile leans a few degrees toward it and its layers
+   separate -- headline, text and picture each rise to their own height --
+   while its rim catches a lilac light where the pointer is. At rest the
+   tile is flat and still. */
+.mx [data-depth] {
+  --rx: 0deg;
+  --ry: 0deg;
+  --lift: 0;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.mx .mx-reveal.is-in[data-depth] {
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition:
+    transform 0.9s var(--mx-ease),
+    box-shadow 0.9s var(--mx-ease),
+    opacity 0.9s var(--mx-ease);
+}
+.mx .mx-reveal.is-in[data-depth].is-deep {
+  --lift: 1;
+  transition:
+    transform 0.25s ease-out,
+    box-shadow 0.6s var(--mx-ease),
+    opacity 0.9s var(--mx-ease);
+  box-shadow: 0 1px 0 var(--mx-line), 0 40px 60px -40px rgba(40, 30, 80, 0.4);
+}
+.mx [data-depth] > * {
+  transition: transform 0.8s var(--mx-ease);
+}
+.mx [data-depth] > h3,
+.mx [data-depth] > b {
+  transform: translateZ(calc(var(--lift) * 34px));
+}
+.mx [data-depth] > p,
+.mx [data-depth] > span {
+  transform: translateZ(calc(var(--lift) * 18px));
+}
+.mx [data-depth] > .mx-set,
+.mx [data-depth] > .mx-switch,
+.mx [data-depth] > .mx-values,
+.mx [data-depth] > .mx-goals {
+  transform: translateZ(calc(var(--lift) * 52px));
+}
+.mx [data-depth]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: radial-gradient(circle at var(--px, 50%) var(--py, 50%), rgba(112, 80, 184, 0.95), rgba(177, 154, 249, 0.35) 30%, transparent 58%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s var(--mx-ease);
+}
+.mx [data-depth].is-deep::before {
+  opacity: 1;
 }
 
 /* ---------- The scanner's corners find what you point at ---------- */
@@ -1429,12 +1333,6 @@
   .mx-hero-stage {
     padding-top: 120px;
     gap: 56px;
-  }
-  .hs-phone {
-    width: min(72vw, 300px);
-  }
-  .hs-replay {
-    display: block;
   }
   .mx-dex {
     margin-top: 110px;

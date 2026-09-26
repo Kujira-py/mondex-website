@@ -15,7 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang={locale}>
       <body>
         <noscript>
-          <style>{`.mx-reveal{opacity:1!important;transform:none!important}.mx-bar span{transform:none!important}.hs-card,.hs-corner{opacity:1!important}`}</style>
+          <style>{`.mx-reveal{opacity:1!important;transform:none!important}.mx-bar span{transform:none!important}.hp-card,.hp-phone{opacity:1!important;visibility:visible!important}`}</style>
         </noscript>
         <LanguageProvider initialLocale={locale}>{children}</LanguageProvider>
       </body>

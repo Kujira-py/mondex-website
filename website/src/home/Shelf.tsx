@@ -18,6 +18,13 @@ const CARDS = [
   'leafeon', 'arceus', 'reshiram', 'blaziken', 'groudon', 'dialga', 'xerneas', 'magikarp',
   'aerodactyl', 'iron-leaves', 'houndour',
 ];
+// The Pokémon on each card, for the ones whose artwork the site carries.
+const POKEMON: Record<string, number> = {
+  charizard: 6, umbreon: 197, pikachu: 25, lugia: 249, gengar: 94, rayquaza: 384, mew: 151,
+  sylveon: 700, giratina: 487, blastoise: 9, gardevoir: 282, dragonite: 149, eevee: 133,
+  suicune: 245, mewtwo: 150, venusaur: 3, leafeon: 470, arceus: 493, reshiram: 643,
+  blaziken: 257, magikarp: 129, aerodactyl: 142,
+};
 const SETS = [
   'sv3pt5', 'base1', 'swsh7', 'me1', 'sv8pt5', 'neo1', 'xy12', 'sv4pt5', 'cel25', 'swsh12pt5',
   'base2', 'sm12', 'sv6', 'ex7', 'sv2', 'bw1', 'swsh45', 'dp1', 'me2', 'sv10', 'base5', 'sm115',
@@ -92,8 +99,13 @@ export function Shelf({ cardsLabel, setsLabel }: { cardsLabel: string; setsLabel
       <div className="sh-row" role="group" aria-label={cardsLabel}>
         <div className="sh-set">
           {CARDS.map((card) => (
-            <div key={card} className="sh-card" data-lock>
-              <img src={`/assets/card-${card}.webp`} alt="" loading="lazy" decoding="async" width="660" height="922" />
+            <div key={card} className={`sh-card ${POKEMON[card] ? 'has-pop' : ''}`}>
+              <div className="sh-face">
+                <img src={`/assets/card-${card}.webp`} alt="" loading="lazy" decoding="async" width="660" height="922" />
+              </div>
+              {POKEMON[card] ? (
+                <img className="sh-pop" src={`/assets/pokemon-${POKEMON[card]}.webp`} alt="" loading="lazy" decoding="async" />
+              ) : null}
             </div>
           ))}
         </div>
