@@ -311,6 +311,12 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
         </div>
         <div className="hp-floor" />
       </div>
+      <p className="hp-note">
+        {phone.simulated}
+        <sup className="mx-ref">
+          <a href="#note-3">3</a>
+        </sup>
+      </p>
       {played && (
         <button className="mx-replay hp-replay" type="button" onClick={() => setTake((n) => n + 1)}>
           {replay}

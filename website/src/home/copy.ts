@@ -13,6 +13,7 @@ export const homeCopy = {
       body: 'Every card you scan brings a Pokémon into your Pokédex. See who you have found, and who is still out there.',
     },
     phone: {
+      simulated: 'Simulated screen',
       estimated: 'Estimated value',
       price: '$352',
       matched: 'Matched card',
@@ -30,11 +31,11 @@ export const homeCopy = {
     scan: {
       eyebrow: 'Scanning',
       title: ['Point your phone.', 'That’s it.'],
-      body: 'MonDex recognises the card the moment it sees it. One card, or a whole stack in a row.',
+      body: 'MonDex recognises the card while you hold it in the frame. One card, or a whole stack in a row.',
       facts: [
-        ['Fast', 'Recognises a card in about a second, on the phone itself.'],
-        ['Offline', 'Keeps scanning at a card show with no signal.'],
-        ['Exact', 'Knows every printing, down to Poké Ball and Master Ball patterns.'],
+        ['Hands-free', 'In Auto mode there is nothing to press. Hold a card in the frame, then the next.'],
+        ['Offline', 'Keeps scanning at a card show with no signal.', 1],
+        ['Exact', 'Knows every printing, down to Poké Ball and Master Ball patterns.', 2],
       ],
     },
     dex: {
@@ -63,6 +64,16 @@ export const homeCopy = {
       title: ['Every card.', 'Every set.'],
       body: 'More than 20,000 cards across every English set, from the 1999 Base Set to the latest release.',
     },
+    openings: {
+      eyebrow: 'Pack openings',
+      title: ['Open a pack.', 'See how it went.'],
+      body: 'Scan your pulls in Opening mode and add what the pack cost. MonDex sets what you paid beside what came out.',
+      paid: 'You paid',
+      pulled: 'Came out',
+      more: '+ 9 more cards',
+      result: 'Difference',
+      values: ['$5.49', '$38.70', '+$33.21'],
+    },
     gallery: {
       eyebrow: 'A closer look',
       title: 'Made for collectors. Down to the details.',
@@ -72,10 +83,10 @@ export const homeCopy = {
       title: 'Questions',
       items: [
         ['When is MonDex coming?', 'MonDex is in development and launches on iPhone first, with Android to follow. Join the waitlist and we will email you once, on launch day.'],
-        ['Which languages does it speak?', 'MonDex is available in English and German.'],
+        ['Which languages does it speak?', 'The app is in English and German. Its catalogue holds the English cards: a card printed in another language is often recognised by its artwork and saved as its English counterpart, with your copy’s language noted. Japanese-only cards are not in the catalogue yet, and card names are shown in English.'],
         ['Which cards does it know?', 'Every English Pokémon card set, from the 1999 Base Set to the newest release, including special printings like Poké Ball and Master Ball patterns.'],
         ['Can I scan without a connection?', 'Yes. With the offline pack downloaded, MonDex recognises cards without a connection and syncs them when you are back online.'],
-        ['Can I bring my existing collection?', 'Yes. Import a CSV file, or scan your cards in batches.'],
+        ['Can I bring my existing collection?', 'Scan it in: Batch takes up to a hundred cards in one session, and nothing is saved until you have checked them.'],
       ],
     },
     waitlist: {
@@ -84,6 +95,7 @@ export const homeCopy = {
       email: 'Email address',
       action: 'Join the waitlist',
       sending: 'Joining…',
+      proof: '{n}+ collectors are already waiting.',
       success: 'You’re on the list.',
       successBody: 'We’ll email you when MonDex is ready.',
       emailError: 'Please enter a valid email address.',
@@ -97,6 +109,11 @@ export const homeCopy = {
       contact: 'Contact',
       privacy: 'Privacy',
       imprint: 'Legal notice',
+      notes: [
+        'Offline scanning uses the offline pack, which MonDex downloads while you are online. Without a connection you choose special printings yourself, and prices and syncing wait until you are back online.',
+        'Every English printing TCGplayer lists. A pattern is picked out from the photo only when it clearly shows; otherwise you choose it.',
+        'Screens are simulated. Prices, progress and counts on this page are examples.',
+      ],
       legal:
         'Pokémon and Pokémon card names and images are trademarks of their respective owners. MonDex is an independent project and is not affiliated with Nintendo, Creatures, GAME FREAK or The Pokémon Company.',
     },
@@ -116,6 +133,7 @@ export const homeCopy = {
       body: 'Jede Karte, die du scannst, bringt ein Pokémon in deinen Pokédex. Sieh, wen du gefunden hast und wer noch da draußen ist.',
     },
     phone: {
+      simulated: 'Bildschirm simuliert',
       estimated: 'Geschätzter Wert',
       price: '325 €',
       matched: 'Karte erkannt',
@@ -133,11 +151,11 @@ export const homeCopy = {
     scan: {
       eyebrow: 'Scannen',
       title: ['Handy draufhalten.', 'Fertig.'],
-      body: 'MonDex erkennt die Karte in dem Moment, in dem es sie sieht. Eine Karte oder einen ganzen Stapel am Stück.',
+      body: 'MonDex erkennt die Karte, während du sie in den Rahmen hältst. Eine Karte oder einen ganzen Stapel am Stück.',
       facts: [
-        ['Schnell', 'Erkennt eine Karte in etwa einer Sekunde, direkt auf dem Handy.'],
-        ['Offline', 'Scannt auf der Tauschbörse weiter, auch ohne Empfang.'],
-        ['Genau', 'Kennt jede Variante, bis zum Poké-Ball- und Master-Ball-Muster.'],
+        ['Freihändig', 'Im Auto-Modus drückst du nichts. Karte in den Rahmen halten, dann die nächste.'],
+        ['Offline', 'Scannt auf der Tauschbörse weiter, auch ohne Empfang.', 1],
+        ['Genau', 'Kennt jede Variante, bis zum Poké-Ball- und Master-Ball-Muster.', 2],
       ],
     },
     dex: {
@@ -166,6 +184,16 @@ export const homeCopy = {
       title: ['Jede Karte.', 'Jedes Set.'],
       body: 'Über 20.000 Karten aus jedem englischen Set, vom Grundset 1999 bis zur neuesten Erweiterung.',
     },
+    openings: {
+      eyebrow: 'Pack-Openings',
+      title: ['Pack öffnen.', 'Sehen, wie es lief.'],
+      body: 'Scanne deine Pulls im Opening-Modus und trag ein, was das Pack gekostet hat. MonDex stellt gegenüber, was du bezahlt hast und was herauskam.',
+      paid: 'Bezahlt',
+      pulled: 'Herausgekommen',
+      more: '+ 9 weitere Karten',
+      result: 'Differenz',
+      values: ['5,49 €', '38,70 €', '+33,21 €'],
+    },
     gallery: {
       eyebrow: 'Genauer hingeschaut',
       title: 'Für Sammler gemacht. Bis ins Detail.',
@@ -175,10 +203,10 @@ export const homeCopy = {
       title: 'Fragen',
       items: [
         ['Wann kommt MonDex?', 'MonDex ist in Entwicklung und startet zuerst auf dem iPhone, Android folgt. Trag dich ein, dann schreiben wir dir einmal, am Starttag.'],
-        ['Welche Sprachen spricht MonDex?', 'MonDex gibt es auf Deutsch und Englisch.'],
+        ['Welche Sprachen spricht MonDex?', 'Die App gibt es auf Deutsch und Englisch. Ihr Katalog enthält die englischen Karten: Eine Karte in einer anderen Sprache wird oft an ihrem Artwork erkannt und als englisches Gegenstück gespeichert, mit der Sprache deines Exemplars. Rein japanische Karten sind noch nicht im Katalog, und Kartennamen erscheinen auf Englisch.'],
         ['Welche Karten kennt MonDex?', 'Jedes englische Pokémon-Kartenset, vom Grundset 1999 bis zur neuesten Erweiterung, samt Sonderdrucken wie Poké-Ball- und Master-Ball-Muster.'],
         ['Kann ich ohne Verbindung scannen?', 'Ja. Mit dem Offline-Paket erkennt MonDex Karten auch ohne Verbindung und gleicht sie ab, sobald du wieder online bist.'],
-        ['Kann ich meine Sammlung mitnehmen?', 'Ja. Importiere eine CSV-Datei oder scanne deine Karten stapelweise.'],
+        ['Kann ich meine Sammlung mitnehmen?', 'Scanne sie ein: Der Stapel-Modus nimmt bis zu hundert Karten pro Sitzung, und gespeichert wird erst, wenn du sie geprüft hast.'],
       ],
     },
     waitlist: {
@@ -187,6 +215,7 @@ export const homeCopy = {
       email: 'E-Mail-Adresse',
       action: 'Vormerken',
       sending: 'Wird eingetragen…',
+      proof: 'Schon {n}+ Sammler warten.',
       success: 'Du stehst auf der Liste.',
       successBody: 'Wir schreiben dir, sobald MonDex bereit ist.',
       emailError: 'Bitte gib eine gültige E-Mail-Adresse ein.',
@@ -200,6 +229,11 @@ export const homeCopy = {
       contact: 'Kontakt',
       privacy: 'Datenschutz',
       imprint: 'Impressum',
+      notes: [
+        'Offline-Scannen nutzt das Offline-Paket, das MonDex lädt, während du online bist. Ohne Verbindung wählst du Sonderdrucke selbst, und Preise sowie Abgleich warten, bis du wieder online bist.',
+        'Jede englische Variante, die TCGplayer führt. Ein Muster wird nur dann am Foto erkannt, wenn es deutlich zu sehen ist; sonst wählst du es.',
+        'Bildschirme simuliert. Preise, Fortschritte und Zahlen auf dieser Seite sind Beispiele.',
+      ],
       legal:
         'Pokémon sowie Namen und Bilder von Pokémon-Karten sind Marken ihrer jeweiligen Inhaber. MonDex ist ein unabhängiges Projekt und steht in keiner Verbindung zu Nintendo, Creatures, GAME FREAK oder The Pokémon Company.',
     },
