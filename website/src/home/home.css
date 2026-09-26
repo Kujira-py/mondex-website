@@ -1442,3 +1442,50 @@
     align-self: start;
   }
 }
+
+/* ---------- Tall tablets (iPad upright): stack instead of two columns ----------
+   Two columns leave the height of a portrait tablet empty above and below.
+   Stacked, the headline leads and the phone or the Dex page fills the rest,
+   still pinned while scrolling. */
+@media (min-width: 900px) and (orientation: portrait) {
+  .mx-hero-stage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+    align-content: center;
+    justify-items: center;
+    gap: 48px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .mx-hero .mx-title {
+    font-size: clamp(52px, 6.4vw, 72px);
+  }
+  .mx-hero .mx-lead {
+    margin-inline: auto;
+  }
+  .mx-hero .mx-form {
+    margin-inline: auto;
+    text-align: left;
+  }
+  .mx-dex-stage {
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 56px;
+    padding-top: 120px;
+  }
+  .mx-dex .mx-section-head {
+    max-width: 640px;
+  }
+  .mx-dex .mx-title {
+    font-size: clamp(44px, 5.4vw, 60px);
+  }
+}
+
+/* Tablets narrower than the pinned layout keep the full eight Dex columns. */
+@media (min-width: 600px) and (max-width: 899px) {
+  .dw-grid {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+  }
+}

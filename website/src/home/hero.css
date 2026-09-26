@@ -737,3 +737,11 @@
     margin-top: 28px;
   }
 }
+
+/* Upright tablets: the phone takes the height left under the headline. */
+@media (min-width: 900px) and (orientation: portrait) {
+  .hp-stage {
+    width: min(420px, calc((100svh - 620px) / 2.07));
+    min-width: 300px;
+  }
+}
