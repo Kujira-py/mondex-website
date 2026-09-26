@@ -88,6 +88,7 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
         tl.set(q('.hp-trace rect'), { strokeDashoffset: 1 })
           .set(q('.hp-trace'), { autoAlpha: 0 })
           .set(q('.hp-sheen'), { xPercent: -130 })
+          .set(q('.hp-dim'), { opacity: 0 })
           .set(q('.hp-receipt'), { y: () => 24 * pt(), autoAlpha: 0 })
           .set(q('.hp-price-value'), { yPercent: 60, autoAlpha: 0 })
           .set(q('.hp-price-empty'), { yPercent: 0, autoAlpha: 1 })
@@ -113,7 +114,8 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
           .to(q('.hp-price-empty'), { yPercent: -60, autoAlpha: 0, duration: 0.4 }, 2.3)
           .to(q('.hp-price-value'), { yPercent: 0, autoAlpha: 1, duration: 0.5 }, 2.4)
           // The Pokémon steps out of its card.
-          .to(q('.hp-card'), { rotateX: 22, scale: 0.94, filter: 'brightness(0.72)', duration: 1, ease: EASE_IN_OUT }, 3.3)
+          .to(q('.hp-card'), { rotateX: 22, scale: 0.94, duration: 1, ease: EASE_IN_OUT }, 3.3)
+          .to(q('.hp-dim'), { opacity: 0.32, duration: 1, ease: EASE_IN_OUT }, 3.3)
           .to(q('.hp-trace'), { autoAlpha: 0, duration: 0.4 }, 3.3)
           .to(q('.hp-pop'), { x: 0, y: 0, scale: 1, autoAlpha: 1, duration: 1.2, ease: 'back.out(1.3)' }, 3.45)
           .to(q('.hp-burst'), { autoAlpha: 1, scale: 1, duration: 1.1 }, 3.5)
@@ -128,8 +130,8 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
           .to(q('.hp-slot-shadow'), { autoAlpha: 0, duration: 0.3 }, 6.25)
           .to(q('.hp-ring'), { scale: 1.35, autoAlpha: 1, duration: 0.35, ease: 'power2.out' }, 6.4)
           .to(q('.hp-ring'), { autoAlpha: 0, duration: 0.6 }, 6.75)
-          .to(q('.hp-slot-unknown'), { yPercent: -40, autoAlpha: 0, duration: 0.4 }, 6.4)
-          .to(q('.hp-slot-name'), { yPercent: 0, autoAlpha: 1, duration: 0.5 }, 6.5)
+          .to(q('.hp-slot-unknown'), { yPercent: -40, autoAlpha: 0, duration: 0.35 }, 6.15)
+          .to(q('.hp-slot-name'), { yPercent: 0, autoAlpha: 1, duration: 0.45 }, 6.25)
           .to({}, { duration: 0.9 });
         return tl;
       };
@@ -151,10 +153,13 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
           animation: story().pause(),
         });
       });
+      // Phones: the phone arrives at once (no empty space below the form);
+      // the story plays when it is well in view.
       mm.add('(max-width: 899px)', () => {
-        const tl = gsap.timeline({ paused: true }).add(intro()).add(story(), '-=0.4');
+        intro();
+        const tl = story().pause();
         return onceInView(root.current!, () => {
-          tl.play();
+          gsap.delayedCall(0.3, () => tl.play());
           setPlayed(true);
         }, 0.45);
       });
@@ -187,6 +192,7 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
                 <div className="hp-card">
                   <img src="/assets/card-charizard.webp" alt="" width="660" height="922" />
                   <span className="hp-sheen" />
+                  <span className="hp-dim" />
                   <svg className="hp-trace" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <rect x="0.6" y="0.6" width="98.8" height="98.8" rx="4.5" ry="3.2" pathLength="1" />
                   </svg>

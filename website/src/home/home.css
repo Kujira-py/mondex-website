@@ -1070,8 +1070,20 @@
   perspective: 700px;
 }
 .sh-face {
+  position: relative;
   transform-origin: 50% 100%;
-  transition: transform 0.7s var(--mx-ease), filter 0.7s var(--mx-ease);
+  transition: transform 0.7s var(--mx-ease);
+}
+/* Shade, not a filter: Safari paints filtered 3D-turned layers black. */
+.sh-face::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5.5%;
+  background: #1a1426;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s var(--mx-ease);
 }
 /* Undiscovered cards wait pale; where you look, they take their colour. */
 .sh-face img {
@@ -1127,7 +1139,9 @@
      like a page of a pop-up book and its Pokémon rises in front of it. */
   .sh-card:hover .sh-face {
     transform: rotateX(16deg) translateY(-4px);
-    filter: brightness(0.86);
+  }
+  .sh-card:hover .sh-face::after {
+    opacity: 0.14;
   }
   .sh-card.has-pop:hover .sh-pop {
     opacity: 1;
@@ -1360,19 +1374,21 @@
   .mx-missing {
     grid-template-columns: repeat(4, 1fr);
   }
+  /* Two by two on phones: no scroller inside the page to get caught in. */
   .mx-shots {
-    grid-template-columns: repeat(4, 62vw);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    margin-inline: calc(var(--mx-gutter) * -1);
-    padding: 0 var(--mx-gutter) 12px;
-    scrollbar-width: none;
-  }
-  .mx-shot {
-    scroll-snap-align: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+    margin-top: 48px;
   }
   .mx-shot:nth-child(even) {
-    margin-top: 0;
+    margin-top: 40px;
+  }
+  .mx-phone {
+    padding: 5px;
+    border-radius: 26px;
+  }
+  .mx-phone img {
+    border-radius: 21px;
   }
   .mx-footer-top {
     flex-direction: column;
