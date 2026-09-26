@@ -2,7 +2,6 @@ import { mkdir, writeFile } from 'node:fs/promises';
 const paths = [
   '',
   'pokemon-tcg-scanner',
-  'digital-pokemon-card-binder',
   'pokemon-card-collection-tracker',
   'kontakt',
   'datenschutz',

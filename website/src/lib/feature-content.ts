@@ -1,6 +1,6 @@
 import type { Locale } from './messages';
 export type FeaturePath =
-  '/pokemon-tcg-scanner' | '/digital-pokemon-card-binder' | '/pokemon-card-collection-tracker';
+  '/pokemon-tcg-scanner' | '/pokemon-card-collection-tracker';
 
 type FeatureCopy = {
   label: string;
@@ -98,98 +98,12 @@ export const featureContent: Record<FeaturePath, Record<Locale, FeatureCopy>> = 
       ],
     },
   },
-  '/digital-pokemon-card-binder': {
-    en: {
-      label: 'Digital Pokémon binders',
-      title: 'A digital binder for the Pokémon cards you want to keep close.',
-      intro:
-        'A digital Pokémon card binder gives your collection a layout of its own. MonDex’s binder experience is built around choosing a cover, arranging cards in pockets and turning pages to enjoy the collection as an album.',
-      demo: 'Explore the binder preview',
-      anchor: 'features',
-      sections: [
-        {
-          title: 'An album with a purpose',
-          paragraphs: [
-            'Start with a reason for the binder. A favourites album can put your most-loved illustrations together. A Kanto binder can follow Pokédex order. A set album can make the empty spaces part of a collecting goal.',
-            'These are different ways to look at a collection. A binder is its presentation; the collection entry records which card and printing you own. Keeping those roles separate helps you rearrange an album without losing track of your copies.',
-          ],
-        },
-        {
-          title: 'Try the binder before the app launches',
-          paragraphs: [
-            'The website shows an illustrated binder layout with cards finding their place in pockets. In the collection section, switch between Cards, Sets, Binders and Lists to see different ways to organise the same example collection.',
-            'The illustrations adapt to your screen. All cards and positions are example data, and changes in the demo are not saved as a personal binder.',
-          ],
-        },
-        {
-          title: 'Build a layout around how you collect',
-          paragraphs: [
-            'A small rule can make a binder easier to maintain. Put an evolution line together, leave a space for a missing card or group illustrations from one set. A dedicated Holo or Reverse Holo album can also make sense when printings are part of your collecting goal.',
-          ],
-          steps: [
-            'Choose a theme, such as favourites, a region or one expansion.',
-            'Decide whether the order follows Pokédex numbers, set numbers or your own visual arrangement.',
-            'Use a wishlist for the missing cards you want to look for next.',
-          ],
-        },
-        {
-          title: 'A digital album alongside your physical one',
-          paragraphs: [
-            'A digital binder helps you browse and plan. It does not replace the sleeves or storage you use for physical cards, and the on-screen foil effect is only a simulation.',
-            'MonDex is in development for iPhone and Android. The interactive website is a product preview, not a place to save your own binder yet. You can explore the illustrated layouts without signing in.',
-          ],
-        },
-      ],
-    },
-    de: {
-      label: 'Digitale Pokémon-Binder',
-      title: 'Ein digitaler Binder für Karten, die dir etwas bedeuten.',
-      intro:
-        'Ein digitaler Pokémon-Karten-Binder gibt deiner Sammlung eine eigene Anordnung. Bei MonDex wählst du ein Cover, ordnest Karten in Taschen an und blätterst durch die Sammlung wie durch ein Album.',
-      demo: 'Binder-Vorschau entdecken',
-      anchor: 'features',
-      sections: [
-        {
-          title: 'Ein Album mit einem Ziel',
-          paragraphs: [
-            'Beginne mit einer Idee für den Binder. Ein Favoriten-Album vereint deine liebsten Illustrationen. Ein Kanto-Binder kann dem Pokédex folgen. Ein Set-Album macht freie Plätze zu einem sichtbaren Sammelziel.',
-            'Das sind verschiedene Ansichten deiner Sammlung. Der Binder gestaltet die Präsentation; der Sammlungseintrag hält fest, welche Karte und Variante du besitzt. Diese Trennung hilft, beim Umordnen den Überblick über deine Exemplare zu behalten.',
-          ],
-        },
-        {
-          title: 'Den Binder vor dem App-Launch ausprobieren',
-          paragraphs: [
-            'Die Website zeigt ein illustriertes Binder-Layout, in dem Karten ihren Platz in den Taschen finden. Wechsle im Sammlungsbereich zwischen Cards, Sets, Binders und Lists, um verschiedene Ansichten derselben Beispielsammlung zu entdecken.',
-            'Die Illustrationen passen sich deinem Bildschirm an. Alle Karten und Positionen sind Beispieldaten. Änderungen in der Demo werden nicht als persönlicher Binder gespeichert.',
-          ],
-        },
-        {
-          title: 'So ordnen, wie du sammelst',
-          paragraphs: [
-            'Eine einfache Regel erleichtert die Pflege des Albums: Entwicklungsreihen zusammenstellen, Plätze für fehlende Karten freilassen oder Illustrationen eines Sets gruppieren. Auch ein Holo- oder Reverse-Holo-Album kann sinnvoll sein, wenn Druckvarianten zu deinem Sammelziel gehören.',
-          ],
-          steps: [
-            'Wähle ein Thema, etwa Favoriten, eine Region oder eine Erweiterung.',
-            'Entscheide dich für Pokédex-Nummern, Set-Nummern oder eine eigene Bildanordnung.',
-            'Halte die fehlenden Karten für deine nächste Suche in einer Wunschliste fest.',
-          ],
-        },
-        {
-          title: 'Ein digitales Album neben deinem echten',
-          paragraphs: [
-            'Ein digitaler Binder unterstützt dich beim Anschauen und Planen. Er ersetzt keine Schutzhüllen oder die Aufbewahrung echter Karten. Der Folieneffekt auf dem Bildschirm ist eine Simulation.',
-            'MonDex wird für iPhone und Android entwickelt. Die Website ist eine Produktvorschau, in der sich noch kein eigener Binder dauerhaft speichern lässt. Die illustrierten Layouts kannst du ohne Anmeldung entdecken.',
-          ],
-        },
-      ],
-    },
-  },
   '/pokemon-card-collection-tracker': {
     en: {
       label: 'Pokémon collection tracker',
       title: 'Know what you own. Find what you’re missing.',
       intro:
-        'A Pokémon card collection tracker brings cards, printings and collecting goals together. MonDex is being developed to connect that overview with a personal Pokédex, digital binders and lists for the cards you want next.',
+        'A Pokémon card collection tracker brings cards, printings and collecting goals together. MonDex is being developed to connect that overview with a personal Pokédex, set progress and lists for the cards you want next.',
       demo: 'Explore the collection demo',
       anchor: 'sammlung',
       sections: [
@@ -210,12 +124,11 @@ export const featureContent: Record<FeaturePath, Record<Locale, FeatureCopy>> = 
         {
           title: 'Choose the view for the task',
           paragraphs: [
-            'The MonDex collection preview has four views, each with a different purpose.',
+            'The MonDex collection preview has three views, each with a different purpose.',
           ],
           steps: [
             'Cards: browse the artwork and inspect a card more closely.',
             'Sets: see how cards belong to an expansion and where collecting gaps remain.',
-            'Binders: see an album layout.',
             'Lists: keep a wishlist, trading plans or cards to consider for grading together.',
           ],
         },
@@ -232,7 +145,7 @@ export const featureContent: Record<FeaturePath, Record<Locale, FeatureCopy>> = 
       label: 'Pokémon-Sammlungstracker',
       title: 'Wissen, was du hast. Entdecken, was noch fehlt.',
       intro:
-        'Ein Pokémon-Sammlungstracker verbindet Karten, Druckvarianten und Sammelziele. MonDex entsteht, um diesen Überblick mit einem persönlichen Pokédex, digitalen Bindern und Listen für deine nächsten Wunschkarten zusammenzubringen.',
+        'Ein Pokémon-Sammlungstracker verbindet Karten, Druckvarianten und Sammelziele. MonDex entsteht, um diesen Überblick mit einem persönlichen Pokédex, Set-Fortschritt und Listen für deine nächsten Wunschkarten zusammenzubringen.',
       demo: 'Sammlungs-Demo entdecken',
       anchor: 'sammlung',
       sections: [
@@ -253,12 +166,11 @@ export const featureContent: Record<FeaturePath, Record<Locale, FeatureCopy>> = 
         {
           title: 'Die passende Ansicht für dein Vorhaben',
           paragraphs: [
-            'Die MonDex-Sammlungsvorschau bietet vier Ansichten mit unterschiedlichen Aufgaben.',
+            'Die MonDex-Sammlungsvorschau bietet drei Ansichten mit unterschiedlichen Aufgaben.',
           ],
           steps: [
             'Cards: Illustrationen durchsehen und eine Karte genauer anschauen.',
             'Sets: Karten einer Erweiterung zuordnen und Sammellücken erkennen.',
-            'Binders: eine Album-Anordnung ansehen.',
             'Lists: Wunschkarten, Tauschpläne oder Karten für ein mögliches Grading zusammenhalten.',
           ],
         },
