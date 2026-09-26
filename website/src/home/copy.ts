@@ -19,7 +19,7 @@ export const homeCopy = {
       matched: 'Matched card',
       set: 'Scarlet & Violet 151 · 199',
       discovery: 'New in your Pokédex',
-      modes: ['Snap', 'Auto', 'Batch'],
+      modes: ['Auto', 'Batch'],
       dex: 'Dex',
       tabs: ['Pokémon', 'Paths', 'Generations'],
       search: 'Name or Pokédex number',
@@ -67,7 +67,7 @@ export const homeCopy = {
     openings: {
       eyebrow: 'Pack openings',
       title: ['Open a pack.', 'See how it went.'],
-      body: 'Scan your pulls in Opening mode and add what the pack cost. MonDex sets what you paid beside what came out.',
+      body: 'Scan your pulls with Batch or Auto and mark them as a pack opening with what it cost. MonDex sets what you paid beside what came out.',
       paid: 'You paid',
       pulled: 'Came out',
       more: '+ 9 more cards',
@@ -84,6 +84,7 @@ export const homeCopy = {
       items: [
         ['When is MonDex coming?', 'MonDex is in development and launches on iPhone first, with Android to follow. Join the waitlist and we will email you once, on launch day.'],
         ['Which languages does it speak?', 'The app is in English and German. Its catalogue holds the English cards: a card printed in another language is often recognised by its artwork and saved as its English counterpart, with your copy’s language noted. Japanese-only cards are not in the catalogue yet, and card names are shown in English.'],
+        ['What does MonDex cost?', 'Your collection, Pokédex, sets and prices are free. Every new collector gets a Welcome Week of unlimited scanning; after that, scanning and the deeper analytics are part of MonDex Plus. Everyone on the waitlist gets Plus at a founder price.'],
         ['Which cards does it know?', 'Every English Pokémon card set, from the 1999 Base Set to the newest release, including special printings like Poké Ball and Master Ball patterns.'],
         ['Can I scan without a connection?', 'Yes. With the offline pack downloaded, MonDex recognises cards without a connection and syncs them when you are back online.'],
         ['Can I bring my existing collection?', 'Scan it in: Batch takes up to a hundred cards in one session, and nothing is saved until you have checked them.'],
@@ -139,7 +140,7 @@ export const homeCopy = {
       matched: 'Karte erkannt',
       set: 'Scarlet & Violet 151 · 199',
       discovery: 'Neu in deinem Pokédex',
-      modes: ['Snap', 'Auto', 'Stapel'],
+      modes: ['Auto', 'Stapel'],
       dex: 'Dex',
       tabs: ['Pokémon', 'Sammelziele', 'Generationen'],
       search: 'Name oder Pokédex-Nummer',
@@ -187,7 +188,7 @@ export const homeCopy = {
     openings: {
       eyebrow: 'Pack-Openings',
       title: ['Pack öffnen.', 'Sehen, wie es lief.'],
-      body: 'Scanne deine Pulls im Opening-Modus und trag ein, was das Pack gekostet hat. MonDex stellt gegenüber, was du bezahlt hast und was herauskam.',
+      body: 'Scanne deine Pulls mit Stapel oder Auto und markiere sie als Pack-Öffnung mit dem Packpreis. MonDex stellt gegenüber, was du bezahlt hast und was herauskam.',
       paid: 'Bezahlt',
       pulled: 'Herausgekommen',
       more: '+ 9 weitere Karten',
@@ -204,6 +205,7 @@ export const homeCopy = {
       items: [
         ['Wann kommt MonDex?', 'MonDex ist in Entwicklung und startet zuerst auf dem iPhone, Android folgt. Trag dich ein, dann schreiben wir dir einmal, am Starttag.'],
         ['Welche Sprachen spricht MonDex?', 'Die App gibt es auf Deutsch und Englisch. Ihr Katalog enthält die englischen Karten: Eine Karte in einer anderen Sprache wird oft an ihrem Artwork erkannt und als englisches Gegenstück gespeichert, mit der Sprache deines Exemplars. Rein japanische Karten sind noch nicht im Katalog, und Kartennamen erscheinen auf Englisch.'],
+        ['Was kostet MonDex?', 'Sammlung, Pokédex, Sets und Preise sind kostenlos. Jede neue Sammlerin und jeder neue Sammler bekommt eine Willkommenswoche mit unbegrenztem Scannen; danach gehören Scannen und die tieferen Analysen zu MonDex Plus. Wer auf der Warteliste steht, bekommt Plus zum Gründerpreis.'],
         ['Welche Karten kennt MonDex?', 'Jedes englische Pokémon-Kartenset, vom Grundset 1999 bis zur neuesten Erweiterung, samt Sonderdrucken wie Poké-Ball- und Master-Ball-Muster.'],
         ['Kann ich ohne Verbindung scannen?', 'Ja. Mit dem Offline-Paket erkennt MonDex Karten auch ohne Verbindung und gleicht sie ab, sobald du wieder online bist.'],
         ['Kann ich meine Sammlung mitnehmen?', 'Scanne sie ein: Der Stapel-Modus nimmt bis zu hundert Karten pro Sitzung, und gespeichert wird erst, wenn du sie geprüft hast.'],

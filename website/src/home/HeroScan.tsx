@@ -220,9 +220,8 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
                 </div>
                 <div className="hp-bottom">
                   <div className="hp-modes">
-                    <span className="is-on"><Icon d={ICONS.camera} />{phone.modes[0]}</span>
-                    <span><Icon d={ICONS.auto} />{phone.modes[1]}</span>
-                    <span><Icon d={ICONS.batch} />{phone.modes[2]}</span>
+                    <span className="is-on"><Icon d={ICONS.auto} />{phone.modes[0]}</span>
+                    <span><Icon d={ICONS.batch} />{phone.modes[1]}</span>
                   </div>
                   <span className="hp-lang"><Icon d={ICONS.globe} />{german ? 'DE' : 'EN'}</span>
                   <span className="hp-go"><Icon d={ICONS.arrow} /></span>
