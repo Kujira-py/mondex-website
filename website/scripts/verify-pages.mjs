@@ -4,7 +4,6 @@ import { join } from 'node:path';
 const paths = [
   '',
   'pokemon-tcg-scanner',
-  'digital-pokemon-card-binder',
   'pokemon-card-collection-tracker',
   'kontakt',
   'datenschutz',
@@ -29,5 +28,5 @@ assert.equal(readFileSync('out/CNAME', 'utf8').trim(), 'mondextcg.com');
 assert(existsSync('out/404.html'));
 assert(existsSync('out/sitemap.xml'));
 assert(existsSync('out/robots.txt'));
-assert.match(readFileSync('out/index.html', 'utf8'), /class="waitlist-form"/);
-console.log('PASS: 7 pages, 7 legacy German URLs, assets, internal links and waitlist form.');
+assert.match(readFileSync('out/index.html', 'utf8'), /class="mx-form[^"]*"/);
+console.log('PASS: 6 pages, 6 legacy German URLs, assets, internal links and waitlist form.');

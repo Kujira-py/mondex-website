@@ -78,14 +78,13 @@ export function SiteFooter({ home = false }: { home?: boolean }) {
           <h2>{c.learn}</h2>
           {[
             'pokemon-tcg-scanner',
-            'digital-pokemon-card-binder',
             'pokemon-card-collection-tracker',
           ].map((path, i) => (
             <a key={path} href={`/${path}/`}>
               {c.guides[i]}
             </a>
           ))}
-          <a href={`${root}#faq`}>{c.faq}</a>
+          <a href={`${root}#fragen`}>{c.faq}</a>
         </nav>
         <nav aria-label={c.support}>
           <h2>{c.support}</h2>
