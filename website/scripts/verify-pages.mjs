@@ -26,7 +26,14 @@ for (const path of paths) {
 assert(existsSync('out/.nojekyll'));
 assert.equal(readFileSync('out/CNAME', 'utf8').trim(), 'mondextcg.com');
 assert(existsSync('out/404.html'));
+// Invitation links: the page, and 404.html sending /i/<code> to it first thing.
+const invite = readFileSync('out/i/index.html', 'utf8');
+assert.equal([...invite.matchAll(/<h1\b/g)].length, 1, 'i: one heading');
+assert.match(invite, /<meta name="robots" content="noindex, nofollow"/);
+const notFound = readFileSync('out/404.html', 'utf8');
+assert(notFound.indexOf("location.replace('/i/?'") > -1, '404.html: invitation redirect');
+assert(notFound.indexOf("location.replace('/i/?'") < notFound.indexOf('<script src='), '404.html: redirect before the app');
 assert(existsSync('out/sitemap.xml'));
 assert(existsSync('out/robots.txt'));
 assert.match(readFileSync('out/index.html', 'utf8'), /class="mx-form[^"]*"/);
-console.log('PASS: 6 pages, 6 legacy German URLs, assets, internal links and waitlist form.');
+console.log('PASS: 6 pages, 6 legacy German URLs, assets, internal links, waitlist form and invitation links.');

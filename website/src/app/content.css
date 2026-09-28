@@ -535,6 +535,39 @@
 .contact-facts li + li {
   margin-top: 14px;
 }
+.invite-code {
+  margin: 0 0 18px;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 550;
+  letter-spacing: 0.06em;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+  color: var(--violet);
+  user-select: all;
+}
+.invite-copy {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+.invite-panel {
+  margin-bottom: 32px;
+}
+.invite-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.invite-installed {
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 66ch;
+}
 .contact-topics > p {
   color: var(--muted);
   margin-bottom: 32px;
@@ -724,6 +757,9 @@
   }
   .info-summary p {
     font-size: 15px;
+  }
+  .invite-code {
+    font-size: clamp(34px, 11vw, 48px);
   }
   .contact-panel {
     grid-template-columns: 1fr;
