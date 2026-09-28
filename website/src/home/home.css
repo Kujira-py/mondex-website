@@ -1426,3 +1426,216 @@
     align-self: start;
   }
 }
+
+/* ---------- Footnotes (Apple-style: every claim has its source) ---------- */
+.mx-ref {
+  margin-left: 2px;
+  font-size: 0.62em;
+  line-height: 0;
+  vertical-align: super;
+}
+.mx-ref a {
+  color: var(--mx-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.mx-ref a:hover {
+  text-decoration: underline;
+}
+.mx-notes {
+  margin: 36px 0 0;
+  padding-left: 18px;
+  max-width: 70em;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #8a8a99;
+}
+.mx-notes li + li {
+  margin-top: 6px;
+}
+.mx-notes li:target {
+  color: var(--mx-text);
+}
+.mx-legal {
+  margin-top: 20px;
+}
+.hp-note {
+  margin: 18px 0 0;
+  font-size: 12px;
+  color: #9798a8;
+}
+.mx-hero .hp-note .mx-ref,
+.hp-note .mx-ref {
+  font-size: 0.75em;
+}
+
+/* ---------- Waitlist proof ---------- */
+.mx-proof {
+  margin: 0 0 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mx-accent);
+}
+.mx-final .mx-proof {
+  text-align: center;
+  margin-left: 0;
+}
+
+/* ---------- Pack openings ---------- */
+.mx-openings .mx-title {
+  font-size: clamp(40px, 4.6vw, 64px);
+}
+.mx-openings-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(40px, 6vw, 96px);
+}
+.op {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(24px, 4vw, 56px);
+  padding: 170px clamp(20px, 3vw, 40px) 40px;
+  border-radius: 32px;
+  background:
+    radial-gradient(80% 70% at 30% 80%, rgba(177, 154, 249, 0.22), transparent 70%),
+    var(--mx-surface);
+  box-shadow: 0 1px 0 var(--mx-line);
+  overflow: hidden;
+}
+.op-stage {
+  position: relative;
+  flex: none;
+  margin-left: 64px;
+  width: clamp(130px, 13vw, 170px);
+}
+.op-pack {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 0.62;
+  padding: 18% 10%;
+  background:
+    linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.45) 45%, transparent 60%),
+    linear-gradient(160deg, #9c7ff0, #6a4bc4 55%, #4a3399);
+  border-radius: 6px;
+  /* Crimped top and bottom, like a foil pack. */
+  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 10px 100%;
+  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 10px 100%;
+  box-shadow: 0 30px 40px -24px rgba(60, 30, 120, 0.6);
+  opacity: 0;
+}
+.op-pack img {
+  width: 100%;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+.op-pack .op-orbit {
+  width: 26%;
+  opacity: 0.9;
+  filter: brightness(0) invert(1);
+}
+.op-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 11%;
+  background: linear-gradient(160deg, #b8a2fb, #8a6be0);
+  border-bottom: 1.5px dashed rgba(255, 255, 255, 0.5);
+}
+.op-cards {
+  position: absolute;
+  z-index: 1;
+  left: 8%;
+  right: 8%;
+  top: 6%;
+}
+.op-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  aspect-ratio: 245 / 342;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 18px 28px -16px rgba(30, 20, 60, 0.5);
+  opacity: 0;
+}
+.op-back {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.9) 0 9%, transparent 10%),
+    radial-gradient(circle at 50% 50%, #7050b8 0 17%, transparent 18%),
+    linear-gradient(160deg, #2b2440, #1a1628);
+  outline: 3px solid #e9e4f5;
+  outline-offset: -3px;
+}
+.op-receipt {
+  flex: 1;
+  max-width: 300px;
+  display: grid;
+  gap: 4px;
+}
+.op-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--mx-line);
+  opacity: 0;
+}
+.op-line span {
+  color: var(--mx-muted);
+  font-size: 15px;
+}
+.op-line small {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #9798a8;
+}
+.op-line b {
+  font-size: 20px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.op-result {
+  border-bottom: 0;
+}
+.op-result span {
+  color: var(--mx-text);
+  font-weight: 600;
+}
+.op-result b {
+  font-size: 26px;
+  color: #2b8a6e;
+}
+@media (max-width: 899px) {
+  .mx-openings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .op {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 190px;
+  }
+  .op-stage {
+    margin-left: 0;
+  }
+  .op-receipt {
+    width: 100%;
+    max-width: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .op-pack,
+  .op-card,
+  .op-line {
+    opacity: 1;
+  }
+}

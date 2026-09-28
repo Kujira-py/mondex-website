@@ -24,6 +24,17 @@ export function Reveal({ children, className = '', as: Tag = 'div', lock = false
   );
 }
 
+/** An Apple-style footnote marker, linked to its note in the footer. */
+export function Note({ n }: { n: number }) {
+  return (
+    <sup className="mx-ref">
+      <a href={`#note-${n}`} id={`ref-${n}`} aria-label={`Note ${n}`}>
+        {n}
+      </a>
+    </sup>
+  );
+}
+
 export function Title({ lines, as: Tag = 'h2' }: { lines: readonly string[]; as?: 'h1' | 'h2' }) {
   return (
     <Tag className="mx-title">
@@ -158,6 +169,24 @@ export function Faq({ items }: { items: readonly (readonly [string, string])[] }
 
 const ENDPOINT = 'https://mondex-api.onrender.com/api/v1/waitlist';
 
+/** The public waitlist size, or null while the server keeps it private (under 1,000). */
+let countRequest: Promise<number | null> | null = null;
+function useWaitlistCount() {
+  const [count, setCount] = useState<number | null>(null);
+  useEffect(() => {
+    countRequest ??= fetch(`${ENDPOINT}/count`, { credentials: 'omit' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((body) => (typeof body?.count === 'number' ? body.count : null))
+      .catch(() => null);
+    let live = true;
+    countRequest.then((value) => live && setCount(value));
+    return () => {
+      live = false;
+    };
+  }, []);
+  return count;
+}
+
 export function Waitlist({ c, locale, compact = false }: {
   c: HomeCopy['waitlist'];
   locale: 'en' | 'de';
@@ -167,6 +196,7 @@ export function Waitlist({ c, locale, compact = false }: {
   const [state, setState] = useState<'idle' | 'busy' | 'done'>('idle');
   const [error, setError] = useState<'email' | 'rate' | 'server' | null>(null);
   const input = useRef<HTMLInputElement>(null);
+  const count = useWaitlistCount();
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (state === 'busy') return;
@@ -213,6 +243,7 @@ export function Waitlist({ c, locale, compact = false }: {
     );
   return (
     <form className={`mx-form ${compact ? 'is-compact' : ''}`} onSubmit={submit} noValidate>
+      {count ? <p className="mx-proof">{c.proof.replace('{n}', count.toLocaleString(locale === 'de' ? 'de-DE' : 'en-US'))}</p> : null}
       <div className="mx-field">
         <label htmlFor={`${id}-email`} className="sr-only">
           {c.email}

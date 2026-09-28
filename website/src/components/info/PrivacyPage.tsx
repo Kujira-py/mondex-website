@@ -19,6 +19,9 @@ import {
 
 const GITHUB_PRIVACY =
   'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement';
+const APPLE_PRIVACY = 'https://www.apple.com/legal/privacy/';
+const GOOGLE_PRIVACY = 'https://policies.google.com/privacy';
+const REVENUECAT_PRIVACY = 'https://www.revenuecat.com/privacy';
 
 type PrivacyCopy = {
   label: string;
@@ -50,7 +53,7 @@ const copy: Record<Locale, PrivacyCopy> = {
     ),
     summaryTitle: 'The short version',
     summary:
-      'The website’s demos work without an account or camera access. Your language choice is stored in a preference cookie. App accounts, collections and the launch waitlist are described separately below.',
+      'The website’s demos work without an account or camera access. Your language choice is stored in a preference cookie. App accounts, collections, MonDex Plus and the launch waitlist are described separately below.',
     toc: 'On this page',
     sections: [
       {
@@ -87,7 +90,7 @@ const copy: Record<Locale, PrivacyCopy> = {
               When you submit the waitlist form on this website, your browser sends the following
               directly to the MonDex server (see{' '}
               <a className="info-link" href="#providers">
-                section 8
+                section 11
               </a>
               ):
             </p>
@@ -207,6 +210,119 @@ const copy: Record<Locale, PrivacyCopy> = {
         ),
       },
       {
+        id: 'plus',
+        title: 'MonDex Plus and purchases',
+        body: (
+          <>
+            <h3>Buying Plus</h3>
+            <p>
+              MonDex Plus is sold through the Apple App Store and Google Play. Apple or Google take
+              the payment and handle billing as independent providers, under their own privacy
+              policies (<Out href={APPLE_PRIVACY}>Apple</Out>,{' '}
+              <Out href={GOOGLE_PRIVACY}>Google</Out>). We never see your payment details. From the
+              store, we learn what you bought and its status: the product, the store, when it
+              started, when it renews or ends, and whether it was cancelled or refunded.
+            </p>
+            <p>
+              The conditions for Plus are in our{' '}
+              <Local to="/nutzungsbedingungen">Terms of Use</Local>.
+            </p>
+            <h3>RevenueCat</h3>
+            <p>
+              To check purchases and keep your Plus status up to date, we use RevenueCat
+              (RevenueCat, Inc., USA). The app signs in to RevenueCat with an anonymous app user ID:
+              your MonDex account ID, not your name or email address. RevenueCat receives the
+              store’s purchase receipts and transaction data for that ID, and the technical data
+              needed to handle each request, such as your device type, operating system and app
+              version, store country and IP address{' '}
+              <Fill>[check against RevenueCat’s data documentation]</Fill>. RevenueCat tells our
+              server when a subscription starts, renews, ends or is refunded. It processes this data
+              on our behalf and not for advertising. Transfers to RevenueCat in the USA are based on
+              the EU Standard Contractual Clauses. See{' '}
+              <Out href={REVENUECAT_PRIVACY}>RevenueCat’s privacy policy</Out>.
+            </p>
+            <h3>Welcome Week</h3>
+            <p>
+              Your Welcome Week starts with your first recognised scan. We store with your account
+              when it started and when it ends.
+            </p>
+            <h3>One per device: Apple DeviceCheck</h3>
+            <p>
+              So that each iPhone gets only one Welcome Week and one invitation reward, the app uses
+              Apple’s DeviceCheck. Apple keeps two bits per device for us: “Welcome Week used” and
+              “invitation reward received”. The app creates a short-lived token on your phone, and
+              our server sends it to Apple to read or set these two bits. Apple doesn’t tell us
+              which device it is. The bits contain no personal data and identify no one. They stay
+              with the device, even if you reinstall MonDex or delete your account.{' '}
+              <Fill>[Android: confirm the equivalent check before the Android launch.]</Fill>
+            </p>
+          </>
+        ),
+      },
+      {
+        id: 'invitations',
+        title: 'Invitations',
+        body: (
+          <>
+            <p>
+              When you invite a friend, you share your personal invitation link from your phone, for
+              example through the share sheet. MonDex doesn’t email your friends and doesn’t read
+              your contacts.
+            </p>
+            <p>When someone joins through an invitation, we store:</p>
+            <ul>
+              <li>your personal invitation code</li>
+              <li>who invited whom, and when</li>
+              <li>
+                the invitation’s status (waiting, qualified, rewarded) and the extra Plus days
+                granted
+              </li>
+              <li>
+                for the invited account, counters that show whether it has really been used, such as
+                the number of recognised scans and the days on which the app was opened
+              </li>
+            </ul>
+            <p>
+              We use this only to grant rewards and to prevent misuse, such as inviting yourself
+              with the same account, device or email address. For the device, we use the DeviceCheck
+              bits described in{' '}
+              <a className="info-link" href="#plus">
+                section 6
+              </a>
+              . The person who invited you doesn’t see your collection.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: 'push',
+        title: 'Price alerts and push notifications',
+        body: (
+          <>
+            <p>
+              You can set a price alert on a card, and MonDex tells you when its price rises above
+              or drops below your target. We store the alert with your account: the card and
+              printing, the target and its currency.
+            </p>
+            <p>
+              The app asks for permission to send notifications only when you start a price alert.
+              If you allow it, your phone gets a device token from Apple Push Notification service
+              (on iPhone) or Firebase Cloud Messaging (on Android, a Google service). We store this
+              token with your account, together with the platform and the app’s language, so the
+              notification reaches this phone in your language. When an alert is reached, our server
+              sends the notification through Apple or Google, who deliver it to your phone. It
+              contains the card and its price.
+            </p>
+            <p>
+              We delete a token when you sign out on that phone, when Apple or Google tell us it’s
+              no longer valid, and when you delete your account. You can turn notifications off at
+              any time in your phone’s settings. Price alerts in the sample collection never send
+              notifications and stay on your device.
+            </p>
+          </>
+        ),
+      },
+      {
         id: 'on-device',
         title: 'Data that stays on your device',
         body: (
@@ -244,6 +360,14 @@ const copy: Record<Locale, PrivacyCopy> = {
               <li>No analytics or advertising SDKs.</li>
               <li>No selling or renting of your personal data.</li>
             </ul>
+            <p>
+              RevenueCat (see{' '}
+              <a className="info-link" href="#plus">
+                section 6
+              </a>
+              ) only tells us whether you have MonDex Plus. It isn’t used for advertising or
+              tracking.
+            </p>
             <p>The app’s privacy declaration to Apple says the same: no tracking.</p>
           </>
         ),
@@ -278,6 +402,40 @@ const copy: Record<Locale, PrivacyCopy> = {
                 ],
                 ['Apple and Google', 'Sign-in, only if you choose Sign in with Apple or Google.'],
                 [
+                  'Apple App Store and Google Play',
+                  'Selling and billing MonDex Plus, under their own terms and privacy policies.',
+                ],
+                [
+                  'RevenueCat',
+                  <>
+                    Subscription status for MonDex Plus (see{' '}
+                    <a className="info-link" href="#plus">
+                      section 6
+                    </a>
+                    ). RevenueCat, Inc., USA.
+                  </>,
+                ],
+                [
+                  'Apple Push Notification service and Firebase Cloud Messaging',
+                  <>
+                    Delivering price-alert notifications to iPhone and Android (see{' '}
+                    <a className="info-link" href="#push">
+                      section 8
+                    </a>
+                    ).
+                  </>,
+                ],
+                [
+                  'Apple DeviceCheck',
+                  <>
+                    Two bits per iPhone for the Welcome Week and invitation rewards (see{' '}
+                    <a className="info-link" href="#plus">
+                      section 6
+                    </a>
+                    ).
+                  </>,
+                ],
+                [
                   'GitHub Pages',
                   <>
                     Hosting this website (see{' '}
@@ -296,6 +454,10 @@ const copy: Record<Locale, PrivacyCopy> = {
               your personal data is sent to them.
             </p>
             <h3>International transfers</h3>
+            <p>
+              RevenueCat, Inc. is based in the USA. Transfers to RevenueCat are based on the EU
+              Standard Contractual Clauses.
+            </p>
             <p>
               <Fill>
                 [describe safeguards, e.g. Standard Contractual Clauses, if any provider is outside
@@ -333,6 +495,28 @@ const copy: Record<Locale, PrivacyCopy> = {
               ['Sign-up codes', 'Expire after 15 minutes.'],
               ['Password-reset codes', 'Expire after 30 minutes.'],
               [
+                'MonDex Plus status',
+                <>
+                  As long as your account exists.{' '}
+                  <Fill>[Confirm what RevenueCat keeps after an account is deleted.]</Fill>
+                </>,
+              ],
+              [
+                'Welcome Week and invitations',
+                <>
+                  As long as your account exists.{' '}
+                  <Fill>
+                    [Confirm whether invitation records are kept longer to prevent misuse.]
+                  </Fill>
+                </>,
+              ],
+              ['DeviceCheck bits', 'Kept by Apple with the device, not with your account.'],
+              ['Price alerts', 'Until you remove the alert or delete your account.'],
+              [
+                'Push tokens',
+                'Until you sign out on that phone, Apple or Google report the token as invalid, or you delete your account.',
+              ],
+              [
                 'Waitlist',
                 <>
                   See{' '}
@@ -361,6 +545,13 @@ const copy: Record<Locale, PrivacyCopy> = {
                 Delete your account permanently. This removes your collection, your scan photos and
                 your sign-in data. If you use Sign in with Apple, we also revoke MonDex’s access
                 with Apple.
+              </li>
+              <li>
+                Cancel MonDex Plus in your App Store or Google Play account settings. Deleting your
+                MonDex account doesn’t cancel a store subscription.
+              </li>
+              <li>
+                Turn notifications off in your phone’s settings, and remove price alerts in the app.
               </li>
             </ul>
             <p>
@@ -429,7 +620,7 @@ const copy: Record<Locale, PrivacyCopy> = {
     ),
     summaryTitle: 'Kurz gesagt',
     summary:
-      'Die Website-Demos funktionieren ohne Konto und ohne Kamerazugriff. Deine Sprachwahl wird in einem Einstellungs-Cookie gespeichert. App-Konten, Sammlungen und die Launch-Warteliste werden unten getrennt beschrieben.',
+      'Die Website-Demos funktionieren ohne Konto und ohne Kamerazugriff. Deine Sprachwahl wird in einem Einstellungs-Cookie gespeichert. App-Konten, Sammlungen, MonDex Plus und die Launch-Warteliste werden unten getrennt beschrieben.',
     toc: 'Auf dieser Seite',
     sections: [
       {
@@ -467,7 +658,7 @@ const copy: Record<Locale, PrivacyCopy> = {
               Wenn du das Wartelistenformular auf dieser Website absendest, sendet dein Browser
               Folgendes direkt an den MonDex-Server (siehe{' '}
               <a className="info-link" href="#providers">
-                Abschnitt 8
+                Abschnitt 11
               </a>
               ):
             </p>
@@ -596,6 +787,122 @@ const copy: Record<Locale, PrivacyCopy> = {
         ),
       },
       {
+        id: 'plus',
+        title: 'MonDex Plus und Käufe',
+        body: (
+          <>
+            <h3>Plus kaufen</h3>
+            <p>
+              MonDex Plus wird über den Apple App Store und Google Play verkauft. Apple bzw. Google
+              wickeln Zahlung und Abrechnung als eigenständige Anbieter nach ihren eigenen
+              Datenschutzerklärungen ab (<Out href={APPLE_PRIVACY}>Apple</Out>,{' '}
+              <Out href={GOOGLE_PRIVACY}>Google</Out>). Deine Zahlungsdaten sehen wir nie. Vom Store
+              erfahren wir, was du gekauft hast und wie es darum steht: das Produkt, den Store, wann
+              es begonnen hat, wann es sich verlängert oder endet und ob es gekündigt oder erstattet
+              wurde.
+            </p>
+            <p>
+              Die Bedingungen für Plus stehen in unseren{' '}
+              <Local to="/nutzungsbedingungen">Nutzungsbedingungen</Local>.
+            </p>
+            <h3>RevenueCat</h3>
+            <p>
+              Um Käufe zu prüfen und deinen Plus-Status aktuell zu halten, nutzen wir RevenueCat
+              (RevenueCat, Inc., USA). Die App meldet sich bei RevenueCat mit einer anonymen
+              App-Nutzer-ID an: der ID deines MonDex-Kontos, nicht deinem Namen oder deiner
+              E-Mail-Adresse. RevenueCat erhält die Kaufbelege und Transaktionsdaten des Stores zu
+              dieser ID sowie die technischen Daten, die für jede Anfrage nötig sind, etwa
+              Gerätetyp, Betriebssystem- und App-Version, Store-Land und IP-Adresse{' '}
+              <Fill>[mit der Datendokumentation von RevenueCat abgleichen]</Fill>. RevenueCat teilt
+              unserem Server mit, wenn ein Abo beginnt, sich verlängert, endet oder erstattet wird.
+              RevenueCat verarbeitet diese Daten in unserem Auftrag und nicht für Werbung. Die
+              Übermittlung an RevenueCat in die USA stützt sich auf die EU-Standardvertragsklauseln.
+              Mehr dazu in der{' '}
+              <Out href={REVENUECAT_PRIVACY}>Datenschutzerklärung von RevenueCat</Out>.
+            </p>
+            <h3>Welcome Week</h3>
+            <p>
+              Deine Welcome Week beginnt mit deinem ersten erkannten Scan. Wir speichern bei deinem
+              Konto, wann sie begonnen hat und wann sie endet.
+            </p>
+            <h3>Eine pro Gerät: Apple DeviceCheck</h3>
+            <p>
+              Damit jedes iPhone nur eine Welcome Week und eine Einladungsprämie erhält, nutzt die
+              App Apples DeviceCheck. Apple speichert für uns zwei Bits pro Gerät: „Welcome Week
+              genutzt“ und „Einladungsprämie erhalten“. Die App erzeugt auf deinem Handy ein
+              kurzlebiges Token, und unser Server schickt es an Apple, um diese zwei Bits zu lesen
+              oder zu setzen. Apple teilt uns nicht mit, um welches Gerät es sich handelt. Die Bits
+              enthalten keine personenbezogenen Daten und identifizieren niemanden. Sie bleiben beim
+              Gerät, auch wenn du MonDex neu installierst oder dein Konto löschst.{' '}
+              <Fill>[Android: gleichwertige Prüfung vor dem Android-Start bestätigen.]</Fill>
+            </p>
+          </>
+        ),
+      },
+      {
+        id: 'invitations',
+        title: 'Einladungen',
+        body: (
+          <>
+            <p>
+              Wenn du jemanden einlädst, teilst du deinen persönlichen Einladungslink von deinem
+              Handy aus, zum Beispiel über das Teilen-Menü. MonDex schreibt deinen Freunden keine
+              E-Mails und liest deine Kontakte nicht.
+            </p>
+            <p>Wenn sich jemand über eine Einladung anmeldet, speichern wir:</p>
+            <ul>
+              <li>deinen persönlichen Einladungscode</li>
+              <li>wer wen eingeladen hat, und wann</li>
+              <li>
+                den Stand der Einladung (offen, erfüllt, belohnt) und die gutgeschriebenen Plus-Tage
+              </li>
+              <li>
+                für das eingeladene Konto Zähler, die zeigen, ob es wirklich genutzt wird, etwa die
+                Zahl der erkannten Scans und die Tage, an denen die App geöffnet wurde
+              </li>
+            </ul>
+            <p>
+              Wir nutzen diese Angaben nur, um Prämien gutzuschreiben und Missbrauch zu verhindern,
+              etwa Selbsteinladungen mit demselben Konto, Gerät oder derselben E-Mail-Adresse. Für
+              das Gerät nutzen wir die DeviceCheck-Bits aus{' '}
+              <a className="info-link" href="#plus">
+                Abschnitt 6
+              </a>
+              . Wer dich eingeladen hat, sieht deine Sammlung nicht.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: 'push',
+        title: 'Preisalarme und Push-Mitteilungen',
+        body: (
+          <>
+            <p>
+              Du kannst für eine Karte einen Preisalarm setzen, und MonDex sagt dir Bescheid, wenn
+              ihr Preis über dein Ziel steigt oder darunter fällt. Den Alarm speichern wir bei
+              deinem Konto: Karte und Druckvariante, Zielpreis und dessen Währung.
+            </p>
+            <p>
+              Die App fragt erst nach der Erlaubnis für Mitteilungen, wenn du einen Preisalarm
+              startest. Wenn du zustimmst, erhält dein Handy ein Geräte-Token vom Apple Push
+              Notification Service (auf dem iPhone) oder von Firebase Cloud Messaging (auf Android,
+              ein Dienst von Google). Wir speichern dieses Token bei deinem Konto, zusammen mit der
+              Plattform und der Sprache der App, damit die Mitteilung dieses Handy in deiner Sprache
+              erreicht. Wird ein Alarm ausgelöst, schickt unser Server die Mitteilung über Apple
+              bzw. Google, die sie an dein Handy zustellen. Sie enthält die Karte und ihren Preis.
+            </p>
+            <p>
+              Wir löschen ein Token, wenn du dich auf diesem Handy abmeldest, wenn Apple bzw. Google
+              uns mitteilen, dass es nicht mehr gültig ist, und wenn du dein Konto löschst. Du
+              kannst Mitteilungen jederzeit in den Einstellungen deines Handys ausschalten.
+              Preisalarme in der Beispielsammlung senden nie Mitteilungen und bleiben auf deinem
+              Gerät.
+            </p>
+          </>
+        ),
+      },
+      {
         id: 'on-device',
         title: 'Daten, die auf deinem Gerät bleiben',
         body: (
@@ -633,6 +940,14 @@ const copy: Record<Locale, PrivacyCopy> = {
               <li>Keine Analyse- oder Werbe-SDKs.</li>
               <li>Kein Verkauf und keine Vermietung deiner personenbezogenen Daten.</li>
             </ul>
+            <p>
+              RevenueCat (siehe{' '}
+              <a className="info-link" href="#plus">
+                Abschnitt 6
+              </a>
+              ) sagt uns nur, ob du MonDex Plus hast. Es wird nicht für Werbung oder Tracking
+              genutzt.
+            </p>
             <p>Die Datenschutzangaben der App gegenüber Apple sagen dasselbe: kein Tracking.</p>
           </>
         ),
@@ -670,6 +985,40 @@ const copy: Record<Locale, PrivacyCopy> = {
                   'Anmeldung, nur wenn du „Mit Apple anmelden“ oder „Mit Google anmelden“ wählst.',
                 ],
                 [
+                  'Apple App Store und Google Play',
+                  'Verkauf und Abrechnung von MonDex Plus, nach ihren eigenen Bedingungen und Datenschutzerklärungen.',
+                ],
+                [
+                  'RevenueCat',
+                  <>
+                    Abo-Status für MonDex Plus (siehe{' '}
+                    <a className="info-link" href="#plus">
+                      Abschnitt 6
+                    </a>
+                    ). RevenueCat, Inc., USA.
+                  </>,
+                ],
+                [
+                  'Apple Push Notification Service und Firebase Cloud Messaging',
+                  <>
+                    Zustellung von Preisalarm-Mitteilungen auf iPhone und Android (siehe{' '}
+                    <a className="info-link" href="#push">
+                      Abschnitt 8
+                    </a>
+                    ).
+                  </>,
+                ],
+                [
+                  'Apple DeviceCheck',
+                  <>
+                    Zwei Bits pro iPhone für die Welcome Week und Einladungsprämien (siehe{' '}
+                    <a className="info-link" href="#plus">
+                      Abschnitt 6
+                    </a>
+                    ).
+                  </>,
+                ],
+                [
                   'GitHub Pages',
                   <>
                     Hosting dieser Website (siehe{' '}
@@ -688,6 +1037,10 @@ const copy: Record<Locale, PrivacyCopy> = {
               personenbezogenen Daten werden dabei nicht übermittelt.
             </p>
             <h3>Übermittlung ins Ausland</h3>
+            <p>
+              RevenueCat, Inc. sitzt in den USA. Die Übermittlung an RevenueCat stützt sich auf die
+              EU-Standardvertragsklauseln.
+            </p>
             <p>
               <Fill>
                 [Garantien beschreiben, z. B. Standardvertragsklauseln, falls ein Anbieter außerhalb
@@ -725,6 +1078,29 @@ const copy: Record<Locale, PrivacyCopy> = {
               ['Registrierungscodes', 'Laufen nach 15 Minuten ab.'],
               ['Codes zum Zurücksetzen des Passworts', 'Laufen nach 30 Minuten ab.'],
               [
+                'MonDex-Plus-Status',
+                <>
+                  Solange dein Konto besteht.{' '}
+                  <Fill>[Bestätigen, was RevenueCat nach einer Kontolöschung aufbewahrt.]</Fill>
+                </>,
+              ],
+              [
+                'Welcome Week und Einladungen',
+                <>
+                  Solange dein Konto besteht.{' '}
+                  <Fill>
+                    [Bestätigen, ob Einladungsdaten zur Missbrauchsverhinderung länger aufbewahrt
+                    werden.]
+                  </Fill>
+                </>,
+              ],
+              ['DeviceCheck-Bits', 'Bei Apple zum Gerät gespeichert, nicht bei deinem Konto.'],
+              ['Preisalarme', 'Bis du den Alarm entfernst oder dein Konto löschst.'],
+              [
+                'Push-Tokens',
+                'Bis du dich auf diesem Handy abmeldest, Apple bzw. Google das Token als ungültig melden oder du dein Konto löschst.',
+              ],
+              [
                 'Warteliste',
                 <>
                   Siehe{' '}
@@ -759,6 +1135,14 @@ const copy: Record<Locale, PrivacyCopy> = {
                 Dein Konto endgültig löschen. Dabei werden deine Sammlung, deine Scan-Fotos und
                 deine Anmeldedaten entfernt. Wenn du „Mit Apple anmelden“ nutzt, widerrufen wir
                 außerdem den Zugriff von MonDex bei Apple.
+              </li>
+              <li>
+                MonDex Plus in den Einstellungen deines App-Store- oder Google-Play-Kontos kündigen.
+                Das Löschen deines MonDex-Kontos kündigt kein Store-Abo.
+              </li>
+              <li>
+                Mitteilungen in den Einstellungen deines Handys ausschalten und Preisalarme in der
+                App entfernen.
               </li>
             </ul>
             <p>

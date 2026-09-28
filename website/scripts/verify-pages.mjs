@@ -8,6 +8,7 @@ const paths = [
   'kontakt',
   'datenschutz',
   'impressum',
+  'nutzungsbedingungen',
 ];
 for (const path of paths) {
   const html = readFileSync(`out/${path ? path + '/' : ''}index.html`, 'utf8');
@@ -36,4 +37,11 @@ assert(notFound.indexOf("location.replace('/i/?'") < notFound.indexOf('<script s
 assert(existsSync('out/sitemap.xml'));
 assert(existsSync('out/robots.txt'));
 assert.match(readFileSync('out/index.html', 'utf8'), /class="mx-form[^"]*"/);
-console.log('PASS: 6 pages, 6 legacy German URLs, assets, internal links, waitlist form and invitation links.');
+const german = readFileSync('out/de/index.html', 'utf8');
+assert.match(german, /Vervollständige deinen Pokédex/);
+for (const html of [readFileSync('out/index.html', 'utf8'), german]) {
+  assert.match(html, /hreflang="de" href="https:\/\/mondextcg.com\/de\/"/i);
+  assert.match(html, /hreflang="en" href="https:\/\/mondextcg.com\/"/i);
+  assert.match(html, /property="og:image"/);
+}
+console.log('PASS: 7 pages (German home included), 5 legacy German URLs, assets, internal links, waitlist form and invitation links.');

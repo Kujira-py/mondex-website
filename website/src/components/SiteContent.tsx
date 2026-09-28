@@ -90,6 +90,7 @@ export function SiteFooter({ home = false }: { home?: boolean }) {
           <h2>{c.support}</h2>
           <a href="/kontakt/">{c.contact}</a>
           <a href="/datenschutz/">{c.privacy}</a>
+          <a href="/nutzungsbedingungen/">{c.terms}</a>
           <a href="/impressum/">{c.legal}</a>
           <a href={`${root}#vormerken`}>{c.waitlist}</a>
         </nav>

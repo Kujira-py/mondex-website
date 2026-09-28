@@ -6,9 +6,12 @@ const paths = [
   'kontakt',
   'datenschutz',
   'impressum',
+  'nutzungsbedingungen',
 ];
 // Preserve German links, campaign tags and anchors from the previous website.
 for (const path of paths) {
+  // The German home page is a real page (app/de); only the others redirect.
+  if (!path) continue;
   const destination = `/${path ? path + '/' : ''}?lang=de`;
   const directory = `out/de/${path}`;
   await mkdir(directory, { recursive: true });
