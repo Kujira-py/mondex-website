@@ -6,6 +6,7 @@ const paths = [
   'kontakt',
   'datenschutz',
   'impressum',
+  'nutzungsbedingungen',
 ];
 // Preserve German links, campaign tags and anchors from the previous website.
 for (const path of paths) {

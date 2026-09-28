@@ -17,22 +17,31 @@ export const operator = {
   responsible: '[NAME]',
 };
 export const COPYRIGHT_YEAR = '2026';
-export const PRIVACY_LAST_UPDATED = '[DATE]';
+export const PRIVACY_LAST_UPDATED = '2026-09-28';
+export const TERMS_LAST_UPDATED = '2026-09-28';
 
-export function LegalDraftNotice() {
+type DraftNote = { title: string; body: string };
+const defaultDraftNote: Record<Locale, DraftNote> = {
+  en: {
+    title: 'Review draft — not yet complete',
+    body: 'The original documents are missing operator details and several privacy facts. Marked entries still need to be supplied before this document can be published as a complete notice.',
+  },
+  de: {
+    title: 'Prüfentwurf — noch nicht vollständig',
+    body: 'In den ursprünglichen Dokumenten fehlen Betreiberangaben und einige Datenschutzinformationen. Markierte Angaben müssen ergänzt werden, bevor dieses Dokument vollständig veröffentlicht werden kann.',
+  },
+};
+
+export function LegalDraftNotice({
+  note = defaultDraftNote,
+}: {
+  note?: Record<Locale, DraftNote>;
+}) {
   const { locale } = useLanguage();
   return (
     <aside className="legal-draft" data-legal-draft>
-      <strong>
-        {locale === 'en'
-          ? 'Review draft — not yet complete'
-          : 'Prüfentwurf — noch nicht vollständig'}
-      </strong>
-      <p>
-        {locale === 'en'
-          ? 'The original documents are missing operator details and several privacy facts. Marked entries still need to be supplied before this document can be published as a complete notice.'
-          : 'In den ursprünglichen Dokumenten fehlen Betreiberangaben und einige Datenschutzinformationen. Markierte Angaben müssen ergänzt werden, bevor dieses Dokument vollständig veröffentlicht werden kann.'}
-      </p>
+      <strong>{note[locale].title}</strong>
+      <p>{note[locale].body}</p>
     </aside>
   );
 }
@@ -55,6 +64,23 @@ export function formatDate(value: string, locale: Locale) {
     <Fill>{value}</Fill>
   );
 }
+export const trademark: Record<Locale, ReactNode> = {
+  en: (
+    <>
+      Pokémon and all related names, characters and card images are trademarks of Nintendo,
+      Creatures Inc., GAME FREAK inc. and The Pokémon Company. MonDex is an independent fan-made
+      collector’s app and is not affiliated with, sponsored or endorsed by them.
+    </>
+  ),
+  de: (
+    <>
+      Pokémon und alle damit verbundenen Namen, Figuren und Kartenbilder sind Marken von Nintendo,
+      Creatures Inc., GAME FREAK inc. und The Pokémon Company. MonDex ist eine unabhängige, von Fans
+      entwickelte Sammler-App und steht in keiner Verbindung zu diesen Unternehmen. Sie wird von
+      ihnen weder gesponsert noch unterstützt.
+    </>
+  ),
+};
 export const Mail = ({ subject }: { subject?: string }) => (
   <a href={mailto(subject)}>{contactEmail}</a>
 );

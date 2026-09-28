@@ -107,6 +107,7 @@ export const homeCopy = {
     },
     footer: {
       tagline: 'Your Pokémon collection. Complete.',
+      terms: 'Terms of use',
       contact: 'Contact',
       privacy: 'Privacy',
       imprint: 'Legal notice',
@@ -228,6 +229,7 @@ export const homeCopy = {
     },
     footer: {
       tagline: 'Deine Pokémon-Sammlung. Komplett.',
+      terms: 'Nutzungsbedingungen',
       contact: 'Kontakt',
       privacy: 'Datenschutz',
       imprint: 'Impressum',

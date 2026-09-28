@@ -8,6 +8,7 @@ const paths = [
   'kontakt',
   'datenschutz',
   'impressum',
+  'nutzungsbedingungen',
 ];
 for (const path of paths) {
   const html = readFileSync(`out/${path ? path + '/' : ''}index.html`, 'utf8');
