@@ -12,6 +12,7 @@ import {
   Out,
   Rows,
   operator,
+  trademark,
   type InfoSection,
 } from './shared';
 
@@ -29,24 +30,6 @@ type LegalCopy = {
     responsible: string;
   };
   sections: InfoSection[];
-};
-
-const trademark: Record<Locale, ReactNode> = {
-  en: (
-    <>
-      Pokémon and all related names, characters and card images are trademarks of Nintendo,
-      Creatures Inc., GAME FREAK inc. and The Pokémon Company. MonDex is an independent fan-made
-      collector’s app and is not affiliated with, sponsored or endorsed by them.
-    </>
-  ),
-  de: (
-    <>
-      Pokémon und alle damit verbundenen Namen, Figuren und Kartenbilder sind Marken von Nintendo,
-      Creatures Inc., GAME FREAK inc. und The Pokémon Company. MonDex ist eine unabhängige, von Fans
-      entwickelte Sammler-App und steht in keiner Verbindung zu diesen Unternehmen. Sie wird von
-      ihnen weder gesponsert noch unterstützt.
-    </>
-  ),
 };
 
 const copy: Record<Locale, LegalCopy> = {

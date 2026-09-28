@@ -175,6 +175,7 @@ export default function Home() {
           <nav aria-label="Footer">
             <a href="/kontakt/">{c.footer.contact}</a>
             <a href="/datenschutz/">{c.footer.privacy}</a>
+            <a href="/nutzungsbedingungen/">{c.footer.terms}</a>
             <a href="/impressum/">{c.footer.imprint}</a>
           </nav>
         </div>

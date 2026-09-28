@@ -30,8 +30,9 @@ const copy: Record<Locale, ContactCopy> = {
     password: 'MonDex will never ask for your password by email. If someone does, it isn’t us.',
     postal: (
       <>
-        More information: <Local to="/impressum">Legal Notice</Local> and{' '}
-        <Local to="/datenschutz">Privacy Policy</Local>.
+        More information: <Local to="/impressum">Legal Notice</Local>,{' '}
+        <Local to="/datenschutz">Privacy Policy</Local> and{' '}
+        <Local to="/nutzungsbedingungen">Terms of Use</Local>.
       </>
     ),
     topicsTitle: 'What people write to us about',
@@ -105,8 +106,9 @@ const copy: Record<Locale, ContactCopy> = {
       'MonDex fragt dich nie per E-Mail nach deinem Passwort. Wenn das jemand tut, sind es nicht wir.',
     postal: (
       <>
-        Weitere Informationen: <Local to="/impressum">Impressum</Local> und{' '}
-        <Local to="/datenschutz">Datenschutz</Local>.
+        Weitere Informationen: <Local to="/impressum">Impressum</Local>,{' '}
+        <Local to="/datenschutz">Datenschutz</Local> und{' '}
+        <Local to="/nutzungsbedingungen">Nutzungsbedingungen</Local>.
       </>
     ),
     topicsTitle: 'Worum es in deiner Nachricht gehen kann',
