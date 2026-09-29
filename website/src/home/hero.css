@@ -61,6 +61,13 @@
   overflow: hidden;
   background: #0b0b0f;
   isolation: isolate;
+  /* Safari ignores overflow + border-radius for composited children (the
+     card's will-change, mix-blend-mode and filters below) inside a 3D-animated
+     frame, so the square screen pokes out past the rounded phone. An explicit
+     rounded clip and mask fixes it. */
+  clip-path: inset(0 round 12.7cqw);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: radial-gradient(white, black);
   font-family: var(--font-onest, Onest), -apple-system, system-ui, sans-serif;
 }
 .hp-screen * {
