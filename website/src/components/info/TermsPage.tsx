@@ -6,7 +6,6 @@ import {
   Fill,
   InfoIntro,
   InfoSections,
-  LegalDraftNotice,
   Local,
   Mail,
   Out,
@@ -31,17 +30,6 @@ type TermsCopy = {
   summary: string;
   toc: string;
   sections: InfoSection[];
-};
-
-const draftNote = {
-  en: {
-    title: 'Draft for legal review — not yet in force',
-    body: 'These terms are a draft. The operator’s details are still missing, and the text needs a legal review before MonDex Plus goes on sale. Marked entries still need to be supplied.',
-  },
-  de: {
-    title: 'Entwurf zur rechtlichen Prüfung — noch nicht in Kraft',
-    body: 'Diese Bedingungen sind ein Entwurf. Es fehlen noch die Betreiberangaben, und der Text muss vor dem Verkaufsstart von MonDex Plus rechtlich geprüft werden. Markierte Angaben müssen noch ergänzt werden.',
-  },
 };
 
 const copy: Record<Locale, TermsCopy> = {
@@ -101,9 +89,8 @@ const copy: Record<Locale, TermsCopy> = {
               account, change your password and let us know.
             </p>
             <p>
-              To create an account, you must be at least{' '}
-              <Fill>[minimum age: decide together with the Privacy Policy]</Fill> years old, or have
-              the permission of a parent or guardian.
+              To create an account, you must be at least 16 years old, or have the permission of a
+              parent or guardian.
             </p>
           </>
         ),
@@ -156,8 +143,8 @@ const copy: Record<Locale, TermsCopy> = {
             <h3>Price changes and offers</h3>
             <p>
               If the price of Plus changes, the store tells you before it applies to you and, where
-              its rules require it, asks for your consent. Offers such as a founder price or offer
-              codes come with their own conditions, shown with the offer.
+              its rules require it, asks for your consent. Offers such as offer codes come with
+              their own conditions, shown with the offer.
             </p>
           </>
         ),
@@ -179,9 +166,9 @@ const copy: Record<Locale, TermsCopy> = {
                 subscription.
               </li>
               <li>
-                There is one Welcome Week per account and one per device. To check the device,
-                MonDex uses a feature of the phone’s operating system that identifies no one (see
-                the <Local to="/datenschutz#plus">Privacy Policy</Local>).
+                There is one Welcome Week per account and, on iPhone, one per device. To check the
+                device, MonDex uses a feature of the iPhone’s operating system that identifies no
+                one (see the <Local to="/datenschutz#plus">Privacy Policy</Local>).
               </li>
             </ul>
             <p>
@@ -272,8 +259,8 @@ const copy: Record<Locale, TermsCopy> = {
         body: (
           <>
             <p>
-              What you add to MonDex stays yours: your scan photos, notes, profile photo, bio and
-              the details of your collection.
+              What you add to MonDex stays yours: your notes, profile photo, bio and the details of
+              your collection.
             </p>
             <p>
               So that we can run MonDex for you, you give us a non-exclusive, free permission to
@@ -402,8 +389,8 @@ const copy: Record<Locale, TermsCopy> = {
               <li>export your collection as CSV or JSON first, if you want to keep it</li>
               <li>deactivate your account; signing in again restores it</li>
               <li>
-                delete your account permanently. This removes your collection, your scan photos and
-                your sign-in data, and it can’t be undone.
+                delete your account permanently. This removes your collection and your sign-in data,
+                and it can’t be undone.
               </li>
             </ul>
             <p>
@@ -453,14 +440,12 @@ const copy: Record<Locale, TermsCopy> = {
         body: (
           <>
             <p>
-              German law applies, excluding the UN Convention on Contracts for the International
-              Sale of Goods. If you use MonDex as a consumer, you keep the protection of the
-              mandatory consumer laws of the country where you live.
+              The law of the Republic of Kosovo applies. If you use MonDex as a consumer, you keep
+              the protection of the mandatory consumer laws of the country where you live.
             </p>
             <p>
-              <Fill>
-                [Confirm the operator’s information on consumer dispute resolution (§ 36 VSBG).]
-              </Fill>
+              We are neither obliged nor willing to take part in dispute resolution proceedings
+              before a consumer arbitration board.
             </p>
           </>
         ),
@@ -527,9 +512,8 @@ const copy: Record<Locale, TermsCopy> = {
               dein Konto nutzt, ändere dein Passwort und sag uns Bescheid.
             </p>
             <p>
-              Für ein Konto musst du mindestens{' '}
-              <Fill>[Mindestalter: zusammen mit der Datenschutzerklärung festlegen]</Fill> Jahre alt
-              sein oder die Erlaubnis deiner Eltern oder Erziehungsberechtigten haben.
+              Für ein Konto musst du mindestens 16 Jahre alt sein oder die Erlaubnis deiner Eltern
+              oder Erziehungsberechtigten haben.
             </p>
           </>
         ),
@@ -584,8 +568,8 @@ const copy: Record<Locale, TermsCopy> = {
             <h3>Preisänderungen und Angebote</h3>
             <p>
               Ändert sich der Preis von Plus, informiert dich der Store, bevor er für dich gilt, und
-              fragt nach deiner Zustimmung, wo seine Regeln das vorsehen. Angebote wie ein
-              Gründerpreis oder Angebotscodes haben eigene Bedingungen, die beim Angebot stehen.
+              fragt nach deiner Zustimmung, wo seine Regeln das vorsehen. Angebote wie Angebotscodes
+              haben eigene Bedingungen, die beim Angebot stehen.
             </p>
           </>
         ),
@@ -607,9 +591,9 @@ const copy: Record<Locale, TermsCopy> = {
                 bezahlten Abo.
               </li>
               <li>
-                Es gibt eine Welcome Week pro Konto und eine pro Gerät. Um das Gerät zu prüfen,
-                nutzt MonDex eine Funktion des Betriebssystems, die niemanden identifiziert (siehe{' '}
-                <Local to="/datenschutz#plus">Datenschutzerklärung</Local>).
+                Es gibt eine Welcome Week pro Konto und auf dem iPhone eine pro Gerät. Um das Gerät
+                zu prüfen, nutzt MonDex eine Funktion des iPhone-Betriebssystems, die niemanden
+                identifiziert (siehe <Local to="/datenschutz#plus">Datenschutzerklärung</Local>).
               </li>
             </ul>
             <p>
@@ -701,8 +685,8 @@ const copy: Record<Locale, TermsCopy> = {
         body: (
           <>
             <p>
-              Was du in MonDex einbringst, bleibt deins: deine Scan-Fotos, Notizen, dein Profilfoto,
-              deine Bio und die Angaben zu deiner Sammlung.
+              Was du in MonDex einbringst, bleibt deins: deine Notizen, dein Profilfoto, deine Bio
+              und die Angaben zu deiner Sammlung.
             </p>
             <p>
               Damit wir MonDex für dich betreiben können, räumst du uns ein einfaches,
@@ -843,8 +827,8 @@ const copy: Record<Locale, TermsCopy> = {
               </li>
               <li>dein Konto deaktivieren; wenn du dich wieder anmeldest, ist es wieder da</li>
               <li>
-                dein Konto endgültig löschen. Dabei werden deine Sammlung, deine Scan-Fotos und
-                deine Anmeldedaten entfernt, und das lässt sich nicht rückgängig machen.
+                dein Konto endgültig löschen. Dabei werden deine Sammlung und deine Anmeldedaten
+                entfernt, und das lässt sich nicht rückgängig machen.
               </li>
             </ul>
             <p>
@@ -894,15 +878,13 @@ const copy: Record<Locale, TermsCopy> = {
         body: (
           <>
             <p>
-              Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts. Nutzt du MonDex als
-              Verbraucherin oder Verbraucher, behältst du den Schutz der zwingenden
-              Verbraucherschutzvorschriften des Landes, in dem du deinen gewöhnlichen Aufenthalt
-              hast.
+              Es gilt das Recht der Republik Kosovo. Nutzt du MonDex als Verbraucherin oder
+              Verbraucher, behältst du den Schutz der zwingenden Verbraucherschutzvorschriften des
+              Landes, in dem du deinen gewöhnlichen Aufenthalt hast.
             </p>
             <p>
-              <Fill>
-                [Angaben des Betreibers zur Verbraucherstreitbeilegung (§ 36 VSBG) bestätigen.]
-              </Fill>
+              Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer
+              Verbraucherschlichtungsstelle teilzunehmen.
             </p>
           </>
         ),
@@ -916,7 +898,6 @@ export default function TermsPage() {
   const c = copy[locale];
   return (
     <>
-      <LegalDraftNotice note={draftNote} />
       <InfoIntro label={c.label} title={c.title}>
         <p className="info-meta">
           <span>

@@ -7,44 +7,17 @@ import { useLanguage } from '../Language';
 import { Arrow } from '../Primitives';
 import { contactEmail, mailto } from '@/lib/site-content';
 
-// Original source leaves these facts open. Do not publish as a completed legal
-// notice until the owner supplies them; see docs/content-migration.md.
 export const operator = {
-  name: '[FULL LEGAL NAME / COMPANY NAME]',
-  address: '[STREET, POSTCODE, CITY, COUNTRY]',
-  phone: '',
-  register: '[Company register / UID / VAT number, if applicable]',
-  responsible: '[NAME]',
+  name: 'Naran Solutions',
+  address: 'St. Tirana 42, 10000 Pristina, Kosovo',
+  phone: '+383 44 871 333',
+  register: '',
+  responsible: 'Vigan Mustafa',
 };
 export const COPYRIGHT_YEAR = '2026';
-export const PRIVACY_LAST_UPDATED = '2026-09-28';
-export const TERMS_LAST_UPDATED = '2026-09-28';
+export const PRIVACY_LAST_UPDATED = '2026-09-30';
+export const TERMS_LAST_UPDATED = '2026-09-30';
 
-type DraftNote = { title: string; body: string };
-const defaultDraftNote: Record<Locale, DraftNote> = {
-  en: {
-    title: 'Review draft — not yet complete',
-    body: 'The original documents are missing operator details and several privacy facts. Marked entries still need to be supplied before this document can be published as a complete notice.',
-  },
-  de: {
-    title: 'Prüfentwurf — noch nicht vollständig',
-    body: 'In den ursprünglichen Dokumenten fehlen Betreiberangaben und einige Datenschutzinformationen. Markierte Angaben müssen ergänzt werden, bevor dieses Dokument vollständig veröffentlicht werden kann.',
-  },
-};
-
-export function LegalDraftNotice({
-  note = defaultDraftNote,
-}: {
-  note?: Record<Locale, DraftNote>;
-}) {
-  const { locale } = useLanguage();
-  return (
-    <aside className="legal-draft" data-legal-draft>
-      <strong>{note[locale].title}</strong>
-      <p>{note[locale].body}</p>
-    </aside>
-  );
-}
 export function Fill({ children }: { children: string }) {
   return /^\[[\s\S]*\]$/.test(children.trim()) ? (
     <mark className="legal-pending" data-legal-pending>

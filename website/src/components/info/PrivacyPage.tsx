@@ -6,7 +6,6 @@ import {
   Fill,
   InfoIntro,
   InfoSections,
-  LegalDraftNotice,
   Local,
   Mail,
   Out,
@@ -46,11 +45,7 @@ const copy: Record<Locale, PrivacyCopy> = {
       </>
     ),
     updated: 'Last updated',
-    framework: (
-      <>
-        This policy is written for <Fill>[Swiss FADP / EU GDPR, confirm which applies]</Fill>.
-      </>
-    ),
+    framework: <>This policy follows the EU General Data Protection Regulation (GDPR).</>,
     summaryTitle: 'The short version',
     summary:
       'The website’s demos work without an account or camera access. Your language choice is stored in a preference cookie. App accounts, collections, MonDex Plus and the launch waitlist are described separately below.',
@@ -105,9 +100,9 @@ const copy: Record<Locale, PrivacyCopy> = {
             </ul>
             <p>
               Joining the waitlist doesn’t create a MonDex account. We use these details for one
-              thing: telling you when MonDex launches. We keep them{' '}
-              <Fill>[until launch + N months / until you ask us to remove it]</Fill>. You can remove
-              yourself at any time by emailing <Mail subject="Remove me from the waitlist" />.
+              thing: telling you when MonDex launches. We keep them until six months after MonDex
+              launches. You can remove yourself at any time by emailing{' '}
+              <Mail subject="Remove me from the waitlist" />.
             </p>
             <h3>Keeping bots out</h3>
             <p>
@@ -190,15 +185,8 @@ const copy: Record<Locale, PrivacyCopy> = {
             <p>
               For online recognition, the app sends the photo to our server to compare it with the
               card catalogue. Supported offline camera scans use a previously downloaded recognition
-              pack on your device. We don’t use your photos to identify you, and we don’t use them
-              to train AI models.
-            </p>
-            <h3>Saved scan photos</h3>
-            <p>
-              <Fill>[If image storage is turned on in production:]</Fill> When you save a scanned
-              card, its scan photo may be kept with that card. Photos you discard are deleted.
-              Deleting a card deletes its photo, and deleting your account deletes all of your scan
-              photos.
+              pack on your device. Scan photos aren’t saved on our server. We don’t use your photos
+              to identify you, and we don’t use them to train AI models.
             </p>
             <h3>Grade</h3>
             <p>
@@ -231,14 +219,14 @@ const copy: Record<Locale, PrivacyCopy> = {
             <p>
               To check purchases and keep your Plus status up to date, we use RevenueCat
               (RevenueCat, Inc., USA). The app signs in to RevenueCat with an anonymous app user ID:
-              your MonDex account ID, not your name or email address. RevenueCat receives the
-              store’s purchase receipts and transaction data for that ID, and the technical data
-              needed to handle each request, such as your device type, operating system and app
-              version, store country and IP address{' '}
-              <Fill>[check against RevenueCat’s data documentation]</Fill>. RevenueCat tells our
-              server when a subscription starts, renews, ends or is refunded. It processes this data
-              on our behalf and not for advertising. Transfers to RevenueCat in the USA are based on
-              the EU Standard Contractual Clauses. See{' '}
+              your MonDex account ID, not your name or email address. For that ID, RevenueCat
+              receives the store’s purchase receipts and transaction data (the Apple receipt or the
+              Google Play purchase token) and when you last used the app. With each request it also
+              receives technical data: your device type, operating system and its version, app
+              version, locale, currency, store country and IP address. RevenueCat tells our server
+              when a subscription starts, renews, ends or is refunded. It processes this data on our
+              behalf and not for advertising. Transfers to RevenueCat in the USA are based on the EU
+              Standard Contractual Clauses. See{' '}
               <Out href={REVENUECAT_PRIVACY}>RevenueCat’s privacy policy</Out>.
             </p>
             <h3>Welcome Week</h3>
@@ -253,8 +241,8 @@ const copy: Record<Locale, PrivacyCopy> = {
               “invitation reward received”. The app creates a short-lived token on your phone, and
               our server sends it to Apple to read or set these two bits. Apple doesn’t tell us
               which device it is. The bits contain no personal data and identify no one. They stay
-              with the device, even if you reinstall MonDex or delete your account.{' '}
-              <Fill>[Android: confirm the equivalent check before the Android launch.]</Fill>
+              with the device, even if you reinstall MonDex or delete your account. On Android,
+              there is currently no equivalent check per device.
             </p>
           </>
         ),
@@ -385,20 +373,15 @@ const copy: Record<Locale, PrivacyCopy> = {
               items={[
                 [
                   'Render',
-                  <>
-                    App server and database, including the waitlist. Region:{' '}
-                    <Fill>[Region: e.g. Frankfurt, EU / Oregon, US]</Fill>
-                  </>,
+                  <>App server and database, including the waitlist. Region: Oregon, USA.</>,
                 ],
                 [
-                  <Fill key="storage">[S3-compatible storage provider + region]</Fill>,
-                  'Scan photos, if photo storage is turned on.',
+                  'Titan Email',
+                  'Sending sign-up codes, password-reset codes and collection exports, and receiving the emails you send us.',
                 ],
                 [
-                  <>
-                    Titan Email <Fill>[Confirm provider]</Fill>
-                  </>,
-                  'Sending sign-up codes, password-reset codes and collection exports.',
+                  'Sentry',
+                  'Error reports from our server, so we can find and fix problems. Names, email addresses, passwords, sign-in tokens and IP addresses are removed before a report is sent.',
                 ],
                 ['Apple and Google', 'Sign-in, only if you choose Sign in with Apple or Google.'],
                 [
@@ -455,14 +438,18 @@ const copy: Record<Locale, PrivacyCopy> = {
             </p>
             <h3>International transfers</h3>
             <p>
-              RevenueCat, Inc. is based in the USA. Transfers to RevenueCat are based on the EU
-              Standard Contractual Clauses.
+              Some of our service providers are based, or process data, outside the EU and
+              Switzerland, mainly in the USA: Render (app server and database), RevenueCat, Titan
+              (email), Sentry (error reports), Apple (App Store, push notifications, Sign in with
+              Apple), Google (Google Sign-In, Android push notifications, Google Play Billing) and
+              GitHub (website hosting).
             </p>
             <p>
-              <Fill>
-                [describe safeguards, e.g. Standard Contractual Clauses, if any provider is outside
-                Switzerland/EU]
-              </Fill>
+              Where the recipient is certified under the EU-US Data Privacy Framework (and, for data
+              from Switzerland, the Swiss-US Data Privacy Framework), transfers are based on that
+              framework. Otherwise, they are covered by the EU Standard Contractual Clauses
+              (Commission Decision 2021/914), with the adaptations required for Switzerland, which
+              are part of each provider’s data processing agreement.
             </p>
           </>
         ),
@@ -497,17 +484,17 @@ const copy: Record<Locale, PrivacyCopy> = {
               [
                 'MonDex Plus status',
                 <>
-                  As long as your account exists.{' '}
-                  <Fill>[Confirm what RevenueCat keeps after an account is deleted.]</Fill>
+                  As long as your account exists. Deleting your MonDex account doesn’t delete your
+                  purchase history at RevenueCat, which stays stored under your anonymous app user
+                  ID. Email us at <Mail subject="Data request" /> and we’ll have it deleted there
+                  too.
                 </>,
               ],
               [
                 'Welcome Week and invitations',
                 <>
-                  As long as your account exists.{' '}
-                  <Fill>
-                    [Confirm whether invitation records are kept longer to prevent misuse.]
-                  </Fill>
+                  As long as your account exists. When you delete your account, they are deleted
+                  immediately.
                 </>,
               ],
               ['DeviceCheck bits', 'Kept by Apple with the device, not with your account.'],
@@ -526,7 +513,7 @@ const copy: Record<Locale, PrivacyCopy> = {
                   .
                 </>,
               ],
-              ['Server logs', <Fill key="logs">[N days]</Fill>],
+              ['Server logs', '7 days.'],
             ]}
           />
         ),
@@ -542,9 +529,8 @@ const copy: Record<Locale, PrivacyCopy> = {
               <li>Edit your profile at any time.</li>
               <li>Deactivate your account. This is reversible: signing in again restores it.</li>
               <li>
-                Delete your account permanently. This removes your collection, your scan photos and
-                your sign-in data. If you use Sign in with Apple, we also revoke MonDex’s access
-                with Apple.
+                Delete your account permanently. This removes your collection and your sign-in data.
+                If you use Sign in with Apple, we also revoke MonDex’s access with Apple.
               </li>
               <li>
                 Cancel MonDex Plus in your App Store or Google Play account settings. Deleting your
@@ -556,8 +542,10 @@ const copy: Record<Locale, PrivacyCopy> = {
             </ul>
             <p>
               You can also email us at <Mail subject="Data request" /> to access, correct, delete or
-              port your data, or to object to how we use it. And you have the right to complain to{' '}
-              <Fill>[FDPIC (Switzerland) / your local EU data protection authority]</Fill>.
+              port your data, or to object to how we use it. And you have the right to complain to a
+              data protection authority, in particular the one in the EU country where you live or,
+              if you live in Switzerland, the Federal Data Protection and Information Commissioner
+              (FDPIC).
             </p>
           </>
         ),
@@ -580,10 +568,9 @@ const copy: Record<Locale, PrivacyCopy> = {
         body: (
           <>
             <p>
-              <Fill>
-                [Minimum age, e.g. 16, or younger with parental consent. Decide this: Pokémon has
-                many young fans.]
-              </Fill>
+              You need to be at least 16 to create a MonDex account. If you’re younger, you need the
+              consent of a parent or guardian. If you think a child under 16 has given us personal
+              data without that consent, email us at <Mail subject="Privacy" /> and we’ll delete it.
             </p>
           </>
         ),
@@ -613,11 +600,7 @@ const copy: Record<Locale, PrivacyCopy> = {
       </>
     ),
     updated: 'Zuletzt aktualisiert',
-    framework: (
-      <>
-        Diese Erklärung richtet sich nach <Fill>[Schweizer DSG / EU-DSGVO, bitte bestätigen]</Fill>.
-      </>
-    ),
+    framework: <>Diese Erklärung richtet sich nach der EU-Datenschutz-Grundverordnung (DSGVO).</>,
     summaryTitle: 'Kurz gesagt',
     summary:
       'Die Website-Demos funktionieren ohne Konto und ohne Kamerazugriff. Deine Sprachwahl wird in einem Einstellungs-Cookie gespeichert. App-Konten, Sammlungen, MonDex Plus und die Launch-Warteliste werden unten getrennt beschrieben.',
@@ -678,9 +661,9 @@ const copy: Record<Locale, PrivacyCopy> = {
             <p>
               Mit dem Eintrag in die Warteliste wird kein MonDex-Konto angelegt. Wir nutzen diese
               Angaben für genau eine Sache: dir Bescheid zu geben, wenn MonDex startet. Wir bewahren
-              sie <Fill>[bis zum Launch + N Monate / bis du uns bittest, sie zu löschen]</Fill> auf.
-              Du kannst dich jederzeit austragen lassen, indem du an{' '}
-              <Mail subject="Bitte von der Warteliste entfernen" /> schreibst.
+              sie bis sechs Monate nach dem Launch von MonDex auf. Du kannst dich jederzeit
+              austragen lassen, indem du an <Mail subject="Bitte von der Warteliste entfernen" />{' '}
+              schreibst.
             </p>
             <h3>Schutz vor Bots</h3>
             <p>
@@ -767,15 +750,9 @@ const copy: Record<Locale, PrivacyCopy> = {
             <p>
               Für die Online-Erkennung sendet die App das Foto an unseren Server zum Vergleich mit
               dem Kartenkatalog. Unterstützte Offline-Kamera-Scans nutzen ein zuvor geladenes
-              Erkennungspaket auf deinem Gerät. Wir nutzen deine Fotos nicht, um dich zu
-              identifizieren, und nicht, um KI-Modelle zu trainieren.
-            </p>
-            <h3>Gespeicherte Scan-Fotos</h3>
-            <p>
-              <Fill>[Falls die Bildspeicherung im Produktivbetrieb aktiviert ist:]</Fill> Wenn du
-              eine gescannte Karte speicherst, kann ihr Scan-Foto zusammen mit der Karte aufbewahrt
-              werden. Fotos, die du verwirfst, werden gelöscht. Löschst du eine Karte, wird ihr Foto
-              gelöscht, und löschst du dein Konto, werden alle deine Scan-Fotos gelöscht.
+              Erkennungspaket auf deinem Gerät. Scan-Fotos werden nicht auf unserem Server
+              gespeichert. Wir nutzen deine Fotos nicht, um dich zu identifizieren, und nicht, um
+              KI-Modelle zu trainieren.
             </p>
             <h3>Grade</h3>
             <p>
@@ -810,15 +787,15 @@ const copy: Record<Locale, PrivacyCopy> = {
               Um Käufe zu prüfen und deinen Plus-Status aktuell zu halten, nutzen wir RevenueCat
               (RevenueCat, Inc., USA). Die App meldet sich bei RevenueCat mit einer anonymen
               App-Nutzer-ID an: der ID deines MonDex-Kontos, nicht deinem Namen oder deiner
-              E-Mail-Adresse. RevenueCat erhält die Kaufbelege und Transaktionsdaten des Stores zu
-              dieser ID sowie die technischen Daten, die für jede Anfrage nötig sind, etwa
-              Gerätetyp, Betriebssystem- und App-Version, Store-Land und IP-Adresse{' '}
-              <Fill>[mit der Datendokumentation von RevenueCat abgleichen]</Fill>. RevenueCat teilt
-              unserem Server mit, wenn ein Abo beginnt, sich verlängert, endet oder erstattet wird.
-              RevenueCat verarbeitet diese Daten in unserem Auftrag und nicht für Werbung. Die
-              Übermittlung an RevenueCat in die USA stützt sich auf die EU-Standardvertragsklauseln.
-              Mehr dazu in der{' '}
-              <Out href={REVENUECAT_PRIVACY}>Datenschutzerklärung von RevenueCat</Out>.
+              E-Mail-Adresse. Zu dieser ID erhält RevenueCat die Kaufbelege und Transaktionsdaten
+              des Stores (den Apple-Kaufbeleg bzw. das Kauf-Token von Google Play) und den
+              Zeitpunkt, zu dem du die App zuletzt genutzt hast. Mit jeder Anfrage erhält RevenueCat
+              außerdem technische Daten: Gerätetyp, Betriebssystem und dessen Version, App-Version,
+              Spracheinstellung, Währung, Store-Land und IP-Adresse. RevenueCat teilt unserem Server
+              mit, wenn ein Abo beginnt, sich verlängert, endet oder erstattet wird. RevenueCat
+              verarbeitet diese Daten in unserem Auftrag und nicht für Werbung. Die Übermittlung an
+              RevenueCat in die USA stützt sich auf die EU-Standardvertragsklauseln. Mehr dazu in
+              der <Out href={REVENUECAT_PRIVACY}>Datenschutzerklärung von RevenueCat</Out>.
             </p>
             <h3>Welcome Week</h3>
             <p>
@@ -833,8 +810,8 @@ const copy: Record<Locale, PrivacyCopy> = {
               kurzlebiges Token, und unser Server schickt es an Apple, um diese zwei Bits zu lesen
               oder zu setzen. Apple teilt uns nicht mit, um welches Gerät es sich handelt. Die Bits
               enthalten keine personenbezogenen Daten und identifizieren niemanden. Sie bleiben beim
-              Gerät, auch wenn du MonDex neu installierst oder dein Konto löschst.{' '}
-              <Fill>[Android: gleichwertige Prüfung vor dem Android-Start bestätigen.]</Fill>
+              Gerät, auch wenn du MonDex neu installierst oder dein Konto löschst. Auf Android gibt
+              es derzeit keine entsprechende Prüfung pro Gerät.
             </p>
           </>
         ),
@@ -966,19 +943,16 @@ const copy: Record<Locale, PrivacyCopy> = {
                 [
                   'Render',
                   <>
-                    App-Server und Datenbank, einschließlich der Warteliste. Region:{' '}
-                    <Fill>[Region: z. B. Frankfurt, EU / Oregon, USA]</Fill>
+                    App-Server und Datenbank, einschließlich der Warteliste. Region: Oregon, USA.
                   </>,
                 ],
                 [
-                  <Fill key="storage">[S3-kompatibler Speicheranbieter + Region]</Fill>,
-                  'Scan-Fotos, falls die Fotospeicherung aktiviert ist.',
+                  'Titan Email',
+                  'Versand von Registrierungscodes, Codes zum Zurücksetzen des Passworts und Sammlungsexporten sowie Empfang der E-Mails, die du uns schickst.',
                 ],
                 [
-                  <>
-                    Titan Email <Fill>[Anbieter bestätigen]</Fill>
-                  </>,
-                  'Versand von Registrierungscodes, Codes zum Zurücksetzen des Passworts und Sammlungsexporten.',
+                  'Sentry',
+                  'Fehlerberichte unseres Servers, damit wir Probleme finden und beheben können. Namen, E-Mail-Adressen, Passwörter, Anmelde-Tokens und IP-Adressen werden entfernt, bevor ein Bericht gesendet wird.',
                 ],
                 [
                   'Apple und Google',
@@ -1038,14 +1012,19 @@ const copy: Record<Locale, PrivacyCopy> = {
             </p>
             <h3>Übermittlung ins Ausland</h3>
             <p>
-              RevenueCat, Inc. sitzt in den USA. Die Übermittlung an RevenueCat stützt sich auf die
-              EU-Standardvertragsklauseln.
+              Einige unserer Dienstleister sitzen außerhalb der EU und der Schweiz oder verarbeiten
+              Daten dort, vor allem in den USA: Render (App-Server und Datenbank), RevenueCat, Titan
+              (E-Mail), Sentry (Fehlerberichte), Apple (App Store, Mitteilungen, „Mit Apple
+              anmelden“), Google (Google-Anmeldung, Mitteilungen auf Android, Google Play Billing)
+              und GitHub (Hosting der Website).
             </p>
             <p>
-              <Fill>
-                [Garantien beschreiben, z. B. Standardvertragsklauseln, falls ein Anbieter außerhalb
-                der Schweiz/EU sitzt]
-              </Fill>
+              Ist der Empfänger unter dem EU-US Data Privacy Framework (und für Daten aus der
+              Schweiz unter dem Swiss-US Data Privacy Framework) zertifiziert, stützt sich die
+              Übermittlung darauf. Andernfalls erfolgt sie auf Grundlage der
+              EU-Standardvertragsklauseln (Durchführungsbeschluss 2021/914 der Kommission) mit den
+              für die Schweiz nötigen Anpassungen, die Teil der Auftragsverarbeitungsvereinbarung
+              des jeweiligen Anbieters sind.
             </p>
           </>
         ),
@@ -1080,19 +1059,15 @@ const copy: Record<Locale, PrivacyCopy> = {
               [
                 'MonDex-Plus-Status',
                 <>
-                  Solange dein Konto besteht.{' '}
-                  <Fill>[Bestätigen, was RevenueCat nach einer Kontolöschung aufbewahrt.]</Fill>
+                  Solange dein Konto besteht. Das Löschen deines MonDex-Kontos löscht deine
+                  Kaufhistorie bei RevenueCat nicht; sie bleibt unter deiner anonymen App-Nutzer-ID
+                  gespeichert. Schreib uns an <Mail subject="Datenanfrage" />, dann lassen wir sie
+                  auch dort löschen.
                 </>,
               ],
               [
                 'Welcome Week und Einladungen',
-                <>
-                  Solange dein Konto besteht.{' '}
-                  <Fill>
-                    [Bestätigen, ob Einladungsdaten zur Missbrauchsverhinderung länger aufbewahrt
-                    werden.]
-                  </Fill>
-                </>,
+                <>Solange dein Konto besteht. Löschst du dein Konto, werden sie sofort gelöscht.</>,
               ],
               ['DeviceCheck-Bits', 'Bei Apple zum Gerät gespeichert, nicht bei deinem Konto.'],
               ['Preisalarme', 'Bis du den Alarm entfernst oder dein Konto löschst.'],
@@ -1110,7 +1085,7 @@ const copy: Record<Locale, PrivacyCopy> = {
                   .
                 </>,
               ],
-              ['Server-Logs', <Fill key="logs">[N Tage]</Fill>],
+              ['Server-Logs', '7 Tage.'],
             ]}
           />
         ),
@@ -1132,9 +1107,9 @@ const copy: Record<Locale, PrivacyCopy> = {
                 anmeldest, ist es wieder da.
               </li>
               <li>
-                Dein Konto endgültig löschen. Dabei werden deine Sammlung, deine Scan-Fotos und
-                deine Anmeldedaten entfernt. Wenn du „Mit Apple anmelden“ nutzt, widerrufen wir
-                außerdem den Zugriff von MonDex bei Apple.
+                Dein Konto endgültig löschen. Dabei werden deine Sammlung und deine Anmeldedaten
+                entfernt. Wenn du „Mit Apple anmelden“ nutzt, widerrufen wir außerdem den Zugriff
+                von MonDex bei Apple.
               </li>
               <li>
                 MonDex Plus in den Einstellungen deines App-Store- oder Google-Play-Kontos kündigen.
@@ -1148,9 +1123,9 @@ const copy: Record<Locale, PrivacyCopy> = {
             <p>
               Du kannst uns auch an <Mail subject="Datenanfrage" /> schreiben, um deine Daten
               einzusehen, zu berichtigen, zu löschen oder mitzunehmen oder um der Nutzung zu
-              widersprechen. Außerdem hast du das Recht, dich bei{' '}
-              <Fill>[EDÖB (Schweiz) / deiner zuständigen EU-Datenschutzbehörde]</Fill> zu
-              beschweren.
+              widersprechen. Außerdem hast du das Recht, dich bei einer Datenschutzbehörde zu
+              beschweren, insbesondere in dem EU-Land, in dem du lebst, oder, wenn du in der Schweiz
+              lebst, beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB).
             </p>
           </>
         ),
@@ -1174,10 +1149,10 @@ const copy: Record<Locale, PrivacyCopy> = {
         body: (
           <>
             <p>
-              <Fill>
-                [Mindestalter, z. B. 16 oder jünger mit Zustimmung der Eltern. Bitte entscheiden:
-                Pokémon hat viele junge Fans.]
-              </Fill>
+              Für ein MonDex-Konto musst du mindestens 16 Jahre alt sein. Bist du jünger, brauchst
+              du die Zustimmung deiner Eltern oder Erziehungsberechtigten. Wenn du glaubst, dass uns
+              ein Kind unter 16 Jahren ohne diese Zustimmung personenbezogene Daten gegeben hat,
+              schreib uns an <Mail subject="Datenschutz" />, dann löschen wir sie.
             </p>
           </>
         ),
@@ -1216,9 +1191,8 @@ export default function PrivacyPage() {
                 explain the issue; never send your password.
               </p>
               <p>
-                <Fill>
-                  [Confirm the email provider and retention period for contact enquiries.]
-                </Fill>
+                Emails you send us are received and stored by our email provider, Titan. We don’t
+                delete them after a fixed period. If you’d like us to delete your emails, just ask.
               </p>
             </>
           ),
@@ -1235,14 +1209,15 @@ export default function PrivacyPage() {
                 des Anliegens nötig sind, und niemals dein Passwort.
               </p>
               <p>
-                <Fill>[E-Mail-Anbieter und Speicherfrist für Kontaktanfragen bestätigen.]</Fill>
+                E-Mails, die du uns schickst, werden bei unserem E-Mail-Anbieter Titan empfangen und
+                gespeichert. Wir löschen sie nicht nach einer festen Frist. Wenn wir deine E-Mails
+                löschen sollen, sag uns einfach Bescheid.
               </p>
             </>
           ),
         };
   return (
     <>
-      <LegalDraftNotice />
       <InfoIntro label={c.label} title={c.title}>
         <p className="info-meta">
           <span>

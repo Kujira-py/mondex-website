@@ -7,7 +7,6 @@ import {
   Fill,
   InfoIntro,
   InfoSections,
-  LegalDraftNotice,
   Mail,
   Out,
   Rows,
@@ -100,9 +99,8 @@ const copy: Record<Locale, LegalCopy> = {
         title: 'Dispute resolution',
         body: (
           <p>
-            <Fill>
-              [Confirm applicable consumer arbitration information for the operator’s country.]
-            </Fill>
+            We are neither obliged nor willing to take part in dispute resolution proceedings before
+            a consumer arbitration board.
           </p>
         ),
       },
@@ -176,9 +174,8 @@ const copy: Record<Locale, LegalCopy> = {
         title: 'Streitbeilegung',
         body: (
           <p>
-            <Fill>
-              [Zutreffende Angaben zur Verbraucherschlichtung für das Betreiberland bestätigen.]
-            </Fill>
+            Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer
+            Verbraucherschlichtungsstelle teilzunehmen.
           </p>
         ),
       },
@@ -195,7 +192,14 @@ export default function LegalNoticePage() {
     [fields.address, <Fill key="address">{operator.address}</Fill>],
     [fields.email, <Mail key="email" />],
     ...(operator.phone
-      ? [[fields.phone, <Fill key="phone">{operator.phone}</Fill>] as [string, ReactNode]]
+      ? [
+          [
+            fields.phone,
+            <a key="phone" href={`tel:${operator.phone.replace(/\s/g, '')}`}>
+              {operator.phone}
+            </a>,
+          ] as [string, ReactNode],
+        ]
       : []),
     ...(operator.register
       ? [[fields.register, <Fill key="register">{operator.register}</Fill>] as [string, ReactNode]]
@@ -204,7 +208,6 @@ export default function LegalNoticePage() {
   ];
   return (
     <>
-      <LegalDraftNotice />
       <InfoIntro label={c.label} title={c.title}>
         <p>{c.intro}</p>
       </InfoIntro>
