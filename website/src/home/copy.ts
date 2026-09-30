@@ -13,7 +13,6 @@ export const homeCopy = {
       body: 'Every card you scan brings a Pokémon into your Pokédex. See who you have found, and who is still out there.',
     },
     phone: {
-      simulated: 'Simulated screen',
       estimated: 'Estimated value',
       price: '$352',
       matched: 'Matched card',
@@ -135,7 +134,6 @@ export const homeCopy = {
       body: 'Jede Karte, die du scannst, bringt ein Pokémon in deinen Pokédex. Sieh, wen du gefunden hast und wer noch da draußen ist.',
     },
     phone: {
-      simulated: 'Bildschirm simuliert',
       estimated: 'Geschätzter Wert',
       price: '325 €',
       matched: 'Karte erkannt',
