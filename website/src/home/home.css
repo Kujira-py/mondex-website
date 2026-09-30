@@ -1459,15 +1459,6 @@
 .mx-legal {
   margin-top: 20px;
 }
-.hp-note {
-  margin: 18px 0 0;
-  font-size: 12px;
-  color: #9798a8;
-}
-.mx-hero .hp-note .mx-ref,
-.hp-note .mx-ref {
-  font-size: 0.75em;
-}
 
 /* ---------- Waitlist proof ---------- */
 .mx-proof {
