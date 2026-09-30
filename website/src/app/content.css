@@ -612,18 +612,6 @@
 .topic-subject:hover {
   color: var(--violet);
 }
-.legal-draft {
-  background: #f4e7cb;
-  color: #543d12;
-  border-radius: 12px;
-  padding: 22px 28px;
-  margin-bottom: 36px;
-  max-width: 90ch;
-}
-.legal-draft p {
-  font-size: 14px;
-  margin-top: 6px;
-}
 .legal-pending {
   background: #f4e7cb;
   color: #543d12;
@@ -784,9 +772,6 @@
   .guide-actions .button {
     font-size: 13px;
     padding-inline: 22px;
-  }
-  .legal-draft {
-    padding: 20px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
