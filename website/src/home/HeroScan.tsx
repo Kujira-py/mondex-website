@@ -5,13 +5,14 @@
 // app (scanner-reference.md, the Dex tab) in a 402 × 874 pt layout, so the
 // flight is computed in the same points the CSS uses.
 //
-// Wide screens: the phone arrives by itself, scrolling tells the rest.
-// Phones: the whole story plays once in view. Reduced motion: final state.
+// The scanner is visible on arrival. Scrolling tells the story; on phones,
+// the first swipe brings the whole device into view before playback.
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { EASE, EASE_IN_OUT, WIDE, onceInView, prefersReducedMotion } from './motion';
+import { EASE, EASE_IN_OUT, WIDE, prefersReducedMotion } from './motion';
+import { attachMobileHero } from './mobileHero';
 import type { HomeCopy } from './copy';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -69,19 +70,6 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
         scale: box.size / POPPED.size,
       });
 
-      // The phone arrives, and a card is brought into the guide.
-      const intro = () =>
-        gsap
-          .timeline({ defaults: { ease: EASE } })
-          .fromTo(q('.hp-phone'), { y: 60, rotateY: -24, rotateX: 12, autoAlpha: 0 }, { y: 0, rotateY: -14, rotateX: 6, autoAlpha: 1, duration: 1.5 })
-          .fromTo(
-            q('.hp-card'),
-            { xPercent: 38, yPercent: 70, rotateX: 38, rotateZ: -16, scale: 0.86, autoAlpha: 0 },
-            { xPercent: 0, yPercent: 0, rotateX: 7, rotateZ: -3, scale: 1, autoAlpha: 1, duration: 1.4 },
-            0.55,
-          )
-          .fromTo(q('.hp-guide'), { '--glow': 0.25 }, { '--glow': 0.6, duration: 0.8 }, 1.3);
-
       // What the scroll tells.
       const story = () => {
         const tl = gsap.timeline({ defaults: { ease: EASE } });
@@ -135,13 +123,11 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
       };
 
       if (prefersReducedMotion()) {
-        intro().progress(1).pause();
         story().progress(1).pause();
         return;
       }
       const mm = gsap.matchMedia();
       mm.add(WIDE, () => {
-        intro();
         ScrollTrigger.create({
           trigger: root.current!.closest('.mx-hero'),
           start: 'top top',
@@ -152,11 +138,11 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
         });
       });
       mm.add('(max-width: 899px)', () => {
-        const tl = gsap.timeline({ paused: true }).add(intro()).add(story(), '-=0.4');
-        return onceInView(root.current!, () => {
+        const tl = story().pause();
+        return attachMobileHero(root.current!, () => {
           tl.play();
           setPlayed(true);
-        }, 0.45);
+        }, take > 0);
       });
       return () => mm.revert();
     },
@@ -185,7 +171,7 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
                   <i className="hp-gc hp-gc-br" />
                 </div>
                 <div className="hp-card">
-                  <img src="/assets/card-charizard.webp" alt="" width="660" height="922" />
+                  <img src="/assets/card-charizard.webp" alt="" width="660" height="922" fetchPriority="high" />
                   <span className="hp-sheen" />
                   <svg className="hp-trace" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <rect x="0.6" y="0.6" width="98.8" height="98.8" rx="4.5" ry="3.2" pathLength="1" />
@@ -310,11 +296,9 @@ export function HeroScan({ phone, german, replay }: { phone: Phone; german: bool
         </div>
         <div className="hp-floor" />
       </div>
-      {played && (
-        <button className="mx-replay hp-replay" type="button" onClick={() => setTake((n) => n + 1)}>
-          {replay}
-        </button>
-      )}
+      <button className="mx-replay hp-replay" type="button" disabled={!played} onClick={() => setTake((n) => n + 1)}>
+        {replay}
+      </button>
     </div>
   );
 }

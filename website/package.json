@@ -15,6 +15,7 @@
     "qa:language": "node scripts/verify-language.mjs",
     "qa:refinement": "node scripts/verify-refinement.mjs",
     "qa:motion": "node scripts/verify-motion.mjs",
+    "qa:mobile-hero": "node scripts/verify-mobile-hero.mjs",
     "build:pages": "next build && node scripts/prepare-pages.mjs",
     "verify:pages": "node scripts/verify-pages.mjs"
   },

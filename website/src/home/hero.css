@@ -31,7 +31,8 @@
     0 1.2cqw 2.4cqw -0.8cqw rgba(20, 16, 40, 0.35),
     0 12cqw 24cqw -8cqw rgba(40, 28, 90, 0.42),
     0 30cqw 50cqw -20cqw rgba(40, 28, 90, 0.35);
-  opacity: 0;
+  opacity: 1;
+  transform: rotateY(-14deg) rotateX(6deg);
   transform-origin: 50% 60%;
   will-change: transform;
 }
@@ -241,7 +242,8 @@
   height: calc(var(--pt) * 334);
   border-radius: calc(var(--pt) * 11);
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
+  transform: rotateX(7deg) rotateZ(-3deg);
   transform-origin: 50% 70%;
   box-shadow:
     0 calc(var(--pt) * 22) calc(var(--pt) * 40) calc(var(--pt) * -12) rgba(0, 0, 0, 0.75),
@@ -723,11 +725,27 @@
 }
 
 @media (max-width: 899px) {
+  .hp {
+    width: 100%;
+    min-height: calc(100svh - 72px);
+    padding-block: 16px;
+    justify-content: center;
+    gap: 16px;
+  }
   .hp-stage {
-    width: min(76vw, 330px);
+    /* Keep the whole device and replay control above Safari's toolbar. */
+    width: min(76vw, 330px, calc((100svh - 164px) / 2.09));
+    min-width: 0;
+  }
+  .hp-phone {
+    transform: none;
   }
   .hp-replay {
     display: block;
-    margin-top: 28px;
+    min-height: 44px;
+    margin: 0;
+  }
+  .hp-replay:disabled {
+    visibility: hidden;
   }
 }
