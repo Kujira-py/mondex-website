@@ -111,7 +111,12 @@ export default function InvitePage() {
               <span aria-hidden="true"> </span>
               {code.slice(4)}
             </p>
-            <button type="button" className="text-link invite-copy" onClick={copyCode} aria-live="polite">
+            <button
+              type="button"
+              className="text-link invite-copy"
+              onClick={copyCode}
+              aria-live="polite"
+            >
               {copied ? c.copied : c.copy}
             </button>
           </div>

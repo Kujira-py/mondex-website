@@ -1,20 +1,28 @@
 'use client';
 
-import { createContext, useCallback, useContext, useEffect, useSyncExternalStore, type ReactNode } from 'react';
-import { useRouter } from 'next/navigation';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useSyncExternalStore,
+  type ReactNode,
+} from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { localeCookie, messages, resolveLocale, type Locale, type Messages } from '@/lib/messages';
+import { counterpart, isGermanPath } from '@/lib/guides';
 
 // A device-local preference for the statically hosted website.
 let sessionLocale: Locale | undefined;
 const languageEvent = 'mondex-language-change';
-// The home page exists twice, at / and /de/, so search engines can index
-// both languages; there the path decides. Other pages switch in place.
-const germanHome = () => /^\/de\/?$/.test(window.location.pathname);
-const englishHome = () => window.location.pathname === '/';
+// The home page and the guides exist in both languages (/de/… is German), so
+// search engines can index both; there the path decides. Pages that exist in
+// one language only (contact, legal) switch in place.
 function readLocale(): Locale {
-  if (sessionLocale) return sessionLocale;
   try {
-    if (germanHome()) return 'de';
+    if (isGermanPath(window.location.pathname)) return 'de';
+    if (counterpart(window.location.pathname, 'de')) return 'en';
+    if (sessionLocale) return sessionLocale;
     const requested = new URLSearchParams(window.location.search).get('lang');
     if (requested === 'de' || requested === 'en') return requested;
     const value = document.cookie
@@ -45,22 +53,36 @@ export function LanguageProvider({
   initialLocale: Locale;
 }) {
   const router = useRouter();
-  const locale = useSyncExternalStore(subscribe, readLocale, () => initialLocale);
+  // A page that exists in both languages takes its language from the URL, on
+  // the server and after client navigation alike; others keep the stored choice.
+  const pathname = usePathname();
+  const fromPath = pathname
+    ? isGermanPath(pathname)
+      ? 'de'
+      : counterpart(pathname, 'de')
+        ? 'en'
+        : undefined
+    : undefined;
+  const stored = useSyncExternalStore(subscribe, readLocale, () => initialLocale);
+  const locale: Locale = fromPath ?? stored;
   const copy = messages[locale];
-  const setLocale = useCallback((next: Locale) => {
-    sessionLocale = next;
-    try {
-      document.cookie = `${localeCookie}=${next}; Path=/; Max-Age=31536000; SameSite=Lax${location.protocol === 'https:' ? '; Secure' : ''}`;
-    } catch {
-      // The current page still switches if the browser blocks preference storage.
-    }
-    const query = new URLSearchParams(window.location.search);
-    query.delete('lang');
-    const tail = (query.size ? `?${query}` : '') + window.location.hash;
-    if (next === 'de' && englishHome()) router.push(`/de/${tail}`);
-    else if (next === 'en' && germanHome()) router.push(`/${tail}`);
-    window.dispatchEvent(new Event(languageEvent));
-  }, [router]);
+  const setLocale = useCallback(
+    (next: Locale) => {
+      sessionLocale = next;
+      try {
+        document.cookie = `${localeCookie}=${next}; Path=/; Max-Age=31536000; SameSite=Lax${location.protocol === 'https:' ? '; Secure' : ''}`;
+      } catch {
+        // The current page still switches if the browser blocks preference storage.
+      }
+      const query = new URLSearchParams(window.location.search);
+      query.delete('lang');
+      const tail = (query.size ? `?${query}` : '') + window.location.hash;
+      const other = counterpart(window.location.pathname, next);
+      if (other && other !== window.location.pathname) router.push(`${other}${tail}`);
+      window.dispatchEvent(new Event(languageEvent));
+    },
+    [router],
+  );
   useEffect(() => {
     document.documentElement.lang = locale;
     const url = new URL(window.location.href);
@@ -69,8 +91,26 @@ export function LanguageProvider({
       setLocale(requested);
       url.searchParams.delete('lang');
       window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+      return;
     }
-  }, [locale, setLocale]);
+    // A language the visitor chose before opens a page that exists in both
+    // languages in that language. Only an explicit choice (the cookie), never
+    // the browser's language: search engines must see each URL as it is.
+    if (sessionLocale) return;
+    let saved: string | undefined;
+    try {
+      saved = document.cookie
+        .split('; ')
+        .find((cookie) => cookie.startsWith(`${localeCookie}=`))
+        ?.split('=')[1];
+    } catch {
+      return;
+    }
+    if ((saved === 'de' || saved === 'en') && saved !== locale) {
+      const other = counterpart(url.pathname, saved);
+      if (other) router.replace(`${other}${url.search}${url.hash}`);
+    }
+  }, [locale, setLocale, router]);
   return (
     <LanguageContext.Provider value={{ locale, copy, setLocale }}>
       {children}

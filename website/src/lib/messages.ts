@@ -138,7 +138,7 @@ const en = {
     label: 'From new find to collection',
     status: ['Capture the card', 'Check the matching result', 'Confirm and organise'],
     steps: [
-      ['Capture.', 'One card with Snap, or several in a row with Batch.'],
+      ['Capture.', 'Card after card with Auto, or a whole stack with Batch.'],
       ['Check.', 'Choose the matching card and the correct variant.'],
       ['Keep.', 'Your card is added only after you confirm.'],
     ],
@@ -319,7 +319,7 @@ const de: Messages = {
     label: 'Vom Fund zur Sammlung',
     status: ['Die Karte erfassen', 'Den passenden Treffer prüfen', 'Bestätigen und einsortieren'],
     steps: [
-      ['Erfassen.', 'Eine Karte mit Snap oder mehrere nacheinander mit Batch.'],
+      ['Erfassen.', 'Karte für Karte mit Auto oder ein ganzer Stapel.'],
       ['Prüfen.', 'Wähle den passenden Treffer und die richtige Variante.'],
       ['Behalten.', 'Erst nach deiner Bestätigung wird die Karte übernommen.'],
     ],

@@ -1,0 +1,45 @@
+/* Shared by every page: the typeface, a small reset and accessibility helpers.
+   Page styles live with their pages (home/home.css, globals.css and content.css
+   for the information pages), so the home page loads only what it draws. */
+@font-face {
+  font-family: Onest;
+  /* Onest, Latin subset (OFL, public/fonts/OFL.txt), preloaded in layout.tsx. */
+  src: url('/fonts/onest-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-onest: Onest, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font-onest);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

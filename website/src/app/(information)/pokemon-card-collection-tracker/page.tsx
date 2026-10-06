@@ -1,6 +1,12 @@
-import type { Metadata } from 'next';
-export const metadata: Metadata = { alternates: { canonical: '/pokemon-card-collection-tracker/' } };
 import { FeatureGuide } from '@/components/info/FeatureGuide';
+import { GuideJsonLd, guideMetadata } from '@/components/info/GuideHead';
+
+export const metadata = guideMetadata('collection', 'en');
 export default function Page() {
-  return <FeatureGuide path="/pokemon-card-collection-tracker" />;
+  return (
+    <>
+      <GuideJsonLd id="collection" locale="en" />
+      <FeatureGuide id="collection" />
+    </>
+  );
 }
