@@ -3,6 +3,7 @@
 import { useLanguage } from './Language';
 import { Arrow, Brand } from './Primitives';
 import { siteContent } from '@/lib/site-content';
+import { GUIDE_PATHS } from '@/lib/guides';
 import { WaitlistForm } from './WaitlistForm';
 
 export function LaunchSection() {
@@ -52,14 +53,15 @@ export function FAQSection() {
 export function SiteFooter({ home = false }: { home?: boolean }) {
   const { copy, locale } = useLanguage();
   const c = siteContent[locale].footer;
-  const root = home ? '' : '/';
+  // Sections of the home page in this language (the home page has its own footer).
+  const root = home ? '' : locale === 'de' ? '/de/' : '/';
   return (
     <footer className="site-footer complete-footer section-shell">
       <div className="footer-top">
-        <a href={`${root}#produkt`} aria-label={copy.footer.home}>
+        <a href={`${root}#top`} aria-label={copy.footer.home}>
           <Brand />
         </a>
-        <a className="text-link" href={`${root}#produkt`}>
+        <a className="text-link" href={`${root}#top`}>
           {copy.footer.top}
           <Arrow up />
         </a>
@@ -68,7 +70,7 @@ export function SiteFooter({ home = false }: { home?: boolean }) {
         <p className="footer-tagline">{copy.footer.tagline}</p>
         <nav aria-label={c.explore}>
           <h2>{c.explore}</h2>
-          {['scanner', 'sammlung', 'portfolio', 'entdecken'].map((id, i) => (
+          {['scanner', 'pokedex', 'preise', 'plus'].map((id, i) => (
             <a key={id} href={`${root}#${id}`}>
               {c.links[i]}
             </a>
@@ -77,10 +79,11 @@ export function SiteFooter({ home = false }: { home?: boolean }) {
         <nav aria-label={c.learn}>
           <h2>{c.learn}</h2>
           {[
-            'pokemon-tcg-scanner',
-            'pokemon-card-collection-tracker',
+            GUIDE_PATHS.scanner[locale],
+            GUIDE_PATHS.value[locale],
+            GUIDE_PATHS.collection[locale],
           ].map((path, i) => (
-            <a key={path} href={`/${path}/`}>
+            <a key={path} href={path}>
               {c.guides[i]}
             </a>
           ))}
@@ -92,7 +95,7 @@ export function SiteFooter({ home = false }: { home?: boolean }) {
           <a href="/datenschutz/">{c.privacy}</a>
           <a href="/nutzungsbedingungen/">{c.terms}</a>
           <a href="/impressum/">{c.legal}</a>
-          <a href={`${root}#vormerken`}>{c.waitlist}</a>
+          <a href={`${root}#holen`}>{c.waitlist}</a>
         </nav>
       </div>
       <div className="footer-bottom">

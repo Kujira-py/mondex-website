@@ -1,195 +1,179 @@
 'use client';
-// mondextcg.com: the Pokédex leads. Six sections, one moment each.
-import { useEffect, useRef, useState } from 'react';
+// mondextcg.com. One idea per screen, objects you can almost touch, and
+// motion that plays by itself instead of asking for long scrolls. Phone-first:
+// everything moves on the compositor, loops pause off screen, Reduce Motion
+// gets a still page.
+import { useEffect, useRef } from 'react';
 import { Brand } from '@/components/Primitives';
 import { LanguageSwitch, useLanguage } from '@/components/Language';
+import { APP_STORE_LIVE, appStoreUrl } from '@/lib/launch';
 import { homeCopy } from './copy';
-import { HeroScan } from './HeroScan';
-import { DexWave } from './DexWave';
-import { Shelf } from './Shelf';
-import { Openings } from './Openings';
-import { attachDepth } from './depth';
-import { Collection, Faq, Note, Phone, Reveal, Title, Waitlist } from './Sections';
+import { featureContent } from '@/lib/feature-content';
+import { GUIDE_PATHS, type GuideId } from '@/lib/guides';
+import { usePageMotion } from './motion';
+import { GetApp } from './GetApp';
+import {
+  Bento,
+  DexOrbit,
+  Faq,
+  FinalOrbit,
+  Heading,
+  HeroStage,
+  Marquee,
+  Plans,
+  PriceShowcase,
+  ScanShowcase,
+  SetRows,
+  Statement,
+} from './Scenes';
 
 export default function Home() {
   const { locale } = useLanguage();
   const c = homeCopy[locale];
-  const [scrolled, setScrolled] = useState(false);
-  const [dark, setDark] = useState(false);
-  const [menu, setMenu] = useState(false);
   const page = useRef<HTMLDivElement>(null);
-  useEffect(() => (page.current ? attachDepth(page.current) : undefined), []);
+  usePageMotion(page);
   useEffect(() => {
     document.title = c.meta.title;
-    const dex = document.getElementById('entdecken');
-    const onScroll = () => {
-      setScrolled(window.scrollY > 8);
-      // Dark while the Pokédex section sits under the header's middle.
-      const box = dex?.getBoundingClientRect();
-      setDark(!!box && box.top <= 36 && box.bottom >= 36);
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
   }, [c.meta.title]);
-  const links: [string, string][] = [
-    ['#scanner', c.nav.scan],
-    ['#entdecken', c.nav.dex],
-    ['#sammlung', c.nav.collection],
-    ['#fragen', c.nav.faq],
-  ];
+  const cta = APP_STORE_LIVE ? appStoreUrl(locale, 'header') : '#holen';
   return (
-    <div className="mx" ref={page}>
+    <div className="mx" ref={page} data-tone="light">
       <a className="mx-skip" href="#inhalt">
-        {locale === 'de' ? 'Zum Inhalt' : 'Skip to content'}
+        {c.skip}
       </a>
-      <header className={`mx-header ${scrolled ? 'is-scrolled' : ''} ${menu ? 'is-open' : ''} ${dark && !menu ? 'is-dark' : ''}`}>
-        <div className="mx-header-bar">
-          <a href="#produkt" aria-label="MonDex" onClick={() => setMenu(false)}>
+      <header className="nav">
+        <div className="nav-pill">
+          <a href="#top" className="nav-brand" aria-label="MonDex">
             <Brand />
           </a>
-          <nav className="mx-nav" aria-label={locale === 'de' ? 'Hauptnavigation' : 'Main'}>
-            {links.map(([href, label]) => (
-              <a key={href} href={href} onClick={() => setMenu(false)}>
-                {label}
-              </a>
-            ))}
+          <nav className="nav-links" aria-label={locale === 'de' ? 'Hauptnavigation' : 'Main'}>
+            <a href="#scanner">{c.nav.scan}</a>
+            <a href="#pokedex">{c.nav.dex}</a>
+            <a href="#preise">{c.nav.prices}</a>
+            <a href="#plus">{c.nav.plus}</a>
+            <a href="#fragen">{c.nav.faq}</a>
           </nav>
-          <div className="mx-header-actions">
-            <LanguageSwitch />
-            <a className="mx-button mx-button-small" href="#vormerken">
-              {c.nav.cta}
-            </a>
-            <button
-              type="button"
-              className="mx-menu"
-              aria-expanded={menu}
-              aria-label={menu ? c.menu[1] : c.menu[0]}
-              onClick={() => setMenu(!menu)}
-            >
-              <span />
-              <span />
-            </button>
-          </div>
+          <LanguageSwitch />
+          <a className="nav-cta" href={cta} data-magnet>
+            <span>{APP_STORE_LIVE ? c.nav.ctaLive : c.nav.cta}</span>
+          </a>
         </div>
       </header>
 
       <main id="inhalt">
-        <section className="mx-hero" id="produkt">
-          <div className="mx-hero-stage">
-            <div className="mx-hero-copy">
-              <p className="mx-eyebrow">{c.hero.eyebrow}</p>
-              <Title as="h1" lines={c.hero.title} />
-              <p className="mx-lead">{c.hero.body}</p>
-              <Waitlist c={c.waitlist} locale={locale} compact />
-            </div>
-            <HeroScan phone={c.phone} german={locale === 'de'} replay={c.replay} />
-          </div>
-        </section>
-
-        <section className="mx-section mx-scan" id="scanner">
-          <Reveal className="mx-section-head">
-            <p className="mx-eyebrow">{c.scan.eyebrow}</p>
-            <Title lines={c.scan.title} />
-            <p className="mx-lead">{c.scan.body}</p>
-          </Reveal>
-          <ul className="mx-facts">
-            {c.scan.facts.map(([title, text, note]) => (
-              <Reveal as="li" key={title} depth>
-                <b>{title}</b>
-                <span>
-                  {text}
-                  {note ? <Note n={note} /> : null}
+        <section className="hero" id="top" data-tone="light">
+          <div className="hero-copy">
+            {/* The badge is part of the h1, so the page's main heading names what MonDex is. */}
+            <Heading
+              parts={c.hero.title}
+              as="h1"
+              inlineLast
+              className="hd-hero"
+              kicker={
+                <span className="hero-badge">
+                  <img src="/assets/orbit.svg" alt="" width={18} height={18} />
+                  {c.hero.badge}
                 </span>
-              </Reveal>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mx-dex" id="entdecken">
-          <div className="mx-dex-stage">
-            <Reveal className="mx-section-head">
-              <p className="mx-eyebrow">{c.dex.eyebrow}</p>
-              <Title lines={c.dex.title} />
-              <p className="mx-lead">{c.dex.body}</p>
-            </Reveal>
-            <DexWave count={c.dex.count} replay={c.replay} />
+              }
+            />
+            <p className="lead hero-lead">{c.hero.body}</p>
+            <div className="hero-cta">
+              <GetApp c={c.waitlist} store={c.store} locale={locale} placement="hero" proof />
+            </div>
           </div>
+          <HeroStage c={c} />
         </section>
 
-        <section className="mx-shelf" aria-labelledby="katalog-title">
-          <Reveal className="mx-section-head">
-            <p className="mx-eyebrow">{c.shelf.eyebrow}</p>
-            <h2 className="mx-title" id="katalog-title">
-              {c.shelf.title[0]}
-              <br />
-              <span className="mx-accent">{c.shelf.title[1]}</span>
-            </h2>
-            <p className="mx-lead">{c.shelf.body}</p>
-          </Reveal>
-          <Shelf cardsLabel={c.shelf.title[0]} setsLabel={c.shelf.title[1]} />
+        <section className="st" data-tone="light">
+          <Statement text={c.statement} />
         </section>
 
-        <section className="mx-section" id="sammlung">
-          <span id="portfolio" className="mx-anchor" />
-          <Reveal className="mx-section-head">
-            <p className="mx-eyebrow">{c.collection.eyebrow}</p>
-            <Title lines={c.collection.title} />
-          </Reveal>
-          <Collection c={c.collection} />
+        <section
+          className="ss is-lilac"
+          id="scanner"
+          data-tone="lilac"
+          aria-labelledby="scan-title"
+        >
+          <ScanShowcase c={c.scan} />
         </section>
 
-        <section className="mx-section mx-openings" id="openings">
-          <div className="mx-openings-grid">
-            <Reveal className="mx-section-head">
-              <p className="mx-eyebrow">{c.openings.eyebrow}</p>
-              <Title lines={c.openings.title} />
-              <p className="mx-lead">{c.openings.body}</p>
-            </Reveal>
-            <Openings c={c.openings} />
+        <section className="dx is-night" id="pokedex" data-tone="night">
+          <div className="sec-head is-centred">
+            <p className="eyebrow">{c.dex.eyebrow}</p>
+            <Heading parts={c.dex.title} />
+            <p className="lead" data-reveal>
+              {c.dex.body}
+            </p>
           </div>
+          <DexOrbit c={c.dex} locale={locale} />
         </section>
 
-        <section className="mx-section mx-gallery">
-          <Reveal className="mx-section-head">
-            <p className="mx-eyebrow">{c.gallery.eyebrow}</p>
-            <h2 className="mx-title">
-              {c.gallery.title}
-              <Note n={3} />
-            </h2>
-          </Reveal>
-          <div className="mx-shots">
-            {(['home', 'dex', 'cards', 'card'] as const).map((shot, i) => (
-              <Reveal key={shot} className="mx-shot">
-                <Phone src={`/assets/app/${shot}.webp`} alt={c.gallery.shots[i]} />
-                <p>{c.gallery.shots[i]}</p>
-              </Reveal>
-            ))}
+        <section className="ps" id="preise" data-tone="light">
+          <div className="sec-head is-centred">
+            <p className="eyebrow">{c.prices.eyebrow}</p>
+            <Heading parts={c.prices.title} />
           </div>
+          <PriceShowcase c={c.prices} />
         </section>
 
-        <section className="mx-section mx-questions" id="fragen">
-          <Reveal className="mx-section-head">
-            <h2 className="mx-title">{c.faq.title}</h2>
-          </Reveal>
-          <Faq items={c.faq.items} />
+        <section className="cg is-night" data-tone="night">
+          <div className="sec-head is-centred">
+            <p className="eyebrow">{c.catalogue.eyebrow}</p>
+            <Heading parts={c.catalogue.title} />
+            <p className="lead" data-reveal>
+              {c.catalogue.body}
+            </p>
+          </div>
+          <Marquee />
+          <SetRows c={c.catalogue} />
         </section>
 
-        <section className="mx-section mx-final" id="vormerken">
-          <Reveal className="mx-final-inner">
-            <Title lines={c.waitlist.title} />
-            <p className="mx-lead">{c.waitlist.body}</p>
-            <Waitlist c={c.waitlist} locale={locale} />
-          </Reveal>
+        <section className="bt-sec" data-tone="light">
+          <div className="sec-head is-centred">
+            <p className="eyebrow">{c.more.eyebrow}</p>
+            <Heading parts={c.more.title} />
+          </div>
+          <Bento c={c.more} />
+        </section>
+
+        <section className="pl" id="plus" data-tone="light">
+          <div className="sec-head is-centred">
+            <p className="eyebrow">{c.plus.eyebrow}</p>
+            <Heading parts={c.plus.title} />
+          </div>
+          <Plans c={c.plus} />
+        </section>
+
+        <section className="fq-sec" id="fragen" data-tone="light">
+          <div className="sec-head">
+            <Heading parts={[c.faq.title]} className="hd-small" />
+          </div>
+          <Faq items={c.faq.items} live={APP_STORE_LIVE} />
+        </section>
+
+        <section className="fin is-night" id="holen" data-tone="night">
+          <FinalOrbit>
+            <Heading parts={c.final.title} />
+            <p className="lead" data-reveal>
+              {APP_STORE_LIVE ? c.final.bodyLive : c.final.body}
+            </p>
+            <div className="fin-cta" data-reveal>
+              <GetApp c={c.waitlist} store={c.store} locale={locale} placement="final" dark />
+            </div>
+          </FinalOrbit>
         </section>
       </main>
 
-      <footer className="mx-footer">
-        <div className="mx-footer-top">
-          <div>
-            <Brand />
-            <p>{c.footer.tagline}</p>
-          </div>
+      <footer className="ft is-night" data-tone="night">
+        <div className="ft-top">
+          <p>{c.footer.tagline}</p>
+          <nav aria-label={locale === 'de' ? 'Ratgeber' : 'Guides'}>
+            {(['scanner', 'value', 'collection'] as GuideId[]).map((guide) => (
+              <a key={guide} href={GUIDE_PATHS[guide][locale]}>
+                {featureContent[guide][locale].label}
+              </a>
+            ))}
+          </nav>
           <nav aria-label="Footer">
             <a href="/kontakt/">{c.footer.contact}</a>
             <a href="/datenschutz/">{c.footer.privacy}</a>
@@ -197,16 +181,12 @@ export default function Home() {
             <a href="/impressum/">{c.footer.imprint}</a>
           </nav>
         </div>
-        <ol className="mx-notes">
-          {c.footer.notes.map((note, i) => (
-            <li key={note} id={`note-${i + 1}`}>
-              {note}
-            </li>
-          ))}
-        </ol>
-        <p className="mx-legal">
-          © {new Date().getFullYear()} MonDex. {c.footer.legal}
+        <p className="ft-word" aria-hidden="true">
+          M<img src="/assets/orbit.svg" alt="" width={200} height={200} />
+          nDex
         </p>
+        <p className="ft-fine">{c.footer.note}</p>
+        <p className="ft-fine">© 2026 MonDex. {c.footer.legal}</p>
       </footer>
     </div>
   );

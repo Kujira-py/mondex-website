@@ -70,28 +70,33 @@ export function InfoIntro({
   label,
   title,
   children,
+  head = true,
 }: {
   label: string;
   title: string;
   children?: ReactNode;
+  /** false when the page sets its title and description itself (Next metadata). */
+  head?: boolean;
 }) {
   const { locale } = useLanguage();
   return (
     <>
-      <title>{`${label} · MonDex`}</title>
-      <meta
-        name="description"
-        content={
-          locale === 'en'
-            ? `${label} for MonDex, the Pokémon card collecting app.`
-            : `${label} für MonDex, die App für deine Pokémon-Kartensammlung.`
-        }
-      />
+      {head && <title>{`${label} · MonDex`}</title>}
+      {head && (
+        <meta
+          name="description"
+          content={
+            locale === 'en'
+              ? `${label} for MonDex, the Pokémon card collecting app.`
+              : `${label} für MonDex, die App für deine Pokémon-Kartensammlung.`
+          }
+        />
+      )}
       <nav
         className="info-breadcrumb"
         aria-label={locale === 'en' ? 'Breadcrumb' : 'Brotkrumennavigation'}
       >
-        <Link href="/">
+        <Link href={locale === 'de' ? '/de/' : '/'}>
           <span>
             <Arrow />
           </span>{' '}

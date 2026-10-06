@@ -25,7 +25,7 @@ export const siteContent = {
       ],
       [
         'Can I scan Pokémon cards with my phone?',
-        'The current iOS development build includes Snap for single cards, Auto for continuous recognition, Batch for multiple cards and Packs for an opening session. Check the suggested card, set and printing before adding a copy. The website’s scanner is an illustration and does not access your camera.',
+        'Yes. Auto recognises card after card while you hold them in the frame, and Batch takes up to 100 cards in one session for you to check before saving. Both work offline. The website’s scanner is an illustration and does not access your camera.',
       ],
       [
         'Can I scan without an internet connection?',
@@ -37,7 +37,7 @@ export const siteContent = {
       ],
       [
         'Can I import my existing collection?',
-        'Collection import has not been confirmed for launch. We’ll share supported formats and options once they are final.',
+        'Yes. MonDex imports exports from other collection apps, its own backups and any spreadsheet with name, set and number, and shows every card before anything is added.',
       ],
       [
         'Are these demos connected to my collection?',
@@ -48,8 +48,8 @@ export const siteContent = {
       explore: 'Explore',
       learn: 'Learn more',
       support: 'Here to help',
-      links: ['Scanner', 'Collection', 'Portfolio', 'Pokédex'],
-      guides: ['Card scanning', 'Collection tracking'],
+      links: ['Scanner', 'Pokédex', 'Prices', 'MonDex Plus'],
+      guides: ['Pokémon card scanner', 'Pokémon card value', 'Collection tracker'],
       contact: 'Contact',
       privacy: 'Privacy',
       terms: 'Terms of use',
@@ -81,7 +81,7 @@ export const siteContent = {
       ],
       [
         'Kann ich Pokémon-Karten mit dem Handy scannen?',
-        'Der aktuelle iOS-Entwicklungsbuild bietet Snap für einzelne Karten, Auto für fortlaufende Erkennung, Batch für mehrere Karten und Packs für eine Opening-Session. Prüfe Karte, Set und Druckvariante des Vorschlags, bevor du ein Exemplar hinzufügst. Der Scanner auf dieser Website ist eine Illustration und nutzt deine Kamera nicht.',
+        'Ja. Auto erkennt Karte für Karte, während du sie in den Rahmen hältst, und Stapel nimmt bis zu 100 Karten pro Sitzung, die du vor dem Speichern prüfst. Beides funktioniert offline. Der Scanner auf dieser Website ist eine Illustration und nutzt deine Kamera nicht.',
       ],
       [
         'Kann ich auch ohne Internet scannen?',
@@ -93,7 +93,7 @@ export const siteContent = {
       ],
       [
         'Kann ich meine bestehende Sammlung importieren?',
-        'Ein Sammlungsimport ist für den Launch noch nicht bestätigt. Sobald die unterstützten Formate und Möglichkeiten feststehen, ergänzen wir diese Information.',
+        'Ja. MonDex importiert Exporte aus anderen Sammel-Apps, eigene Backups und jede Tabelle mit Name, Set und Nummer und zeigt dir jede Karte, bevor etwas hinzugefügt wird.',
       ],
       [
         'Sind die Demos mit meiner Sammlung verbunden?',
@@ -104,8 +104,8 @@ export const siteContent = {
       explore: 'Entdecken',
       learn: 'Mehr erfahren',
       support: 'Wir helfen dir',
-      links: ['Scanner', 'Sammlung', 'Portfolio', 'Pokédex'],
-      guides: ['Karten scannen', 'Sammlung verwalten'],
+      links: ['Scanner', 'Pokédex', 'Preise', 'MonDex Plus'],
+      guides: ['Pokémon-Karten-Scanner', 'Pokémon-Karten Wert', 'Pokémon-Karten-Sammlung'],
       contact: 'Kontakt',
       privacy: 'Datenschutz',
       terms: 'Nutzungsbedingungen',

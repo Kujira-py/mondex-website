@@ -2,9 +2,34 @@
 import { useEffect, useRef, useState } from 'react';
 import { Arrow, Brand } from './Primitives';
 import { LanguageSwitch, useLanguage } from './Language';
+import { APP_STORE_LIVE, appStoreUrl } from '@/lib/launch';
+
+const SECTIONS = {
+  en: [
+    ['scanner', 'Scanner'],
+    ['pokedex', 'Pokédex'],
+    ['preise', 'Prices'],
+    ['fragen', 'FAQ'],
+  ],
+  de: [
+    ['scanner', 'Scanner'],
+    ['pokedex', 'Pokédex'],
+    ['preise', 'Preise'],
+    ['fragen', 'Fragen'],
+  ],
+} as const;
 export function SiteHeader({ home = false }: { home?: boolean }) {
   const { copy, locale } = useLanguage();
-  const root = home ? '' : '/';
+  // The home page exists in both languages; its sections share their ids.
+  const homeHref = home ? '' : locale === 'de' ? '/de/' : '/';
+  const cta = APP_STORE_LIVE ? appStoreUrl(locale, 'info-header') : `${homeHref}#holen`;
+  const ctaLabel = APP_STORE_LIVE
+    ? locale === 'de'
+      ? 'Laden'
+      : 'Download'
+    : locale === 'de'
+      ? 'MonDex holen'
+      : 'Get MonDex';
   const [open, setOpen] = useState(false);
   const menu = useRef<HTMLButtonElement>(null);
   useEffect(() => {
@@ -27,7 +52,7 @@ export function SiteHeader({ home = false }: { home?: boolean }) {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <a href={`${root}#produkt`} onClick={() => setOpen(false)} aria-label={copy.nav.home}>
+        <a href={`${homeHref}#top`} onClick={() => setOpen(false)} aria-label={copy.nav.home}>
           <Brand />
         </a>
         <nav
@@ -35,17 +60,13 @@ export function SiteHeader({ home = false }: { home?: boolean }) {
           className={`main-nav ${open ? 'is-open' : ''}`}
           aria-label={copy.nav.main}
         >
-          {['scanner', 'sammlung', 'portfolio', 'entdecken'].map((id, i) => (
-            <a key={id} href={`${root}#${id}`} onClick={() => setOpen(false)}>
-              {copy.nav.items[i]}
+          {SECTIONS[locale].map(([id, label]) => (
+            <a key={id} href={`${homeHref}#${id}`} onClick={() => setOpen(false)}>
+              {label}
             </a>
           ))}
-          <a
-            className="mobile-waitlist-link"
-            href={`${root}#vormerken`}
-            onClick={() => setOpen(false)}
-          >
-            {locale === 'en' ? 'Join the waitlist' : 'Zum Launch vormerken'}
+          <a className="mobile-waitlist-link" href={cta} onClick={() => setOpen(false)}>
+            {ctaLabel}
           </a>
           <a className="mobile-contact-link" href="/kontakt/" onClick={() => setOpen(false)}>
             {locale === 'en' ? 'Contact' : 'Kontakt'}
@@ -53,8 +74,8 @@ export function SiteHeader({ home = false }: { home?: boolean }) {
         </nav>
         <div className="nav-actions">
           <LanguageSwitch />
-          <a className="nav-cta" href={`${root}#vormerken`} onClick={() => setOpen(false)}>
-            {locale === 'en' ? 'Join the waitlist' : 'Vormerken'} <Arrow />
+          <a className="nav-cta" href={cta} onClick={() => setOpen(false)}>
+            {ctaLabel} <Arrow />
           </a>
           <button
             ref={menu}

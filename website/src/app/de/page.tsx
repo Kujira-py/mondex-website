@@ -1,10 +1,12 @@
 import { type Metadata } from 'next';
 import Home from '@/home/Home';
+import { MOTION_SCRIPT } from '@/home/motionScript';
 import { homeCopy } from '@/home/copy';
 import { LanguageProvider } from '@/components/Language';
 import { homeAlternates } from '@/home/seo';
+import { homeJsonLd } from '@/lib/structured-data';
 import '@/home/home.css';
-import '@/home/hero.css';
+import '@/home/scenes.css';
 
 // The German home page: the same page rendered in German, so search engines
 // index both languages (hreflang in homeAlternates).
@@ -19,16 +21,20 @@ export const metadata: Metadata = {
     url: 'https://mondextcg.com/de/',
     siteName: 'MonDex',
     locale: 'de_DE',
+    alternateLocale: 'en_US',
     type: 'website',
-    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: title }],
+    images: [{ url: '/og-de.jpg', width: 1200, height: 630, alt: title }],
   },
-  twitter: { card: 'summary_large_image', images: ['/og.jpg'] },
+  twitter: { card: 'summary_large_image', title, description, images: ['/og-de.jpg'] },
 };
 
 export default function GermanHome() {
   return (
     <>
-      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang='de'" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: homeJsonLd('de') }} />
+      <script
+        dangerouslySetInnerHTML={{ __html: "document.documentElement.lang='de';" + MOTION_SCRIPT }}
+      />
       <LanguageProvider initialLocale="de">
         <Home />
       </LanguageProvider>

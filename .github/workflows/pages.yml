@@ -41,3 +41,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      # IndexNow: Bing (which Copilot and other AI search tools read) and the
+      # other IndexNow engines hear about every page right after a deploy.
+      # Google does not use IndexNow; it reads the sitemap (Search Console).
+      # The key is public by design: website/public/8ee0ede7ce89a39684dd63ecdadf8a40.txt proves the site is ours.
+      - name: Tell IndexNow engines about the pages
+        continue-on-error: true
+        run: |
+          urls=$(curl -fsS https://mondextcg.com/sitemap.xml | grep -o '<loc>[^<]*' | sed 's/<loc>//' | jq -R . | jq -sc .)
+          curl -fsS -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"mondextcg.com\",\"key\":\"8ee0ede7ce89a39684dd63ecdadf8a40\",\"keyLocation\":\"https://mondextcg.com/8ee0ede7ce89a39684dd63ecdadf8a40.txt\",\"urlList\":$urls}"
