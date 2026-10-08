@@ -138,6 +138,10 @@ html:has(.mx) {
 }
 .hd-w {
   display: inline-block;
+  /* Grow the box over accents and descenders without moving the layout: while a
+     word animates, Safari paints it on a layer clipped to this box. */
+  padding-block: 0.12em 0.24em;
+  margin-block: -0.12em -0.24em;
 }
 .hd-small {
   font-size: clamp(44px, 9vw, 80px);
