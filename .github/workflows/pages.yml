@@ -28,6 +28,10 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: website/out
+          # .well-known/apple-app-site-association links the app to the
+          # domain (invitation links, saved passwords). Hidden folders are
+          # left out of the artifact unless asked for.
+          include-hidden-files: true
   deploy:
     needs: build
     runs-on: ubuntu-latest

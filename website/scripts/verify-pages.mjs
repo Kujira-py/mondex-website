@@ -78,6 +78,11 @@ assert.match(sitemap, /xhtml:link/, 'sitemap: language alternates');
 assert(existsSync('out/.nojekyll'));
 assert.equal(readFileSync('out/CNAME', 'utf8').trim(), 'mondextcg.com');
 assert(existsSync('out/404.html'));
+// Apple reads this file to let the iOS app open invitation links and save
+// passwords for the domain. It must stay valid JSON and name the app.
+const association = JSON.parse(readFileSync('out/.well-known/apple-app-site-association', 'utf8'));
+assert.deepEqual(association.webcredentials.apps, ['TNH3BT2YDR.com.mondex.app']);
+assert(association.applinks.details[0].components.some((c) => c['/'] === '/i/*'), 'universal link: /i/*');
 // Invitation links: the page, and 404.html sending /i/<code> to it first thing.
 const invite = readFileSync('out/i/index.html', 'utf8');
 assert.equal([...invite.matchAll(/<h1\b/g)].length, 1, 'i: one heading');
