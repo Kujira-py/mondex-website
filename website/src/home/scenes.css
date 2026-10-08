@@ -230,7 +230,8 @@
   margin: 0 auto;
   max-width: 13em;
   font-size: clamp(44px, 12.2vw, 112px);
-  line-height: 0.98;
+  /* Onest's descenders run ~0.22em; tighter than this, a "y" meets the line below. */
+  line-height: 1.06;
 }
 .hd-hero .hd-accent .hd-w {
   background: linear-gradient(100deg, #5d3db8 0%, #8564e0 45%, #b19af9 100%);
