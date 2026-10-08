@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TNH3BT2YDR.com.mondex.app"],
+        "components": [
+          { "/": "/i/*", "comment": "Invitations: mondextcg.com/i/<code>" },
+          { "/": "/de/i/*", "comment": "German invitations" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TNH3BT2YDR.com.mondex.app"]
+  }
+}
